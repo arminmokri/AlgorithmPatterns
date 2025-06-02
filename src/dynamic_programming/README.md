@@ -18,7 +18,7 @@ Use DP when a problem has **overlapping subproblems** and **optimal substructure
 ## Examples
 - [Climbing Stairs](climbing_stairs) → [LeetCode](https://leetcode.com/problems/climbing-stairs) ❌
 - [Longest Increasing Subsequence](longest_increasing_subsequence) → [LeetCode](https://leetcode.com/problems/longest-increasing-subsequence) ❌
-- [Coin Change - Minimum Coins To Make Sum](coin_change_min_coins) → [LeetCode](https://leetcode.com/problems/coin-change) ❌
+- [Coin Change](coin_change) → [LeetCode](https://leetcode.com/problems/coin-change) ❌
 - [House Robber](house_robber) → [LeetCode](https://leetcode.com/problems/house-robber) ❌
 - [Edit Distance](edit_distance) → [LeetCode](https://leetcode.com/problems/edit-distance) ❌
 - [Coin Change - Count Ways To Make Sum](coin_change_count_ways) ✅
