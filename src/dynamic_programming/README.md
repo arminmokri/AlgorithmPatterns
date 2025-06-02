@@ -1,6 +1,6 @@
 [< Back To Algorithm Patterns](../../)
 
-# DYNAMIC PROGRAMMING
+# Dynamic Programming Algorithm Patterns
 ### Please support my repo with your star.
 
 ## Concept
