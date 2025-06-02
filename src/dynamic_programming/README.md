@@ -16,11 +16,11 @@ Use DP when a problem has **overlapping subproblems** and **optimal substructure
 - Using 1D or 2D arrays (or dictionaries) to store computed results
 
 ## Examples
-- [Climbing Stairs](climbing_stairs) → [LeetCode](https://leetcode.com/problems/climbing-stairs) ❌
-- [Longest Increasing Subsequence](longest_increasing_subsequence) → [LeetCode](https://leetcode.com/problems/longest-increasing-subsequence) ❌
-- [Coin Change](coin_change) → [LeetCode](https://leetcode.com/problems/coin-change) ❌
-- [House Robber](house_robber) → [LeetCode](https://leetcode.com/problems/house-robber) ❌
-- [Edit Distance](edit_distance) → [LeetCode](https://leetcode.com/problems/edit-distance) ❌
+- [Climbing Stairs]() → [LeetCode](https://leetcode.com/problems/climbing-stairs) ❌
+- [Longest Increasing Subsequence]() → [LeetCode](https://leetcode.com/problems/longest-increasing-subsequence) ❌
+- [Coin Change]() → [LeetCode](https://leetcode.com/problems/coin-change) ❌
+- [House Robber]() → [LeetCode](https://leetcode.com/problems/house-robber) ❌
+- [Edit Distance]() → [LeetCode](https://leetcode.com/problems/edit-distance) ❌
 - [Coin Change - Count Ways To Make Sum](coin_change_count_ways) ✅
 - [Combinatorial Partitioning](combinatorial_partitioning) ✅
 

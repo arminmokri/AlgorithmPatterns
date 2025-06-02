@@ -17,10 +17,10 @@ The two-pointer technique uses two indices that move through a data structure (o
 - Skipping duplicates, adjusting window sizes, or swapping elements.
 
 ## Examples
-- [Two Sum II - Input Array is Sorted]() → [LeetCode](https://leetcode.com/problems/two-sum-ii-input-array-is-sorted/)
-- [3Sum](github.com/yourrepo/3sum) → [LeetCode](https://leetcode.com/problems/3sum/)
-- [Container With Most Water](github.com/yourrepo/container-with-most-water) → [LeetCode](https://leetcode.com/problems/container-with-most-water/)
-- [Trapping Rain Water](github.com/yourrepo/trapping-rain-water) → [LeetCode](https://leetcode.com/problems/trapping-rain-water/)
-- [Valid Palindrome](github.com/yourrepo/valid-palindrome) → [LeetCode](https://leetcode.com/problems/valid-palindrome/)
+- [Two Sum II - Input Array is Sorted]() → [LeetCode](https://leetcode.com/problems/two-sum-ii-input-array-is-sorted/) ❌
+- [3Sum]() → [LeetCode](https://leetcode.com/problems/3sum/) ❌
+- [Container With Most Water]() → [LeetCode](https://leetcode.com/problems/container-with-most-water/) ❌
+- [Trapping Rain Water]() → [LeetCode](https://leetcode.com/problems/trapping-rain-water/) ❌
+- [Valid Palindrome]() → [LeetCode](https://leetcode.com/problems/valid-palindrome/) ❌
 
 [< Back To Algorithm Patterns](../../)
