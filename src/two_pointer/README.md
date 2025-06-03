@@ -17,7 +17,7 @@ The two-pointer technique uses two indices that move through a data structure (o
 - Skipping duplicates, adjusting window sizes, or swapping elements.
 
 ## Examples
-- [Two Sum II - Input Array is Sorted]() → [LeetCode](https://leetcode.com/problems/two-sum-ii-input-array-is-sorted/) ✅
+- [Two Sum II - Input Array is Sorted](two_sum_ii_input_array_is_sorted/) → [LeetCode](https://leetcode.com/problems/two-sum-ii-input-array-is-sorted/) ✅
   <br>
   [`#MorganStanley`](https://morganstanley.com)
 - [3Sum]() → [LeetCode](https://leetcode.com/problems/3sum/) ❌
