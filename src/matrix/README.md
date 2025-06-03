@@ -25,5 +25,8 @@ Matrix problems involve navigating or modifying 2D grids or arrays, often under 
 - [Min Max Row Sum Matrix Partition](min_max_row_sum_matrix_partition) ✅
   <br>
   [`#Bounteous`](https://bounteous.com)
+- [Lucy’s Spiral Hop](lucy_spiral_hop/) → [Brainly](https://brainly.com/question/31047283) ✅
+  <br>
+  [`#Cisco`](https://cisco.com)
 
 [< Back To Algorithm Patterns](../../)
