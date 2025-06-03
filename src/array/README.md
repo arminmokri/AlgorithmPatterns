@@ -28,5 +28,8 @@ Array problems focus on using contiguous memory structures where elements can be
 - [Generate Primes Below N and Save to File](generate_and_write_primes_below_n) ✅
   <br>
   [`#HighTechGenesis`](https://hightechgenesis.com)
+- [Valid Anagram](valid_anagram) → [LeetCode](https://leetcode.com/problems/valid-anagram) ✅
+  <br>
+  [`#Bankino`](https://bankino.digital)
 
 [< Back To Algorithm Patterns](../../)

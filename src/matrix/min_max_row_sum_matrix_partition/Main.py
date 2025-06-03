@@ -1,4 +1,6 @@
 """
+Title: Min Max Row Sum Matrix Partition
+
 You are given an array of integers of a non prime length. Your task is to partition the array into a matrix with 2 dimensions(rows and columns both >1) while preserving the order of the elements.
 The goal is to find the matrix dimensions that minimize the maximum row sum.
 
