@@ -1,5 +1,5 @@
 """
-Simple Palindrome Check
+Title: Simple Palindrome Check
 
 Check if the input string is symmetrical (a palindrome), meaning it reads the same forwards and backwards exactly,
 without ignoring spaces, cases, or punctuation.
