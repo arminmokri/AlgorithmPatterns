@@ -17,10 +17,10 @@ The sliding window pattern uses a subset (or window) that moves across the data 
 - Using a hashmap, set, or counter to track elements inside the window.
 
 ## Examples
-- [Maximum Sum Subarray of Size K]() → [LeetCode](https://leetcode.com/problems/maximum-average-subarray-i/) ❌
-- [Longest Substring Without Repeating Characters]() → [LeetCode](https://leetcode.com/problems/longest-substring-without-repeating-characters/) ❌
-- [Longest Repeating Character Replacement]() → [LeetCode](https://leetcode.com/problems/longest-repeating-character-replacement/) ❌
-- [Minimum Window Substring]() → [LeetCode](https://leetcode.com/problems/minimum-window-substring/) ❌
-- [Permutation in String]() → [LeetCode](https://leetcode.com/problems/permutation-in-string/) ❌
+- [Maximum Sum Subarray of Size K]() → [LeetCode](https://leetcode.com/problems/maximum-average-subarray-i) ❌
+- [Longest Substring Without Repeating Characters]() → [LeetCode](https://leetcode.com/problems/longest-substring-without-repeating-characters) ❌
+- [Longest Repeating Character Replacement]() → [LeetCode](https://leetcode.com/problems/longest-repeating-character-replacement) ❌
+- [Minimum Window Substring]() → [LeetCode](https://leetcode.com/problems/minimum-window-substring) ❌
+- [Permutation in String]() → [LeetCode](https://leetcode.com/problems/permutation-in-string) ❌
 
 [< Back To Algorithm Patterns](../../)

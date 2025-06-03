@@ -17,10 +17,10 @@ The interval pattern deals with problems involving ranges, segments, or spans, w
 - Merging overlapping intervals or adding non-overlapping ones to a result.
 
 ## Examples
-- [Merge Intervals]() → [LeetCode](https://leetcode.com/problems/merge-intervals/) ❌
-- [Insert Interval]() → [LeetCode](https://leetcode.com/problems/insert-interval/) ❌
-- [Meeting Rooms]() → [LeetCode](https://leetcode.com/problems/meeting-rooms/) ❌
-- [Non-overlapping Intervals]() → [LeetCode](https://leetcode.com/problems/non-overlapping-intervals/) ❌
-- [Minimum Number of Arrows to Burst Balloons]() → [LeetCode](https://leetcode.com/problems/minimum-number-of-arrows-to-burst-balloons/) ❌
+- [Merge Intervals]() → [LeetCode](https://leetcode.com/problems/merge-intervals) ❌
+- [Insert Interval]() → [LeetCode](https://leetcode.com/problems/insert-interval) ❌
+- [Meeting Rooms]() → [LeetCode](https://leetcode.com/problems/meeting-rooms) ❌
+- [Non-overlapping Intervals]() → [LeetCode](https://leetcode.com/problems/non-overlapping-intervals) ❌
+- [Minimum Number of Arrows to Burst Balloons]() → [LeetCode](https://leetcode.com/problems/minimum-number-of-arrows-to-burst-balloons) ❌
 
 [< Back To Algorithm Patterns](../../)

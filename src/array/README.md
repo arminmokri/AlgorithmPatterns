@@ -17,11 +17,11 @@ Array problems focus on using contiguous memory structures where elements can be
 - Using nested loops for pair/triplet combinations or subarray scans.
 
 ## Examples
-- [Remove Duplicates from Sorted Array]() → [LeetCode](https://leetcode.com/problems/remove-duplicates-from-sorted-array/) ❌
-- [Maximum Subarray]() → [LeetCode](https://leetcode.com/problems/maximum-subarray/) ❌
-- [Merge Sorted Array]() → [LeetCode](https://leetcode.com/problems/merge-sorted-array/) ❌
-- [Best Time to Buy and Sell Stock]() → [LeetCode](https://leetcode.com/problems/best-time-to-buy-and-sell-stock/) ❌
-- [Product of Array Except Self]() → [LeetCode](https://leetcode.com/problems/product-of-array-except-self/) ❌
+- [Remove Duplicates from Sorted Array]() → [LeetCode](https://leetcode.com/problems/remove-duplicates-from-sorted-array) ❌
+- [Maximum Subarray]() → [LeetCode](https://leetcode.com/problems/maximum-subarray) ❌
+- [Merge Sorted Array]() → [LeetCode](https://leetcode.com/problems/merge-sorted-array) ❌
+- [Best Time to Buy and Sell Stock]() → [LeetCode](https://leetcode.com/problems/best-time-to-buy-and-sell-stock) ❌
+- [Product of Array Except Self]() → [LeetCode](https://leetcode.com/problems/product-of-array-except-self) ❌
 - [First Unique Character in a String](first_unique_character_in_a_string) → [LeetCode](https://leetcode.com/problems/first-unique-character-in-a-string) ✅
   <br>
   [`#Altimetrik`](https://altimetrik.com)

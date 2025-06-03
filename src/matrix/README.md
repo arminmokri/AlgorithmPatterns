@@ -17,11 +17,11 @@ Matrix problems involve navigating or modifying 2D grids or arrays, often under 
 - Maintaining visited cells to avoid reprocessing.
 
 ## Examples
-- [Set Matrix Zeroes]() → [LeetCode](https://leetcode.com/problems/set-matrix-zeroes/) ❌
-- [Spiral Matrix]() → [LeetCode](https://leetcode.com/problems/spiral-matrix/) ❌
-- [Rotate Image]() → [LeetCode](https://leetcode.com/problems/rotate-image/) ❌
-- [Search a 2D Matrix]() → [LeetCode](https://leetcode.com/problems/search-a-2d-matrix/) ❌
-- [Word Search]() → [LeetCode](https://leetcode.com/problems/word-search/) ❌
+- [Set Matrix Zeroes]() → [LeetCode](https://leetcode.com/problems/set-matrix-zeroes) ❌
+- [Spiral Matrix]() → [LeetCode](https://leetcode.com/problems/spiral-matrix) ❌
+- [Rotate Image]() → [LeetCode](https://leetcode.com/problems/rotate-image) ❌
+- [Search a 2D Matrix]() → [LeetCode](https://leetcode.com/problems/search-a-2d-matrix) ❌
+- [Word Search]() → [LeetCode](https://leetcode.com/problems/word-search) ❌
 - [Min Max Row Sum Matrix Partition](min_max_row_sum_matrix_partition) ✅
   <br>
   [`#Bounteous`](https://bounteous.com)
