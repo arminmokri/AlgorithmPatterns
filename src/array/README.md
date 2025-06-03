@@ -25,5 +25,8 @@ Array problems focus on using contiguous memory structures where elements can be
 - [First Unique Character in a String](first_unique_character_in_a_string) → [LeetCode](https://leetcode.com/problems/first-unique-character-in-a-string) ✅
   <br>
   [`#Altimetrik`](https://altimetrik.com)
+- [Generate Primes Below N and Save to File](generate_and_write_primes_below_n) ✅
+  <br>
+  [`#HighTechGenesis`](hightechgenesis.com)
 
 [< Back To Algorithm Patterns](../../)
