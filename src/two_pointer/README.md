@@ -24,5 +24,8 @@ The two-pointer technique uses two indices that move through a data structure (o
 - [Container With Most Water]() → [LeetCode](https://leetcode.com/problems/container-with-most-water) ❌
 - [Trapping Rain Water]() → [LeetCode](https://leetcode.com/problems/trapping-rain-water) ❌
 - [Valid Palindrome]() → [LeetCode](https://leetcode.com/problems/valid-palindrome) ❌
+- [Simple Palindrome Check](simple_palindrome_check) ✅
+  <br>
+  [`#Bankino`](https://bankino.digital)
 
 [< Back To Algorithm Patterns](../../)
