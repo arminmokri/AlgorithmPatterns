@@ -27,6 +27,6 @@ Array problems focus on using contiguous memory structures where elements can be
   [`#Altimetrik`](https://altimetrik.com)
 - [Generate Primes Below N and Save to File](generate_and_write_primes_below_n) ✅
   <br>
-  [`#HighTechGenesis`](hightechgenesis.com)
+  [`#HighTechGenesis`](https://hightechgenesis.com)
 
 [< Back To Algorithm Patterns](../../)
