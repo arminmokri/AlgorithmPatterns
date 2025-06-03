@@ -22,5 +22,8 @@ Array problems focus on using contiguous memory structures where elements can be
 - [Merge Sorted Array]() → [LeetCode](https://leetcode.com/problems/merge-sorted-array/) ❌
 - [Best Time to Buy and Sell Stock]() → [LeetCode](https://leetcode.com/problems/best-time-to-buy-and-sell-stock/) ❌
 - [Product of Array Except Self]() → [LeetCode](https://leetcode.com/problems/product-of-array-except-self/) ❌
+- [First Unique Character in a String]() → [LeetCode](https://leetcode.com/problems/first-unique-character-in-a-string) ✅
+  <br>
+  [`#Altimetrik`](https://altimetrik.com)
 
 [< Back To Algorithm Patterns](../../)
