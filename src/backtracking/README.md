@@ -17,15 +17,15 @@ Backtracking is a recursive algorithmic technique for solving problems increment
 - Backtracking (undoing the last step) when hitting dead ends or reaching base cases.
 
 ## Examples
-- [Permutations]() → [LeetCode](https://leetcode.com/problems/permutations) ❌
+- [Permutations]() → [LeetCode #46](https://leetcode.com/problems/permutations) ❌
 
-- [Combinations]() → [LeetCode](https://leetcode.com/problems/combinations) ❌
+- [Combinations]() → [LeetCode #77](https://leetcode.com/problems/combinations) ❌
 
-- [Combination Sum]() → [LeetCode](https://leetcode.com/problems/combination-sum) ❌
+- [Combination Sum]() → [LeetCode #39](https://leetcode.com/problems/combination-sum) ❌
 
-- [N-Queens]() → [LeetCode](https://leetcode.com/problems/n-queens) ❌
+- [N-Queens]() → [LeetCode #51](https://leetcode.com/problems/n-queens) ❌
 
-- [Word Search]() → [LeetCode](https://leetcode.com/problems/word-search) ❌
+- [Word Search]() → [LeetCode #79](https://leetcode.com/problems/word-search) ❌
 
 - [Reverse String - Recursively](reverse_string_recursively) ✅
   <br>

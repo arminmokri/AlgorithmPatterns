@@ -16,15 +16,15 @@ Use DP when a problem has **overlapping subproblems** and **optimal substructure
 - Using 1D or 2D arrays (or dictionaries) to store computed results
 
 ## Examples
-- [Climbing Stairs]() → [LeetCode](https://leetcode.com/problems/climbing-stairs) ❌
+- [Climbing Stairs]() → [LeetCode #70](https://leetcode.com/problems/climbing-stairs) ❌
 
-- [Longest Increasing Subsequence]() → [LeetCode](https://leetcode.com/problems/longest-increasing-subsequence) ❌
+- [Longest Increasing Subsequence]() → [LeetCode #300](https://leetcode.com/problems/longest-increasing-subsequence) ❌
 
-- [Coin Change]() → [LeetCode](https://leetcode.com/problems/coin-change) ❌
+- [Coin Change]() → [LeetCode #322](https://leetcode.com/problems/coin-change) ❌
 
-- [House Robber]() → [LeetCode](https://leetcode.com/problems/house-robber) ❌
+- [House Robber]() → [LeetCode #198](https://leetcode.com/problems/house-robber) ❌
 
-- [Edit Distance]() → [LeetCode](https://leetcode.com/problems/edit-distance) ❌
+- [Edit Distance]() → [LeetCode #72](https://leetcode.com/problems/edit-distance) ❌
 
 - [Coin Change - Count Ways To Make Sum](coin_change_count_ways) ✅
 
