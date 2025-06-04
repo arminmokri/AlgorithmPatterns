@@ -43,4 +43,8 @@ Array problems focus on using contiguous memory structures where elements can be
   <br>
   [`#Nexu`](https://nexu.co)
 
+- [First Repeated Word](first_repeated_item) ✅
+  <br>
+  [`#Synechron`](https://synechron.com)
+
 [< Back To Algorithm Patterns](../../)

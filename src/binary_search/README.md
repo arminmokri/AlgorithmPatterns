@@ -18,9 +18,13 @@ Binary Search is a divide-and-conquer algorithm used to efficiently find a targe
 
 ## Examples
 - [Binary Search]() → [LeetCode](https://leetcode.com/problems/binary-search) ❌
+
 - [Search Insert Position]() → [LeetCode](https://leetcode.com/problems/search-insert-position) ❌
+
 - [Find Minimum in Rotated Sorted Array]() → [LeetCode](https://leetcode.com/problems/find-minimum-in-rotated-sorted-array) ❌
+
 - [Search in Rotated Sorted Array]() → [LeetCode](https://leetcode.com/problems/search-in-rotated-sorted-array) ❌
+
 - [Median of Two Sorted Arrays]() → [LeetCode](https://leetcode.com/problems/median-of-two-sorted-arrays) ❌
 
 [< Back To Algorithm Patterns](../../)

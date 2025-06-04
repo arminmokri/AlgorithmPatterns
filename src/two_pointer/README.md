@@ -20,10 +20,15 @@ The two-pointer technique uses two indices that move through a data structure (o
 - [Two Sum II - Input Array is Sorted](two_sum_ii_input_array_is_sorted/) → [LeetCode](https://leetcode.com/problems/two-sum-ii-input-array-is-sorted) ✅
   <br>
   [`#MorganStanley`](https://morganstanley.com)
+
 - [3Sum]() → [LeetCode](https://leetcode.com/problems/3sum) ❌
+
 - [Container With Most Water]() → [LeetCode](https://leetcode.com/problems/container-with-most-water) ❌
+
 - [Trapping Rain Water]() → [LeetCode](https://leetcode.com/problems/trapping-rain-water) ❌
+
 - [Valid Palindrome]() → [LeetCode](https://leetcode.com/problems/valid-palindrome) ❌
+
 - [Simple Palindrome Check](simple_palindrome_check) ✅
   <br>
   [`#Bankino`](https://bankino.digital)

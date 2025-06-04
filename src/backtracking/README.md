@@ -18,10 +18,15 @@ Backtracking is a recursive algorithmic technique for solving problems increment
 
 ## Examples
 - [Permutations]() → [LeetCode](https://leetcode.com/problems/permutations) ❌
+
 - [Combinations]() → [LeetCode](https://leetcode.com/problems/combinations) ❌
+
 - [Combination Sum]() → [LeetCode](https://leetcode.com/problems/combination-sum) ❌
+
 - [N-Queens]() → [LeetCode](https://leetcode.com/problems/n-queens) ❌
+
 - [Word Search]() → [LeetCode](https://leetcode.com/problems/word-search) ❌
+
 - [Reverse String - Recursively](reverse_string_recursively) ✅
   <br>
   [`#Genpact`](https://genpact.com)
