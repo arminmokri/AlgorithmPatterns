@@ -18,19 +18,27 @@ Array problems focus on using contiguous memory structures where elements can be
 
 ## Examples
 - [Remove Duplicates from Sorted Array]() → [LeetCode #26](https://leetcode.com/problems/remove-duplicates-from-sorted-array) ❌
+
 - [Maximum Subarray]() → [LeetCode #53](https://leetcode.com/problems/maximum-subarray) ❌
+
 - [Merge Sorted Array]() → [LeetCode #88](https://leetcode.com/problems/merge-sorted-array) ❌
+
 - [Best Time to Buy and Sell Stock]() → [LeetCode #121](https://leetcode.com/problems/best-time-to-buy-and-sell-stock) ❌
+
 - [Product of Array Except Self]() → [LeetCode #238](https://leetcode.com/problems/product-of-array-except-self) ❌
+
 - [First Unique Character in a String](first_unique_character_in_a_string) → [LeetCode #387](https://leetcode.com/problems/first-unique-character-in-a-string) ✅
   <br>
   [`#Altimetrik`](https://altimetrik.com)
+
 - [Generate Primes Below N and Save to File](generate_and_write_primes_below_n) ✅
   <br>
   [`#HighTechGenesis`](https://hightechgenesis.com)
+
 - [Valid Anagram](valid_anagram) → [LeetCode #242](https://leetcode.com/problems/valid-anagram) ✅
   <br>
   [`#Bankino`](https://bankino.digital)
+
 - [Longest Common Prefix](longest_common_prefix) → [LeetCode #14](https://leetcode.com/problems/longest-common-prefix) ✅
   <br>
   [`#Nexu`](https://nexu.co)
