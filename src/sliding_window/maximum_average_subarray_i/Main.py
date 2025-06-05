@@ -35,9 +35,7 @@ class Test(unittest.TestCase):
         self.solution = Solution()
 
     def test_basic_case(self):
-        self.assertAlmostEqual(
-            self.solution.findMaxAverage([1, 12, -5, -6, 50, 3], 4), 12.75
-        )
+        self.assertEqual(self.solution.findMaxAverage([1, 12, -5, -6, 50, 3], 4), 12.75)
         self.assertEqual(self.solution.findMaxAverage([5], 1), 5)
 
     def test_all_positive(self):
@@ -47,14 +45,14 @@ class Test(unittest.TestCase):
         self.assertEqual(self.solution.findMaxAverage([-1, -2, -3, -4], 2), -1.5)
 
     def test_single_element_window(self):
-        self.assertEqual(self.solution.findMaxAverage([5, 1, -2, 3], 1), 5.0)
+        self.assertEqual(self.solution.findMaxAverage([5, 1, -2, 3], 1), 5)
 
     def test_full_array_window(self):
-        self.assertEqual(self.solution.findMaxAverage([2, 4, 6, 8], 4), 5.0)
+        self.assertEqual(self.solution.findMaxAverage([2, 4, 6, 8], 4), 5)
 
     def test_large_numbers(self):
         self.assertEqual(
-            self.solution.findMaxAverage([1000000, 1000000, 1000000], 2), 1000000.0
+            self.solution.findMaxAverage([1000000, 1000000, 1000000], 2), 1000000
         )
 
 
