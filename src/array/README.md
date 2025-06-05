@@ -51,4 +51,8 @@ Array problems focus on using contiguous memory structures where elements can be
   <br>
   [`#TrendMicro`](https://trendmicro.com)
 
+  - [Two Stacks In An Array](two_stacks_in_an_array/) → [GeeksForGeeks](https://geeksforgeeks.org/implement-two-stacks-in-an-array) ✅
+  <br>
+  [`#MorganStanley`](https://morganstanley.com)
+
 [< Back To Algorithm Patterns](../../)
