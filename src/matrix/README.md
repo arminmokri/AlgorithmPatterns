@@ -27,7 +27,7 @@ Matrix problems involve navigating or modifying 2D grids or arrays, often under 
 
 - [Word Search]() → [LeetCode #79](https://leetcode.com/problems/word-search) ❌
 
-- [Min Max Row Sum Matrix Partition](min_max_row_sum_matrix_partition) ✅
+- [Min Max Row Sum Matrix Partition](min_max_row_sum_matrix_partition/) ✅
   <br>
   [`#Bounteous`](https://bounteous.com)
 

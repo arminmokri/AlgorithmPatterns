@@ -27,7 +27,7 @@ Backtracking is a recursive algorithmic technique for solving problems increment
 
 - [Word Search]() → [LeetCode #79](https://leetcode.com/problems/word-search) ❌
 
-- [Reverse String - Recursively](reverse_string_recursively) ✅
+- [Reverse String - Recursively](reverse_string_recursively/) ✅
   <br>
   [`#Genpact`](https://genpact.com)
 

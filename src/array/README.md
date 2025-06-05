@@ -27,24 +27,28 @@ Array problems focus on using contiguous memory structures where elements can be
 
 - [Product of Array Except Self]() → [LeetCode #238](https://leetcode.com/problems/product-of-array-except-self) ❌
 
-- [First Unique Character in a String](first_unique_character_in_a_string) → [LeetCode #387](https://leetcode.com/problems/first-unique-character-in-a-string) ✅
+- [First Unique Character in a String](first_unique_character_in_a_string/) → [LeetCode #387](https://leetcode.com/problems/first-unique-character-in-a-string) ✅
   <br>
   [`#Altimetrik`](https://altimetrik.com)
 
-- [Generate Primes Below N and Save to File](generate_and_write_primes_below_n) ✅
+- [Generate Primes Below N and Save to File](generate_and_write_primes_below_n/) ✅
   <br>
   [`#HighTechGenesis`](https://hightechgenesis.com)
 
-- [Valid Anagram](valid_anagram) → [LeetCode #242](https://leetcode.com/problems/valid-anagram) ✅
+- [Valid Anagram](valid_anagram/) → [LeetCode #242](https://leetcode.com/problems/valid-anagram) ✅
   <br>
   [`#Bankino`](https://bankino.digital)
 
-- [Longest Common Prefix](longest_common_prefix) → [LeetCode #14](https://leetcode.com/problems/longest-common-prefix) ✅
+- [Longest Common Prefix](longest_common_prefix/) → [LeetCode #14](https://leetcode.com/problems/longest-common-prefix) ✅
   <br>
   [`#Nexu`](https://nexu.co)
 
-- [First Repeated Word](first_repeated_item) ✅
+- [First Repeated Word](first_repeated_item/) ✅
   <br>
   [`#Synechron`](https://synechron.com)
+
+- [First Missing Positive](first_missing_positive/) → [LeetCode #41](https://leetcode.com/problems/first-missing-positive) ✅
+  <br>
+  [`#TrendMicro`](https://trendmicro.com)
 
 [< Back To Algorithm Patterns](../../)

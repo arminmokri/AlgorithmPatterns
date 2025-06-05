@@ -26,9 +26,9 @@ Use DP when a problem has **overlapping subproblems** and **optimal substructure
 
 - [Edit Distance]() → [LeetCode #72](https://leetcode.com/problems/edit-distance) ❌
 
-- [Coin Change - Count Ways To Make Sum](coin_change_count_ways) ✅
+- [Coin Change - Count Ways To Make Sum](coin_change_count_ways/) ✅
 
-- [Combinatorial Partitioning](combinatorial_partitioning) ✅
+- [Combinatorial Partitioning](combinatorial_partitioning/) ✅
   <br>
   [`#ExpediaGroup`](https://expediagroup.com)
 

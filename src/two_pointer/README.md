@@ -29,7 +29,7 @@ The two-pointer technique uses two indices that move through a data structure (o
 
 - [Valid Palindrome]() → [LeetCode #125](https://leetcode.com/problems/valid-palindrome) ❌
 
-- [Simple Palindrome Check](simple_palindrome_check) ✅
+- [Simple Palindrome Check](simple_palindrome_check/) ✅
   <br>
   [`#Bankino`](https://bankino.digital)
 
