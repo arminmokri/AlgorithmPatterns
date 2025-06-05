@@ -17,19 +17,19 @@ Backtracking is a recursive algorithmic technique for solving problems increment
 - Backtracking (undoing the last step) when hitting dead ends or reaching base cases.
 
 ## Examples
-- [Permutations]() → [LeetCode #46](https://leetcode.com/problems/permutations) ❌
+1. [Permutations]() → [LeetCode #46](https://leetcode.com/problems/permutations) ❌
 
-- [Combinations]() → [LeetCode #77](https://leetcode.com/problems/combinations) ❌
+2. [Combinations]() → [LeetCode #77](https://leetcode.com/problems/combinations) ❌
   <br>
   [`#Flexton`](https://flextoninc.com)
 
-- [Combination Sum]() → [LeetCode #39](https://leetcode.com/problems/combination-sum) ❌
+3. [Combination Sum]() → [LeetCode #39](https://leetcode.com/problems/combination-sum) ❌
 
-- [N-Queens]() → [LeetCode #51](https://leetcode.com/problems/n-queens) ❌
+4. [N-Queens]() → [LeetCode #51](https://leetcode.com/problems/n-queens) ❌
 
-- [Word Search]() → [LeetCode #79](https://leetcode.com/problems/word-search) ❌
+5. [Word Search]() → [LeetCode #79](https://leetcode.com/problems/word-search) ❌
 
-- [Reverse String - Recursively](reverse_string_recursively/) ✅
+6. [Reverse String - Recursively](reverse_string_recursively/) ✅
   <br>
   [`#Genpact`](https://genpact.com)
 
