@@ -1,5 +1,5 @@
-import sys
 import unittest
+import sys
 
 debug = True
 
