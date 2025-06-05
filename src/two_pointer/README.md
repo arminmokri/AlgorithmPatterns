@@ -17,22 +17,26 @@ The two-pointer technique uses two indices that move through a data structure (o
 - Skipping duplicates, adjusting window sizes, or swapping elements.
 
 ## Examples
-- [Two Sum II - Input Array is Sorted](two_sum_ii_input_array_is_sorted/) → [LeetCode #167](https://leetcode.com/problems/two-sum-ii-input-array-is-sorted) ✅
+- [x] 1. [Two Sum II - Input Array is Sorted](two_sum_ii_input_array_is_sorted/) → [LeetCode #167](https://leetcode.com/problems/two-sum-ii-input-array-is-sorted)
   <br>
   [`#MorganStanley`](https://morganstanley.com)
 
-- [3Sum]() → [LeetCode #15](https://leetcode.com/problems/3sum) ❌
+- [ ] 2. [3Sum]() → [LeetCode #15](https://leetcode.com/problems/3sum)
 
-- [Container With Most Water]() → [LeetCode #11](https://leetcode.com/problems/container-with-most-water) ❌
+- [ ] 3. [Container With Most Water]() → [LeetCode #11](https://leetcode.com/problems/container-with-most-water)
 
-- [Trapping Rain Water]() → [LeetCode #42](https://leetcode.com/problems/trapping-rain-water) ❌
+- [ ] 4. [Trapping Rain Water]() → [LeetCode #42](https://leetcode.com/problems/trapping-rain-water)
 
-- [Valid Palindrome]() → [LeetCode #125](https://leetcode.com/problems/valid-palindrome) ❌
+- [ ] 5. [Valid Palindrome]() → [LeetCode #125](https://leetcode.com/problems/valid-palindrome)
 
-- [Sort Colors]() → [LeetCode #75](https://leetcode.com/problems/sort-colors) ❌
+- [ ] 6. [Sort Colors]() → [LeetCode #75](https://leetcode.com/problems/sort-colors)
 
-- [Simple Palindrome Check](simple_palindrome_check/) ✅
+- [x] 7. [Simple Palindrome Check](simple_palindrome_check/)
   <br>
   [`#Bankino`](https://bankino.digital)
+
+<p align="center">
+  <a href="../tree_traversal">⬅️ <strong>Tree Traversal</strong></a>
+</p>
 
 [< Back To Algorithm Patterns](../../)

@@ -17,14 +17,20 @@ The interval pattern deals with problems involving ranges, segments, or spans, w
 - Merging overlapping intervals or adding non-overlapping ones to a result.
 
 ## Examples
-- [Merge Intervals]() → [LeetCode #56](https://leetcode.com/problems/merge-intervals) ❌
+- [ ] 1. [Merge Intervals]() → [LeetCode #56](https://leetcode.com/problems/merge-intervals)
 
-- [Insert Interval]() → [LeetCode #57](https://leetcode.com/problems/insert-interval) ❌
+- [ ] 2. [Insert Interval]() → [LeetCode #57](https://leetcode.com/problems/insert-interval)
 
-- [Meeting Rooms]() → [LeetCode #252](https://leetcode.com/problems/meeting-rooms) ❌
+- [ ] 3. [Meeting Rooms]() → [LeetCode #252](https://leetcode.com/problems/meeting-rooms)
 
-- [Non-overlapping Intervals]() → [LeetCode #435](https://leetcode.com/problems/non-overlapping-intervals) ❌
+- [ ] 4. [Non-overlapping Intervals]() → [LeetCode #435](https://leetcode.com/problems/non-overlapping-intervals)
 
-- [Minimum Number of Arrows to Burst Balloons]() → [LeetCode #452](https://leetcode.com/problems/minimum-number-of-arrows-to-burst-balloons) ❌
+- [ ] 5. [Minimum Number of Arrows to Burst Balloons]() → [LeetCode #452](https://leetcode.com/problems/minimum-number-of-arrows-to-burst-balloons)
+
+<p align="center">
+  <a href="../dynamic_programming">⬅️ <strong>Dynamic Programming</strong></a>
+  🔸
+  <a href="../matrix"><strong>Matrix</strong> ➡️</a>
+</p>
 
 [< Back To Algorithm Patterns](../../)

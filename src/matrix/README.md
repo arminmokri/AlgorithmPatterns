@@ -17,22 +17,28 @@ Matrix problems involve navigating or modifying 2D grids or arrays, often under 
 - Maintaining visited cells to avoid reprocessing.
 
 ## Examples
-- [Set Matrix Zeroes]() → [LeetCode #73](https://leetcode.com/problems/set-matrix-zeroes) ❌
+- [ ] 1. [Set Matrix Zeroes]() → [LeetCode #73](https://leetcode.com/problems/set-matrix-zeroes)
 
-- [Spiral Matrix]() → [LeetCode #54](https://leetcode.com/problems/spiral-matrix) ❌
+- [ ] 2. [Spiral Matrix]() → [LeetCode #54](https://leetcode.com/problems/spiral-matrix)
 
-- [Rotate Image]() → [LeetCode #48](https://leetcode.com/problems/rotate-image) ❌
+- [ ] 3. [Rotate Image]() → [LeetCode #48](https://leetcode.com/problems/rotate-image)
 
-- [Search a 2D Matrix]() → [LeetCode #74](https://leetcode.com/problems/search-a-2d-matrix) ❌
+- [ ] 4. [Search a 2D Matrix]() → [LeetCode #74](https://leetcode.com/problems/search-a-2d-matrix)
 
-- [Word Search]() → [LeetCode #79](https://leetcode.com/problems/word-search) ❌
+- [ ] 5. [Word Search]() → [LeetCode #79](https://leetcode.com/problems/word-search)
 
-- [Min Max Row Sum Matrix Partition](min_max_row_sum_matrix_partition/) ✅
+- [x] 6. [Min Max Row Sum Matrix Partition](min_max_row_sum_matrix_partition/)
   <br>
   [`#Bounteous`](https://bounteous.com)
 
-- [Lucy’s Spiral Hop](lucy_spiral_hop/) → [Brainly](https://brainly.com/question/31047283) ✅
+- [x] 7. [Lucy’s Spiral Hop](lucy_spiral_hop/) → [Brainly](https://brainly.com/question/31047283)
   <br>
   [`#Cisco`](https://cisco.com)
+
+<p align="center">
+  <a href="../interval">⬅️ <strong>Interval</strong></a>
+  🔸
+  <a href="../sliding_window"><strong>Sliding Window</strong> ➡️</a>
+</p>
 
 [< Back To Algorithm Patterns](../../)

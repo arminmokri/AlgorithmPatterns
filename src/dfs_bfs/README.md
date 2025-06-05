@@ -17,14 +17,20 @@ DFS (Depth-First Search) and BFS (Breadth-First Search) are fundamental graph tr
 - Marking nodes as visited to avoid cycles or repeated work.
 
 ## Examples
-- [Number of Islands]() → [LeetCode #200](https://leetcode.com/problems/number-of-islands) ❌
+- [ ] 1. [Number of Islands]() → [LeetCode #200](https://leetcode.com/problems/number-of-islands)
 
-- [Clone Graph]() → [LeetCode #133](https://leetcode.com/problems/clone-graph) ❌
+- [ ] 2. [Clone Graph]() → [LeetCode #133](https://leetcode.com/problems/clone-graph)
 
-- [Word Ladder]() → [LeetCode #127](https://leetcode.com/problems/word-ladder) ❌
+- [ ] 3. [Word Ladder]() → [LeetCode #127](https://leetcode.com/problems/word-ladder)
 
-- [Course Schedule]() → [LeetCode #207](https://leetcode.com/problems/course-schedule) ❌
+- [ ] 4. [Course Schedule]() → [LeetCode #207](https://leetcode.com/problems/course-schedule)
 
-- [Pacific Atlantic Water Flow]() → [LeetCode #417](https://leetcode.com/problems/pacific-atlantic-water-flow) ❌
+- [ ] 5. [Pacific Atlantic Water Flow]() → [LeetCode #417](https://leetcode.com/problems/pacific-atlantic-water-flow)
+
+<p align="center">
+  <a href="../binary_search">⬅️ <strong>Binary Search</strong></a>
+  🔸
+  <a href="../dynamic_programming"><strong>Dynamic Programming</strong> ➡️</a>
+</p>
 
 [< Back To Algorithm Patterns](../../)

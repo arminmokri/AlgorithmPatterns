@@ -17,14 +17,20 @@ Tree traversal refers to visiting each node in a tree data structure systematica
 - Tracking parent-child relationships, depths, or paths during traversal.
 
 ## Examples
-- [Binary Tree Inorder Traversal]() → [LeetCode #94](https://leetcode.com/problems/binary-tree-inorder-traversal) ❌
+- [ ] 1. [Binary Tree Inorder Traversal]() → [LeetCode #94](https://leetcode.com/problems/binary-tree-inorder-traversal)
 
-- [Binary Tree Preorder Traversal]() → [LeetCode #144](https://leetcode.com/problems/binary-tree-preorder-traversal) ❌
+- [ ] 2. [Binary Tree Preorder Traversal]() → [LeetCode #144](https://leetcode.com/problems/binary-tree-preorder-traversal)
 
-- [Binary Tree Postorder Traversal]() → [LeetCode #145](https://leetcode.com/problems/binary-tree-postorder-traversal) ❌
+- [ ] 3. [Binary Tree Postorder Traversal]() → [LeetCode #145](https://leetcode.com/problems/binary-tree-postorder-traversal)
 
-- [Binary Tree Level Order Traversal]() → [LeetCode #102](https://leetcode.com/problems/binary-tree-level-order-traversal) ❌
+- [ ] 4. [Binary Tree Level Order Traversal]() → [LeetCode #102](https://leetcode.com/problems/binary-tree-level-order-traversal)
 
-- [Maximum Depth of Binary Tree]() → [LeetCode #104](https://leetcode.com/problems/maximum-depth-of-binary-tree) ❌
+- [ ] 5. [Maximum Depth of Binary Tree]() → [LeetCode #104](https://leetcode.com/problems/maximum-depth-of-binary-tree)
+
+<p align="center">
+  <a href="../sliding_window">⬅️ <strong>Sliding Window</strong></a>
+  🔸
+  <a href="../two_pointer"><strong>Two Pointer</strong> ➡️</a>
+</p>
 
 [< Back To Algorithm Patterns](../../)

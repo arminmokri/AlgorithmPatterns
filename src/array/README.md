@@ -55,4 +55,8 @@ Array problems focus on using contiguous memory structures where elements can be
   <br>
   [`#MorganStanley`](https://morganstanley.com)
 
+<p align="center">
+  <a href="../backtracking"><strong>Backtracking</strong> ➡️</a>
+</p>
+
 [< Back To Algorithm Patterns](../../)

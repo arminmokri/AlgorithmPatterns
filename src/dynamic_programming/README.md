@@ -16,24 +16,30 @@ Use DP when a problem has **overlapping subproblems** and **optimal substructure
 - Using 1D or 2D arrays (or dictionaries) to store computed results
 
 ## Examples
-- [Climbing Stairs]() → [LeetCode #70](https://leetcode.com/problems/climbing-stairs) ❌
+- [ ] 1. [Climbing Stairs]() → [LeetCode #70](https://leetcode.com/problems/climbing-stairs)
 
-- [Longest Increasing Subsequence]() → [LeetCode #300](https://leetcode.com/problems/longest-increasing-subsequence) ❌
+- [ ] 2. [Longest Increasing Subsequence]() → [LeetCode #300](https://leetcode.com/problems/longest-increasing-subsequence)
 
-- [Coin Change]() → [LeetCode #322](https://leetcode.com/problems/coin-change) ❌
+- [ ] 3. [Coin Change]() → [LeetCode #322](https://leetcode.com/problems/coin-change)
 
-- [House Robber]() → [LeetCode #198](https://leetcode.com/problems/house-robber) ❌
+- [ ] 4. [House Robber]() → [LeetCode #198](https://leetcode.com/problems/house-robber)
 
-- [Edit Distance]() → [LeetCode #72](https://leetcode.com/problems/edit-distance) ❌
+- [ ] 5. [Edit Distance]() → [LeetCode #72](https://leetcode.com/problems/edit-distance)
 
-- [Coin Change - Count Ways To Make Sum](coin_change_count_ways/) ✅
+- [x] 6. [Coin Change - Count Ways To Make Sum](coin_change_count_ways/)
 
-- [Combinatorial Partitioning](combinatorial_partitioning/) ✅
+- [x] 7. [Combinatorial Partitioning](combinatorial_partitioning/)
   <br>
   [`#ExpediaGroup`](https://expediagroup.com)
 
-- [Fibonacci Number](fibonacci_number/) → [LeetCode #509](https://leetcode.com/problems/fibonacci-number) ✅
+- [x] 8. [Fibonacci Number](fibonacci_number/) → [LeetCode #509](https://leetcode.com/problems/fibonacci-number)
   <br>
   [`#Geotab`](https://geotab.com)
+
+<p align="center">
+  <a href="../dfs_bfs">⬅️ <strong>DFS-BFS</strong></a>
+  🔸
+  <a href="../interval"><strong>Interval</strong> ➡️</a>
+</p>
 
 [< Back To Algorithm Patterns](../../)
