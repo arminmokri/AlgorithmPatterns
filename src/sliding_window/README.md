@@ -17,7 +17,7 @@ The sliding window pattern uses a subset (or window) that moves across the data 
 - Using a hashmap, set, or counter to track elements inside the window.
 
 ## Examples
-- [ ] 1. [Maximum Sum Subarray of Size K]() → [LeetCode #643](https://leetcode.com/problems/maximum-average-subarray-i)
+- [x] 1. [Maximum Average Subarray I]() → [LeetCode #643](https://leetcode.com/problems/maximum-average-subarray-i)
 
 - [ ] 2. [Longest Substring Without Repeating Characters]() → [LeetCode #3](https://leetcode.com/problems/longest-substring-without-repeating-characters)
 
