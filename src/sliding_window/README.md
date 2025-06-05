@@ -31,4 +31,8 @@ The sliding window pattern uses a subset (or window) that moves across the data 
   <br>
   [`#TrendMicro`](https://trendmicro.com)
 
+- [Distance Between Scrambled Programmer Words](distance_between_scrambled_programmer_words/) ✅
+  <br>
+  [`#ExpediaGroup`](https://expediagroup.com)
+
 [< Back To Algorithm Patterns](../../)
