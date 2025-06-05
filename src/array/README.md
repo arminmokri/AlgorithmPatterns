@@ -17,41 +17,41 @@ Array problems focus on using contiguous memory structures where elements can be
 - Using nested loops for pair/triplet combinations or subarray scans.
 
 ## Examples
-1. [Remove Duplicates from Sorted Array]() → [LeetCode #26](https://leetcode.com/problems/remove-duplicates-from-sorted-array) ❌
+- [ ] 1. [Remove Duplicates from Sorted Array]() → [LeetCode #26](https://leetcode.com/problems/remove-duplicates-from-sorted-array)
 
-2. [Maximum Subarray]() → [LeetCode #53](https://leetcode.com/problems/maximum-subarray) ❌
+- [ ] 2. [Maximum Subarray]() → [LeetCode #53](https://leetcode.com/problems/maximum-subarray)
 
-3. [Merge Sorted Array]() → [LeetCode #88](https://leetcode.com/problems/merge-sorted-array) ❌
+- [ ] 3. [Merge Sorted Array]() → [LeetCode #88](https://leetcode.com/problems/merge-sorted-array)
 
-4. [Best Time to Buy and Sell Stock]() → [LeetCode #121](https://leetcode.com/problems/best-time-to-buy-and-sell-stock) ❌
+- [ ] 4. [Best Time to Buy and Sell Stock]() → [LeetCode #121](https://leetcode.com/problems/best-time-to-buy-and-sell-stock)
 
-5. [Product of Array Except Self]() → [LeetCode #238](https://leetcode.com/problems/product-of-array-except-self) ❌
+- [ ] 5. [Product of Array Except Self]() → [LeetCode #238](https://leetcode.com/problems/product-of-array-except-self)
 
-6. [First Unique Character in a String](first_unique_character_in_a_string/) → [LeetCode #387](https://leetcode.com/problems/first-unique-character-in-a-string) ✅
+- [x] 6. [First Unique Character in a String](first_unique_character_in_a_string/) → [LeetCode #387](https://leetcode.com/problems/first-unique-character-in-a-string)
   <br>
   [`#Altimetrik`](https://altimetrik.com)
 
-7. [Generate Primes Below N and Save to File](generate_and_write_primes_below_n/) ✅
+- [x] 7. [Generate Primes Below N and Save to File](generate_and_write_primes_below_n/)
   <br>
   [`#HighTechGenesis`](https://hightechgenesis.com)
 
-8. [Valid Anagram](valid_anagram/) → [LeetCode #242](https://leetcode.com/problems/valid-anagram) ✅
+- [x] 8. [Valid Anagram](valid_anagram/) → [LeetCode #242](https://leetcode.com/problems/valid-anagram)
   <br>
   [`#Bankino`](https://bankino.digital)
 
-9. [Longest Common Prefix](longest_common_prefix/) → [LeetCode #14](https://leetcode.com/problems/longest-common-prefix) ✅
+- [x] 9. [Longest Common Prefix](longest_common_prefix/) → [LeetCode #14](https://leetcode.com/problems/longest-common-prefix)
   <br>
   [`#Nexu`](https://nexu.co)
 
-10. [First Repeated Word](first_repeated_item/) ✅
+- [x] 10. [First Repeated Word](first_repeated_item/)
   <br>
   [`#Synechron`](https://synechron.com)
 
-11. [First Missing Positive](first_missing_positive/) → [LeetCode #41](https://leetcode.com/problems/first-missing-positive) ✅
+- [x] 11. [First Missing Positive](first_missing_positive/) → [LeetCode #41](https://leetcode.com/problems/first-missing-positive)
   <br>
   [`#TrendMicro`](https://trendmicro.com)
 
-12. [Two Stacks In An Array](two_stacks_in_an_array/) → [GeeksForGeeks](https://geeksforgeeks.org/implement-two-stacks-in-an-array) ✅
+- [x] 12. [Two Stacks In An Array](two_stacks_in_an_array/) → [GeeksForGeeks](https://geeksforgeeks.org/implement-two-stacks-in-an-array)
   <br>
   [`#MorganStanley`](https://morganstanley.com)
 
