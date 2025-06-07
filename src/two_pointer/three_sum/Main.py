@@ -65,7 +65,7 @@ class Test(unittest.TestCase):
         self.assertCountEqual(self.solution.threeSum([0, 1, 1]), [])
         self.assertCountEqual(self.solution.threeSum([0, 0, 0]), [[0, 0, 0]])
 
-    def test_basic_case1(self):
+    def test_mirror_list_case(self):
         self.assertCountEqual(
             self.solution.threeSum([0, -3, -2, 2, 3]), [[-3, 0, 3], [-2, 0, 2]]
         )
