@@ -16,7 +16,7 @@ Use DP when a problem has **overlapping subproblems** and **optimal substructure
 - Using 1D or 2D arrays (or dictionaries) to store computed results
 
 ## Examples
-- [ ] 1. [Climbing Stairs]() → [LeetCode #70](https://leetcode.com/problems/climbing-stairs)
+- [x] 1. [Climbing Stairs](climbing_stairs/) → [LeetCode #70](https://leetcode.com/problems/climbing-stairs)
 
 - [ ] 2. [Longest Increasing Subsequence]() → [LeetCode #300](https://leetcode.com/problems/longest-increasing-subsequence)
 

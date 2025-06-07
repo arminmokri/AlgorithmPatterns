@@ -5,12 +5,22 @@ debug = True
 
 
 class Solution:
+    def listToString(self, myList: list | tuple) -> str:
+        items = [f"({i}) {item}" for i, item in enumerate(myList)]
+        return f"[{', '.join(items)}]"
+
     def findMaxAverage(self, nums: list[int], k: int) -> float:
         """
         :type nums: List[int]
         :type k: int
         :rtype: float
         """
+
+        if debug:
+            print()
+
+        if debug:
+            print("nums=" + str(nums))
 
         maxAvg = -sys.maxsize + 1
 
