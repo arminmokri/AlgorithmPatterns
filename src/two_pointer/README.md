@@ -21,7 +21,7 @@ The two-pointer technique uses two indices that move through a data structure (o
   <br>
   [`#MorganStanley`](https://morganstanley.com)
 
-- [ ] 2. [3Sum]() → [LeetCode #15](https://leetcode.com/problems/3sum)
+- [x] 2. [3Sum](three_sum/) → [LeetCode #15](https://leetcode.com/problems/3sum)
 
 - [ ] 3. [Container With Most Water]() → [LeetCode #11](https://leetcode.com/problems/container-with-most-water)
 
