@@ -58,7 +58,7 @@ class Test(unittest.TestCase):
     def setUp(self):
         self.solution = Solution()
 
-    def test_basic_case(self):
+    def test_default_case(self):
         self.assertAlmostEqual(
             self.solution.threeSum([-1, 0, 1, 2, -1, -4]), [[-1, -1, 2], [-1, 0, 1]]
         )

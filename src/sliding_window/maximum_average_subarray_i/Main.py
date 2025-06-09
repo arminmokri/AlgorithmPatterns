@@ -44,7 +44,7 @@ class Test(unittest.TestCase):
     def setUp(self):
         self.solution = Solution()
 
-    def test_basic_case(self):
+    def test_default_case(self):
         self.assertEqual(self.solution.findMaxAverage([1, 12, -5, -6, 50, 3], 4), 12.75)
         self.assertEqual(self.solution.findMaxAverage([5], 1), 5)
 

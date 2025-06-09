@@ -17,7 +17,7 @@ The interval pattern deals with problems involving ranges, segments, or spans, w
 - Merging overlapping intervals or adding non-overlapping ones to a result.
 
 ## Examples
-- [ ] 1. [Merge Intervals]() → [LeetCode #56](https://leetcode.com/problems/merge-intervals)
+- [x] 1. [Merge Intervals](merge_intervals/) → [LeetCode #56](https://leetcode.com/problems/merge-intervals)
 
 - [ ] 2. [Insert Interval]() → [LeetCode #57](https://leetcode.com/problems/insert-interval)
 
