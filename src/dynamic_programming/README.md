@@ -36,6 +36,8 @@ Use DP when a problem has **overlapping subproblems** and **optimal substructure
   <br>
   [`#Geotab`](https://geotab.com)
 
+- [ ] 9. [0/1 Knapsack](zero_one_knapsack/) → [GeeksforGeeks](https://geeksforgeeks.org/0-1-knapsack-problem-dp-10)
+
 <p align="center">
   <a href="../dfs_bfs">⬅️ <strong>DFS-BFS</strong></a>
   🔸
