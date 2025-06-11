@@ -79,6 +79,58 @@ class Test(unittest.TestCase):
             (1200, ["Microscope", "Cup", "Crown"]),
         )
 
+    def test_empty_items(self):
+        self.assertEqual(self.solution.knapsack_tabulation([], [], [], 10), (0, []))
+
+    def test_zero_capacity(self):
+        self.assertEqual(
+            self.solution.knapsack_tabulation(["Item1"], [100], [1], 0), (0, [])
+        )
+
+    def test_single_item_fits(self):
+        self.assertEqual(
+            self.solution.knapsack_tabulation(["Item1"], [100], [1], 1),
+            (100, ["Item1"]),
+        )
+
+    def test_single_item_does_not_fit(self):
+        self.assertEqual(
+            self.solution.knapsack_tabulation(["Item1"], [100], [5], 3), (0, [])
+        )
+
+    def test_all_items_fit_exactly(self):
+        self.assertEqual(
+            self.solution.knapsack_tabulation(
+                ["A", "B", "C"], [10, 20, 30], [1, 2, 3], 6
+            ),
+            (60, ["A", "B", "C"]),
+        )
+
+    def test_choose_optimal_combination(self):
+        self.assertEqual(
+            self.solution.knapsack_tabulation(
+                ["A", "B", "C"], [60, 100, 120], [10, 20, 30], 50
+            ),
+            (220, ["B", "C"]),
+        )
+
+    def test_items_with_same_weight_and_value(self):
+        total_value, selected_items = self.solution.knapsack_tabulation(
+            ["X", "Y", "Z"], [50, 50, 50], [5, 5, 5], 10
+        )
+        self.assertEqual(total_value, 100)
+        self.assertEqual(len(selected_items), 2)
+        self.assertTrue(set(selected_items).issubset({"X", "Y", "Z"}))
+
+    def test_duplicate_best_value(self):
+        result = self.solution.knapsack_tabulation(
+            ["Pen", "Notebook", "Calculator", "Book"],
+            [10, 40, 50, 70],
+            [1, 3, 4, 5],
+            8,
+        )
+        self.assertEqual(result, (110, ["Notebook", "Book"]))
+
 
 def main():
     unittest.main()
