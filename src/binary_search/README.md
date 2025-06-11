@@ -17,7 +17,7 @@ Binary Search is a divide-and-conquer algorithm used to efficiently find a targe
 - Adjusting pointers based on comparison (left = mid + 1, right = mid - 1).
 
 ## Examples
-- [ ] 1. [Binary Search]() → [LeetCode #704](https://leetcode.com/problems/binary-search)
+- [x] 1. [Binary Search](binary_search/) → [LeetCode #704](https://leetcode.com/problems/binary-search)
 
 - [ ] 2. [Search Insert Position]() → [LeetCode #35](https://leetcode.com/problems/search-insert-position)
 
