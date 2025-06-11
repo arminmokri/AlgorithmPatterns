@@ -17,7 +17,7 @@ DFS (Depth-First Search) and BFS (Breadth-First Search) are fundamental graph tr
 - Marking nodes as visited to avoid cycles or repeated work.
 
 ## Examples
-- [ ] 1. [Number of Islands]() → [LeetCode #200](https://leetcode.com/problems/number-of-islands)
+- [x] 1. [Number of Islands](number_of_islands/) → [LeetCode #200](https://leetcode.com/problems/number-of-islands)
 
 - [ ] 2. [Clone Graph]() → [LeetCode #133](https://leetcode.com/problems/clone-graph)
 
