@@ -23,7 +23,7 @@ The two-pointer technique uses two indices that move through a data structure (o
 
 - [x] 2. [3Sum](three_sum/) → [LeetCode #15](https://leetcode.com/problems/3sum)
 
-- [ ] 3. [Container With Most Water]() → [LeetCode #11](https://leetcode.com/problems/container-with-most-water)
+- [x] 3. [Container With Most Water](container_with_most_water/) → [LeetCode #11](https://leetcode.com/problems/container-with-most-water)
 
 - [ ] 4. [Trapping Rain Water]() → [LeetCode #42](https://leetcode.com/problems/trapping-rain-water)
 
