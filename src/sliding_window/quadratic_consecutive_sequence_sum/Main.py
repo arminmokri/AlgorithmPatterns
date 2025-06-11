@@ -40,6 +40,8 @@ class Solution:
     def martixToString(self, myMatrix: list[list] | tuple[tuple]) -> str:
         if myMatrix == []:
             return "[]"
+        elif myMatrix == [[]]:
+            return "[[]]"
 
         str_matrix = [[str(val) for val in row] for row in myMatrix]
         max_width = max(len(val) for row in str_matrix for val in row)
