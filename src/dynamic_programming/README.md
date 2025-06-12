@@ -18,7 +18,7 @@ Use DP when a problem has **overlapping subproblems** and **optimal substructure
 ## Examples
 - [x] 1. [Climbing Stairs](climbing_stairs/) → [LeetCode #70](https://leetcode.com/problems/climbing-stairs)
 
-- [ ] 2. [Longest Increasing Subsequence]() → [LeetCode #300](https://leetcode.com/problems/longest-increasing-subsequence)
+- [x] 2. [Longest Increasing Subsequence](longest_increasing_subsequence/) → [LeetCode #300](https://leetcode.com/problems/longest-increasing-subsequence)
 
 - [ ] 3. [Coin Change]() → [LeetCode #322](https://leetcode.com/problems/coin-change)
 
