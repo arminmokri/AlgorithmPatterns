@@ -69,6 +69,9 @@ class Solution:
         )
 
     def listToString(self, myList: list | tuple) -> str:
+        if myList == []:
+            return "[]"
+
         items = [f"({i}) {item}" for i, item in enumerate(myList)]
         return f"[{', '.join(items)}]"
 

@@ -20,7 +20,24 @@ debug = True
 
 
 class Solution:
+    def martixToString(self, myMatrix: list[list] | tuple[tuple]) -> str:
+        if myMatrix == []:
+            return "[]"
+        elif myMatrix == [[]]:
+            return "[[]]"
+
+        str_matrix = [[str(val) for val in row] for row in myMatrix]
+        max_width = max(len(val) for row in str_matrix for val in row)
+
+        return "\n".join(
+            "[ " + ", ".join(f"{val:>{max_width}}" for val in row) + " ]"
+            for row in str_matrix
+        )
+
     def listToString(self, myList: list | tuple) -> str:
+        if myList == []:
+            return "[]"
+
         items = [f"({i}) {item}" for i, item in enumerate(myList)]
         return f"[{', '.join(items)}]"
 
