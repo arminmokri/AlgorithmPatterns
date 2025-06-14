@@ -19,7 +19,7 @@ Matrix problems involve navigating or modifying 2D grids or arrays, often under 
 ## Examples
 - [ ] 1. [Set Matrix Zeroes]() → [LeetCode #73](https://leetcode.com/problems/set-matrix-zeroes)
 
-- [ ] 2. [Spiral Matrix]() → [LeetCode #54](https://leetcode.com/problems/spiral-matrix)
+- [x] 2. [Spiral Matrix](spiral_matrix/) → [LeetCode #54](https://leetcode.com/problems/spiral-matrix)
 
 - [ ] 3. [Rotate Image]() → [LeetCode #48](https://leetcode.com/problems/rotate-image)
   <br>
