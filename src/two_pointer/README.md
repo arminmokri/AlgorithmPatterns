@@ -29,7 +29,7 @@ The two-pointer technique uses two indices that move through a data structure (o
 
 - [ ] 5. [Valid Palindrome]() → [LeetCode #125](https://leetcode.com/problems/valid-palindrome)
 
-- [ ] 6. [Sort Colors]() → [LeetCode #75](https://leetcode.com/problems/sort-colors)
+- [x] 6. [Sort Colors](sort_colors/) → [LeetCode #75](https://leetcode.com/problems/sort-colors)
 
 - [x] 7. [Simple Palindrome Check](simple_palindrome_check/)
   <br>
