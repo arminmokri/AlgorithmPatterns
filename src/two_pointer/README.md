@@ -27,7 +27,7 @@ The two-pointer technique uses two indices that move through a data structure (o
 
 - [ ] 4. [Trapping Rain Water]() → [LeetCode #42](https://leetcode.com/problems/trapping-rain-water)
 
-- [ ] 5. [Valid Palindrome]() → [LeetCode #125](https://leetcode.com/problems/valid-palindrome)
+- [X] 5. [Valid Palindrome](valid_palindrome/) → [LeetCode #125](https://leetcode.com/problems/valid-palindrome)
 
 - [x] 6. [Sort Colors](sort_colors/) → [LeetCode #75](https://leetcode.com/problems/sort-colors)
 
