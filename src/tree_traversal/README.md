@@ -17,7 +17,7 @@ Tree traversal refers to visiting each node in a tree data structure systematica
 - Tracking parent-child relationships, depths, or paths during traversal.
 
 ## Examples
-- [ ] 1. [Binary Tree Inorder Traversal]() → [LeetCode #94](https://leetcode.com/problems/binary-tree-inorder-traversal)
+- [x] 1. [Binary Tree Inorder Traversal](binary_tree_inorder_traversal/) → [LeetCode #94](https://leetcode.com/problems/binary-tree-inorder-traversal)
 
 - [ ] 2. [Binary Tree Preorder Traversal]() → [LeetCode #144](https://leetcode.com/problems/binary-tree-preorder-traversal)
 
