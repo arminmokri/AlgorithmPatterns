@@ -19,7 +19,7 @@ The sliding window pattern uses a subset (or window) that moves across the data 
 ## Examples
 - [x] 1. [Maximum Average Subarray I](maximum_average_subarray_i/) → [LeetCode #643](https://leetcode.com/problems/maximum-average-subarray-i)
 
-- [ ] 2. [Longest Substring Without Repeating Characters]() → [LeetCode #3](https://leetcode.com/problems/longest-substring-without-repeating-characters)
+- [x] 2. [Longest Substring Without Repeating Characters](longest_substring_without_repeating_characters/) → [LeetCode #3](https://leetcode.com/problems/longest-substring-without-repeating-characters)
 
 - [ ] 3. [Longest Repeating Character Replacement]() → [LeetCode #424](https://leetcode.com/problems/longest-repeating-character-replacement)
 
