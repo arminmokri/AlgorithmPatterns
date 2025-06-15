@@ -17,7 +17,7 @@ Array problems focus on using contiguous memory structures where elements can be
 - Using nested loops for pair/triplet combinations or subarray scans.
 
 ## Examples
-- [ ] 1. [Remove Duplicates from Sorted Array]() → [LeetCode #26](https://leetcode.com/problems/remove-duplicates-from-sorted-array)
+- [x] 1. [Remove Duplicates from Sorted Array](remove_duplicates_from_sorted_array/) → [LeetCode #26](https://leetcode.com/problems/remove-duplicates-from-sorted-array)
 
 - [ ] 2. [Maximum Subarray]() → [LeetCode #53](https://leetcode.com/problems/maximum-subarray)
 
