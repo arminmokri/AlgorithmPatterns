@@ -19,7 +19,7 @@ Backtracking is a recursive algorithmic technique for solving problems increment
 ## Examples
 - [x] 1. [Permutations](permutations/) → [LeetCode #46](https://leetcode.com/problems/permutations)
 
-- [ ] 2. [Combinations]() → [LeetCode #77](https://leetcode.com/problems/combinations)
+- [x] 2. [Combinations](combinations/) → [LeetCode #77](https://leetcode.com/problems/combinations)
   <br>
   [`#Flexton`](https://flextoninc.com)
 
