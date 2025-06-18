@@ -19,19 +19,19 @@ Examples:
 
 Example 1:
 Input: "progrdfammerfgfdmkjfdsprogramfertmer"
-Output: 21
+Output: 10
 Explanation:
 - First "programmer" match starts at index 0 (inclusive)
 - Second "programmer" match ends at index 43 (inclusive)
-- Characters between: from index 11 to 32 → length = 21
+- Characters between: from index 11 to 22 → length = 10
 
 Example 2:
 Input: "xyzprogxrammerabcprogrammer123"
-Output: 12
+Output: 3
 Explanation:
 - First "programmer" match from index 3 to 14
 - Second "programmer" match from index 18 to 29
-- Characters between: from index 15 to 17 → "abc" → length = 3
+- Characters between: from index 13 to 17 → "abc" → length = 3
 
 Example 3:
 Input: "ppprrrooggrraammmeerr"
@@ -49,6 +49,8 @@ Constraints:
 - The input string may contain lowercase letters and symbols.
 - Must handle large strings efficiently.
 """
+
+import unittest
 
 debug = True
 
@@ -75,25 +77,33 @@ class Solution:
         items = [f"({i}) {item}" for i, item in enumerate(myList)]
         return f"[{', '.join(items)}]"
 
-    def Solution(self, string: str) -> int:
+    def distanceBetweenWords(self, string: str) -> int:
+        if debug:
+            print()
+
+        if debug:
+            print("string='" + string + "'")
+
         programmerStr = list("programmer")
         leftPointer = 0
-        for i in range(0, len(string)) or not len(programmerStr) == 0:
-            c = string[i]
-            if c in programmerStr:
-                programmerStr.remove(c)
-                leftPointer = i
+        if len(string) > 0:
+            for i in range(0, len(string)) or not len(programmerStr) == 0:
+                c = string[i]
+                if c in programmerStr:
+                    programmerStr.remove(c)
+                    leftPointer = i
 
         if debug:
             print("leftPointer=" + str(leftPointer))
 
         programmerStr = list("programmer")
         rightPointer = 0
-        for i in range(len(string) - 1, 0, -1) or not len(programmerStr) == 0:
-            c = string[i]
-            if c in programmerStr:
-                programmerStr.remove(c)
-                rightPointer = i
+        if len(string) > 0:
+            for i in range(len(string) - 1, 0, -1) or not len(programmerStr) == 0:
+                c = string[i]
+                if c in programmerStr:
+                    programmerStr.remove(c)
+                    rightPointer = i
 
         if debug:
             print("rightPointer=" + str(rightPointer))
@@ -102,15 +112,61 @@ class Solution:
         if distance < 0:
             distance = 0
 
+        if debug:
+            print("distance=" + str(distance))
+
         return distance
 
 
+class Test(unittest.TestCase):
+    def setUp(self):
+        self.solution = Solution()
+
+    def test_default_case(self):
+        self.assertEqual(
+            self.solution.distanceBetweenWords("progrdfammerfgfdmkjfdsprogramfertmer"),
+            10,
+        )
+        self.assertEqual(
+            self.solution.distanceBetweenWords("xyzprogxrammerabcprogrammer123"), 3
+        )
+        self.assertEqual(self.solution.distanceBetweenWords("ppprrrooggrraammmeerr"), 0)
+        self.assertEqual(self.solution.distanceBetweenWords("somethingrandom"), 0)
+
+    def test_exactly_two_programmers_with_spaces(self):
+        s = "programmer" + ("-" * 15) + "programmer"
+        self.assertEqual(self.solution.distanceBetweenWords(s), 15)
+
+    def test_programmer_at_start_and_end(self):
+        s = "programmerxxxxxxxmoretextyyyyyyyprogrammer"
+        self.assertEqual(
+            self.solution.distanceBetweenWords(s), len("xxxxxxxmoretextyyyyyyy")
+        )
+
+    def test_only_one_programmer(self):
+        self.assertEqual(self.solution.distanceBetweenWords("p-r-o-g-r-a-m-m-e-r"), 0)
+
+    def test_programmer_letters_out_of_order_with_noise(self):
+        s = "rpogmarremblahblahblahprogrammer"
+        self.assertEqual(self.solution.distanceBetweenWords(s), len("blahblahblah"))
+
+    def test_multiple_occurrences(self):
+        s = "xxxprogrammerxxxprogrammerxxxprogrammer"
+        self.assertEqual(self.solution.distanceBetweenWords(s), 16)
+
+    def test_case_with_duplicate_letters_but_no_valid_match(self):
+        s = "ppppprrrrrooooggggrrrraaaammmmmmmeeeerrrrrr"
+        self.assertEqual(self.solution.distanceBetweenWords(s), 0)
+
+    def test_empty_string(self):
+        self.assertEqual(self.solution.distanceBetweenWords(""), 0)
+
+    def test_short_string(self):
+        self.assertEqual(self.solution.distanceBetweenWords("prog"), 0)
+
+
 def main():
-    # string = "ppprrrooggrraammmeerr"
-    string = "xyzprogxrammerabcprogrammer123"
-    solution = Solution()
-    result = solution.Solution(string)
-    print("result=" + str(result))
+    unittest.main()
 
 
 if __name__ == "__main__":
