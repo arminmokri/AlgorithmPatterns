@@ -71,7 +71,7 @@ class Test(unittest.TestCase):
     def setUp(self):
         self.solution = Solution()
 
-    def test_basic_case(self):
+    def test_default_case(self):
         self.assertEqual(self.solution.coinChange(12, (1, 2, 5, 10)), 15)
 
     def test_zero_amount(self):

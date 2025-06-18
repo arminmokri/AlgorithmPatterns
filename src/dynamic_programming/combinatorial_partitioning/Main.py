@@ -1,4 +1,7 @@
+import unittest
+
 debug = True
+
 
 class Solution:
     def martixToString(self, myMatrix: list[list] | tuple[tuple]) -> str:
@@ -22,8 +25,10 @@ class Solution:
         items = [f"({i}) {item}" for i, item in enumerate(myList)]
         return f"[{', '.join(items)}]"
 
+    def combinatorialPartitioning(self, r: int, total: int) -> int:
+        if debug:
+            print()
 
-    def solution(self, r: int, total: int) -> int:
         ways = [0 for _ in range(total + 1)]
 
         ways[0] = 1
@@ -64,12 +69,34 @@ class Solution:
         return ways[total]
 
 
+class Test(unittest.TestCase):
+    def setUp(self):
+        self.solution = Solution()
+
+    def test_default_case(self):
+        self.assertEqual(self.solution.combinatorialPartitioning(2, 8), 5)
+
+    def test_zero_total(self):
+        self.assertEqual(self.solution.combinatorialPartitioning(5, 0), 1)
+
+    def test_zero_range(self):
+        self.assertEqual(self.solution.combinatorialPartitioning(0, 5), 0)
+
+    def test_equal_r_and_total(self):
+        self.assertEqual(self.solution.combinatorialPartitioning(4, 4), 5)
+
+    def test_one_step_only(self):
+        self.assertEqual(self.solution.combinatorialPartitioning(1, 5), 1)
+
+    def test_total_less_than_r(self):
+        self.assertEqual(self.solution.combinatorialPartitioning(10, 3), 3)
+
+    def test_large_total(self):
+        self.assertEqual(self.solution.combinatorialPartitioning(3, 10), 14)
+
+
 def main():
-    r = 2
-    total = 8
-    solution = Solution()
-    result = solution.solution(r, total)
-    print("Result=" + str(result))
+    unittest.main()
 
 
 if __name__ == "__main__":

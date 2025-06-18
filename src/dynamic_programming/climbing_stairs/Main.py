@@ -54,7 +54,7 @@ class Test(unittest.TestCase):
     def setUp(self):
         self.solution = Solution()
 
-    def test_basic_case(self):
+    def test_default_case(self):
         self.assertEqual(self.solution.climbStairs(2), 2)
         self.assertEqual(self.solution.climbStairs(3), 3)
 
