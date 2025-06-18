@@ -16,6 +16,8 @@ Output: 2
 
 """
 
+import unittest
+
 debug = True
 
 
@@ -42,7 +44,10 @@ class Solution:
         return f"[{', '.join(items)}]"
 
     # Time Complexity O(n), Space Complexity O(n)
-    def Solution(self, A: list) -> bool:
+    def firstMissingPositive(self, A: list) -> bool:
+        if debug:
+            print()
+
         myDict = dict()
 
         for item in A:
@@ -56,12 +61,39 @@ class Solution:
         return missing
 
 
+class Test(unittest.TestCase):
+    def setUp(self):
+        self.solution = Solution()
+
+    def test_default_case(self):
+        self.assertEqual(self.solution.firstMissingPositive([3, 4, -1, 1]), 2)
+        self.assertEqual(self.solution.firstMissingPositive([1, 2, 3, 4, 5, 10]), 6)
+        self.assertEqual(self.solution.firstMissingPositive([-1, -3]), 1)
+
+    def test_all_positive_consecutive(self):
+        self.assertEqual(self.solution.firstMissingPositive([1, 2, 3]), 4)
+
+    def test_mixed_with_negatives(self):
+        self.assertEqual(self.solution.firstMissingPositive([7, 8, 9, 11, 12]), 1)
+
+    def test_unsorted_with_gap(self):
+        self.assertEqual(self.solution.firstMissingPositive([2, 1, 0]), 3)
+
+    def test_all_negatives(self):
+        self.assertEqual(self.solution.firstMissingPositive([-1, -2, -3]), 1)
+
+    def test_with_zero(self):
+        self.assertEqual(self.solution.firstMissingPositive([0, 2, 2, 1, 1]), 3)
+
+    def test_empty_list(self):
+        self.assertEqual(self.solution.firstMissingPositive([]), 1)
+
+    def test_large_input_gap_at_beginning(self):
+        self.assertEqual(self.solution.firstMissingPositive([10, 12, 11]), 1)
+
+
 def main():
-    A = [1, 2, 3, 4, 5, 10]
-    # A = [-1, -3]
-    solution = Solution()
-    result = solution.Solution(A)
-    print("result=" + str(result))
+    unittest.main()
 
 
 if __name__ == "__main__":
