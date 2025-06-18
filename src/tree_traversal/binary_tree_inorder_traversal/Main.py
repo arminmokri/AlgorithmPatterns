@@ -15,7 +15,7 @@ class TreeNode(object):
 
 class Tree(object):
     @staticmethod
-    def build_tree(values: list[Optional[int]]) -> TreeNode:
+    def build_tree(values: list[Optional["int"]]) -> TreeNode:
         """
         Builds a binary tree from a level-order list.
         :param values: List[Optional[int]]
