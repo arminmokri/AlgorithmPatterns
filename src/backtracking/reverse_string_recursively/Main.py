@@ -14,6 +14,8 @@ Constraints:
 - Must be solved using recursion.
 """
 
+import unittest
+
 debug = True
 
 
@@ -40,19 +42,56 @@ class Solution:
         return f"[{', '.join(items)}]"
 
     # Time Complexity O(n^2), Space Complexity O(n)
-    def Solution(self, string: list) -> list:
-        if len(string) == 0:
-            return ""
-        else:
-            return string[-1:] + self.Solution(string[:-1])
+    def reverseString(self, string: list) -> list:
+        if debug:
+            print()
+
+        def backtrack(s):
+            if len(s) == 0:
+                return ""
+            else:
+                return s[-1:] + backtrack(s[:-1])
+
+        reverse = backtrack(string)
+
+        if debug:
+            print("string='" + string + "' reverse='" + reverse + "'")
+
+        return reverse
 
     # todo it has solution with Time Complexity O(n), Space Complexity O(n)
 
+
+class Test(unittest.TestCase):
+    def setUp(self):
+        self.solution = Solution()
+
+    def test_default_case(self):
+        self.assertEqual(
+            self.solution.reverseString("I Love Programming"), "gnimmargorP evoL I"
+        )
+
+    def test_empty_string(self):
+        self.assertEqual(self.solution.reverseString(""), "")
+
+    def test_single_character(self):
+        self.assertEqual(self.solution.reverseString("A"), "A")
+
+    def test_palindrome(self):
+        self.assertEqual(self.solution.reverseString("madam"), "madam")
+
+    def test_numbers_and_symbols(self):
+        self.assertEqual(self.solution.reverseString("1234!@#$"), "$#@!4321")
+
+    def test_spaces_only(self):
+        self.assertEqual(self.solution.reverseString("     "), "     ")
+
+    def test_unicode_characters(self):
+        self.assertEqual(self.solution.reverseString("سلام"), "مالس")
+
+
 def main():
-    string = "I Love Programming"
-    solution = Solution()
-    result = solution.Solution(string)
-    print("result=" + str(result))
+    unittest.main()
 
 
 if __name__ == "__main__":
