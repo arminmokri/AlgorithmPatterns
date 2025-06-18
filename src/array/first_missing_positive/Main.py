@@ -44,13 +44,18 @@ class Solution:
         return f"[{', '.join(items)}]"
 
     # Time Complexity O(n), Space Complexity O(n)
-    def firstMissingPositive(self, A: list) -> bool:
+    def firstMissingPositive(self, nums: list) -> bool:
+        """
+        :type nums: List[int]
+        :rtype: int
+        """
+
         if debug:
             print()
 
         myDict = dict()
 
-        for item in A:
+        for item in nums:
             if item > 0:
                 myDict[item] = item
 

@@ -1,3 +1,5 @@
+import unittest
+
 debug = True
 
 
@@ -23,9 +25,17 @@ class Solution:
         items = [f"({i}) {item}" for i, item in enumerate(myList)]
         return f"[{', '.join(items)}]"
 
-    def Solution(self, strs: list[str]) -> str:
+    def longestCommonPrefix(self, strs: list[str]) -> str:
+        """
+        :type strs: List[str]
+        :rtype: str
+        """
+
+        if debug:
+            print()
+
         biggestPrefix = ""
-        minStr = min(strs, key=len)
+        minStr = min(strs, key=len) if len(strs) > 0 else ""
 
         for i in range(len(minStr), 0, -1):
             prefixStr = minStr[0:i]
@@ -47,11 +57,54 @@ class Solution:
         return biggestPrefix
 
 
+class Test(unittest.TestCase):
+    def setUp(self):
+        self.solution = Solution()
+
+    def test_default_case(self):
+        self.assertEqual(
+            self.solution.longestCommonPrefix(["flower", "flow", "flight"]), "fl"
+        )
+        self.assertEqual(
+            self.solution.longestCommonPrefix(["dog", "racecar", "car"]), ""
+        )
+
+    def test_single_word(self):
+        self.assertEqual(self.solution.longestCommonPrefix(["alone"]), "alone")
+
+    def test_identical_words(self):
+        self.assertEqual(
+            self.solution.longestCommonPrefix(["same", "same", "same"]), "same"
+        )
+
+    def test_empty_list(self):
+        self.assertEqual(self.solution.longestCommonPrefix([]), "")
+
+    def test_list_with_empty_string(self):
+        self.assertEqual(self.solution.longestCommonPrefix(["", "abc", "ab"]), "")
+
+    def test_no_common_prefix(self):
+        self.assertEqual(self.solution.longestCommonPrefix(["abc", "def", "ghi"]), "")
+
+    def test_full_prefix_match(self):
+        self.assertEqual(
+            self.solution.longestCommonPrefix(["interview", "intervene", "internal"]),
+            "inter",
+        )
+
+    def test_numeric_string_prefix(self):
+        self.assertEqual(
+            self.solution.longestCommonPrefix(["12345", "123", "123abc"]), "123"
+        )
+
+    def test_case_sensitive(self):
+        self.assertEqual(
+            self.solution.longestCommonPrefix(["Case", "case", "cast"]), ""
+        )
+
+
 def main():
-    strs = ["flower", "flow", "flight"]
-    solution = Solution()
-    result = solution.Solution(strs)
-    print("result=" + str(result))
+    unittest.main()
 
 
 if __name__ == "__main__":
