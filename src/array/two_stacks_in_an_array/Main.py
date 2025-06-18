@@ -14,6 +14,8 @@ Methods:
 This avoids wasting space by maximizing the use of a single array.
 """
 
+import unittest
+
 debug = True
 
 
@@ -88,32 +90,99 @@ class Solution:
         )
 
 
+class Test(unittest.TestCase):
+    def test_default_case(self):
+        stack = Solution(4)
+
+        self.assertTrue(stack.pushA(1))
+        self.assertTrue(stack.pushB(7))
+        self.assertTrue(stack.pushA(11))
+        self.assertTrue(stack.pushB(77))
+        stack.printSpace()
+
+        self.assertFalse(stack.pushA(111))
+
+        self.assertEqual(stack.popA(), 11)
+        self.assertEqual(stack.popA(), 1)
+
+        self.assertEqual(stack.popB(), 77)
+        self.assertEqual(stack.popB(), 7)
+
+        self.assertIsNone(stack.popA(), 7)
+        self.assertIsNone(stack.popB(), 7)
+
+        stack.printSpace()
+
+    def test_push_and_pop_stackA(self):
+        stack = Solution(5)
+        self.assertTrue(stack.pushA(10))
+        self.assertTrue(stack.pushA(20))
+        self.assertEqual(stack.popA(), 20)
+        self.assertEqual(stack.popA(), 10)
+        self.assertIsNone(stack.popA())
+
+        stack.printSpace()
+
+    def test_push_and_pop_stackB(self):
+        stack = Solution(5)
+        self.assertTrue(stack.pushB(30))
+        self.assertTrue(stack.pushB(40))
+        self.assertEqual(stack.popB(), 40)
+        self.assertEqual(stack.popB(), 30)
+        self.assertIsNone(stack.popB())
+
+        stack.printSpace()
+
+    def test_overflow(self):
+        stack = Solution(2)
+        self.assertTrue(stack.pushA(1))
+        self.assertTrue(stack.pushB(2))
+        self.assertFalse(stack.pushA(3))
+        self.assertFalse(stack.pushB(4))
+
+        stack.printSpace()
+
+    def test_underflow(self):
+        stack = Solution(3)
+        self.assertIsNone(stack.popA())
+        self.assertIsNone(stack.popB())
+
+        stack.printSpace()
+
+    def test_full_interleaved_usage(self):
+        stack = Solution(4)
+        self.assertTrue(stack.pushA(1))
+        self.assertTrue(stack.pushB(9))
+        self.assertTrue(stack.pushA(2))
+        self.assertTrue(stack.pushB(8))
+        self.assertFalse(stack.pushA(3))  # Should fail — full
+
+        self.assertEqual(stack.popA(), 2)
+        self.assertEqual(stack.popA(), 1)
+        self.assertIsNone(stack.popA())  # Already empty
+
+        self.assertEqual(stack.popB(), 8)
+        self.assertEqual(stack.popB(), 9)
+        self.assertIsNone(stack.popB())  # Already empty
+
+        stack.printSpace()
+
+    def test_internal_array_integrity(self):
+        stack = Solution(5)
+        stack.pushA(10)
+        stack.pushA(20)
+        stack.pushB(30)
+        stack.pushB(40)
+        self.assertEqual(stack.myList[0], 10)
+        self.assertEqual(stack.myList[1], 20)
+        self.assertEqual(stack.myList[4], 30)
+        self.assertEqual(stack.myList[3], 40)
+
+        stack.printSpace()
+
+
 def main():
-    solution = Solution(4)
-
-    solution.printSpace()
-
-    solution.pushA(1)
-    solution.pushB(7)
-    solution.pushA(11)
-    solution.pushB(77)
-    solution.printSpace()
-
-    solution.pushA(111)
-    solution.printSpace()
-
-    print(solution.popA())
-    print(solution.popA())
-
-    print(solution.popB())
-    print(solution.popB())
-
-    solution.printSpace()
-
-    print(solution.popA())
-    print(solution.popB())
-
-    solution.printSpace()
+    unittest.main()
 
 
 if __name__ == "__main__":
