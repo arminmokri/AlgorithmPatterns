@@ -18,6 +18,8 @@ Time Complexity: O(N * M) — each cell is visited at most once
 Space Complexity: O(N * M) for visited tracking
 """
 
+import unittest
+
 debug = True
 
 
@@ -43,7 +45,15 @@ class Solution:
         items = [f"({i}) {item}" for i, item in enumerate(myList)]
         return f"[{', '.join(items)}]"
 
-    def Solution(self, matrix: list[list[int]]) -> int:
+    def lucySpiralHop(self, matrix: list[list[int]]) -> int:
+        if debug:
+            print()
+
+        if debug:
+            print("matrix=")
+            print(self.martixToString(matrix))
+            print()
+
         lastStop = None
 
         n = len(matrix)
@@ -98,11 +108,46 @@ class Solution:
         return lastStop
 
 
+class Test(unittest.TestCase):
+    def setUp(self):
+        self.solution = Solution()
+
+    def test_default_case(self):
+        self.assertEqual(
+            self.solution.lucySpiralHop([[29, 8, 37], [15, 41, 3], [1, 10, 14]]), 41
+        )
+
+    def test_single_element(self):
+        self.assertEqual(self.solution.lucySpiralHop([[5]]), 5)
+
+    def test_single_row(self):
+        self.assertEqual(self.solution.lucySpiralHop([[1, 2, 3, 4, 5]]), 5)
+
+    def test_single_column(self):
+        self.assertEqual(self.solution.lucySpiralHop([[1], [2], [3], [4]]), 3)
+
+    def test_even_sized_square(self):
+        self.assertEqual(self.solution.lucySpiralHop([[1, 2], [4, 3]]), 3)
+
+    def test_larger_matrix(self):
+        self.assertEqual(
+            self.solution.lucySpiralHop(
+                [[1, 2, 3, 4], [12, 13, 14, 5], [11, 16, 15, 6], [10, 9, 8, 7]]
+            ),
+            15,
+        )
+
+    def test_rectangular_matrix(self):
+        self.assertEqual(
+            self.solution.lucySpiralHop(
+                [[1, 2, 3], [10, 11, 4], [9, 12, 5], [8, 7, 6]]
+            ),
+            11,
+        )
+
+
 def main():
-    matrix = [[29, 8, 37], [15, 41, 3], [1, 10, 14]]
-    solution = Solution()
-    result = solution.Solution(matrix)
-    print("result=" + str(result))
+    unittest.main()
 
 
 if __name__ == "__main__":
