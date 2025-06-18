@@ -36,6 +36,7 @@ maximum row sum = 35
 the solution should be (4,3)
 """
 
+import unittest
 import sys
 
 debug = True
@@ -69,7 +70,10 @@ class Solution:
             sum = sum + myList[i]
         return sum
 
-    def Solution(self, numbers: tuple) -> tuple:
+    def minMaxRowSumMatrixPartition(self, numbers: tuple) -> tuple:
+        if debug:
+            print()
+
         number_of_rows = list()
 
         for i in range(2, len(numbers)):
@@ -77,7 +81,7 @@ class Solution:
                 number_of_rows.append(i)
 
         if debug:
-            print("number_of_rows=" + self.ListToString(number_of_rows))
+            print("number_of_rows=" + self.listToString(number_of_rows))
             print()
 
         n, p = 0, 0
@@ -121,11 +125,60 @@ class Solution:
         return (n, p)
 
 
+class Test(unittest.TestCase):
+    def setUp(self):
+        self.solution = Solution()
+
+    def test_default_case(self):
+        self.assertEqual(
+            self.solution.minMaxRowSumMatrixPartition(
+                (1, 1, 1, 20, 1, 1, 1, 1, 30, 5, 1, 1)
+            ),
+            (4, 3),
+        )
+
+    def test_all_ones(self):
+        self.assertEqual(
+            self.solution.minMaxRowSumMatrixPartition((1, 1, 1, 1, 1, 1, 1, 1)), (4, 2)
+        )
+
+    def test_two_possible_shapes(self):
+        self.assertEqual(
+            self.solution.minMaxRowSumMatrixPartition((10, 20, 30, 40, 50, 60)), (3, 2)
+        )
+
+    def test_larger_values_middle(self):
+        self.assertEqual(
+            self.solution.minMaxRowSumMatrixPartition(
+                (1, 1, 100, 1, 1, 1, 100, 1, 1, 1, 100, 1)
+            ),
+            (6, 2),
+        )
+
+    def test_decreasing_sequence(self):
+        self.assertEqual(
+            self.solution.minMaxRowSumMatrixPartition(
+                (12, 11, 10, 9, 8, 7, 6, 5, 4, 3, 2, 1)
+            ),
+            (6, 2),
+        )
+
+    def test_increasing_sequence(self):
+        self.assertEqual(
+            self.solution.minMaxRowSumMatrixPartition(tuple(range(1, 13))), (6, 2)
+        )
+
+    def test_symmetrical_distribution(self):
+        self.assertEqual(
+            self.solution.minMaxRowSumMatrixPartition(
+                (1, 2, 3, 4, 100, 4, 3, 2, 1, 100, 1, 1)
+            ),
+            (6, 2),
+        )
+
+
 def main():
-    numbers = (1, 1, 1, 20, 1, 1, 1, 1, 30, 5, 1, 1)
-    solution = Solution()
-    result = solution.Solution(numbers)
-    print("result=" + str(result))
+    unittest.main()
 
 
 if __name__ == "__main__":
