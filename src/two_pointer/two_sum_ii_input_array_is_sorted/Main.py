@@ -1,6 +1,8 @@
+import unittest
 from bisect import bisect_left
 
 debug = True
+
 
 class Solution:
     def martixToString(self, myMatrix: list[list] | tuple[tuple]) -> str:
@@ -25,7 +27,10 @@ class Solution:
         return f"[{', '.join(items)}]"
 
     # Time Complexity O(n^2), Space Complexity O(1)
-    def SolutionA(self, numbers: tuple, target: int) -> tuple:
+    def twoSumA(self, numbers: list, target: int) -> list:
+        if debug:
+            print()
+
         indexA = -1
         indexB = -1
 
@@ -41,34 +46,40 @@ class Solution:
             if not indexA == -1:
                 break
 
-        return (indexA, indexB)
-
-    def BinarySearch(self, a, x):
-        i = bisect_left(a, x)
-        if i != len(a) and a[i] == x:
-            return i
-        else:
-            return -1
+        return [indexA, indexB]
 
     # Time Complexity O(nlogn), Space Complexity O(1)
-    def SolutionB(self, numbers: tuple, target: int) -> tuple:
+    def twoSumB(self, numbers: list, target: int) -> list:
+        if debug:
+            print()
+
+        def BinarySearch(self, a, x):
+            i = bisect_left(a, x)
+            if i != len(a) and a[i] == x:
+                return i
+            else:
+                return -1
+
         indexA = -1
         indexB = -1
 
         for i in range(len(numbers)):
             a = numbers[i]
             b = target - a
-            j = self.BinarySearch(numbers, b)
+            j = BinarySearch(numbers, b)
             print(j)
             if not i == j and j >= 0:
                 indexA = i + 1
                 indexB = j + 1
                 break
 
-        return (indexA, indexB)
+        return [indexA, indexB]
 
     # Time Complexity O(n), Space Complexity O(n)
-    def SolutionC(self, numbers: tuple, target: int) -> tuple:
+    def twoSumC(self, numbers: list, target: int) -> list:
+        if debug:
+            print()
+
         indexA = -1
         indexB = -1
 
@@ -85,10 +96,13 @@ class Solution:
                 indexB = j + 1
                 break
 
-        return (indexA, indexB)
+        return [indexA, indexB]
 
     # Time Complexity O(n), Space Complexity O(1)
-    def SolutionD(self, numbers: tuple, target: int) -> tuple:
+    def twoSumD(self, numbers: list, target: int) -> list:
+        if debug:
+            print()
+
         indexA = -1
         indexB = -1
 
@@ -107,15 +121,29 @@ class Solution:
             elif sum < target:
                 left = left + 1
 
-        return (indexA, indexB)
+        return [indexA, indexB]
+
+    def twoSum(self, numbers: list, target: int) -> list:
+        """
+        :type numbers: List[int]
+        :type target: int
+        :rtype: List[int]
+        """
+        return self.twoSumD(numbers, target)
+
+
+class Test(unittest.TestCase):
+    def setUp(self):
+        self.solution = Solution()
+
+    def test_default_case(self):
+        self.assertEqual(self.solution.twoSum([2, 7, 11, 15], 9), [1, 2])
+        self.assertEqual(self.solution.twoSum([2, 3, 4], 6), [1, 3])
+        self.assertEqual(self.solution.twoSum([-1, 0], -1), [1, 2])
 
 
 def main():
-    numbers = (2, 7, 11, 15)
-    target = 9
-    solution = Solution()
-    result = solution.SolutionD(numbers, target)
-    print("result=" + str(result))
+    unittest.main()
 
 
 if __name__ == "__main__":
