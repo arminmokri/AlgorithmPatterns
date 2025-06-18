@@ -11,6 +11,8 @@ This problem can be solved efficiently using a frequency count
 This approach is commonly related to anagrams and substring checks.
 """
 
+import unittest
+
 debug = True
 
 
@@ -37,7 +39,10 @@ class Solution:
         return f"[{', '.join(items)}]"
 
     # Time Complexity O(n), Space Complexity O(1)
-    def Solution(self, stringA: str, stringB: str) -> bool:
+    def validAnagram(self, stringA: str, stringB: str) -> bool:
+        if debug:
+            print()
+
         frequentList = [0] * 256
 
         for c in stringA:
@@ -54,15 +59,54 @@ class Solution:
                 isAnagram = False
                 break
 
+        if debug:
+            print(
+                "stringA="
+                + stringA
+                + " stringB="
+                + stringB
+                + " isAnagram="
+                + str(isAnagram)
+            )
+
         return isAnagram
 
 
+class Test(unittest.TestCase):
+    def setUp(self):
+        self.solution = Solution()
+
+    def test_default_case(self):
+        self.assertTrue(self.solution.validAnagram("listen", "silent"))
+
+    def test_true_case(self):
+        self.assertTrue(self.solution.validAnagram("listen", "silent"))
+        self.assertTrue(self.solution.validAnagram("triangle", "integral"))
+        self.assertTrue(self.solution.validAnagram("aabbcc", "abcabc"))
+
+    def test_false_case(self):
+        self.assertFalse(self.solution.validAnagram("hello", "bello"))
+        self.assertFalse(self.solution.validAnagram("rat", "car"))
+        self.assertFalse(self.solution.validAnagram("aabb", "aabbb"))
+
+    def test_case_sensitive(self):
+        self.assertFalse(self.solution.validAnagram("Listen", "silent"))
+
+    def test_empty_strings(self):
+        self.assertTrue(self.solution.validAnagram("", ""))
+        self.assertFalse(self.solution.validAnagram("abc", ""))
+        self.assertFalse(self.solution.validAnagram("", "abc"))
+
+    def test_same_letters_different_lengths(self):
+        self.assertFalse(self.solution.validAnagram("aabbcc", "abc"))
+        self.assertFalse(self.solution.validAnagram("abc", "aabbcc"))
+
+    def test_unicode_support(self):
+        self.assertTrue(self.solution.validAnagram("éàè", "èàé"))
+
+
 def main():
-    stringA = "listen"
-    stringB = "silent"
-    solution = Solution()
-    result = solution.Solution(stringA, stringB)
-    print("result=" + str(result))
+    unittest.main()
 
 
 if __name__ == "__main__":
