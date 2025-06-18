@@ -13,7 +13,10 @@ this approach uses a bottom-up dynamic programming method (iterative) which comp
 and O(1) space using just two variables to store previous values.
 """
 
+import unittest
+
 debug = True
+
 
 class Solution:
     def martixToString(self, myMatrix: list[list] | tuple[tuple]) -> str:
@@ -38,16 +41,25 @@ class Solution:
         return f"[{', '.join(items)}]"
 
     # Time Complexity O(2^n), Space Complexity O(n)
-    def solutionA(self, N: int) -> int:
-        if N == 0:
-            return 0
-        elif N == 1:
-            return 1
-        else:
-            return self.solutionA(N-1) + self.solutionA(N-2)
+    def fibonacciNumberA(self, N: int) -> int:
+        if debug:
+            print()
+
+        def backtracking(num):
+            if num == 0:
+                return 0
+            elif num == 1:
+                return 1
+            else:
+                return backtracking(num - 1) + backtracking(num - 2)
+
+        return backtracking(N)
 
     # Time Complexity O(n), Space Complexity O(1)
-    def solutionB(self, N: int) -> int:
+    def fibonacciNumberB(self, N: int) -> int:
+        if debug:
+            print()
+
         # a b
         # | |
         # 0 1 1 2 3 5 8 13 21 ....
@@ -61,11 +73,38 @@ class Solution:
         return a
 
 
+class Test(unittest.TestCase):
+    def setUp(self):
+        self.solution = Solution()
+
+    def test_default_case(self):
+        self.assertEqual(self.solution.fibonacciNumberB(0), 0)
+        self.assertEqual(self.solution.fibonacciNumberB(1), 1)
+        self.assertEqual(self.solution.fibonacciNumberB(2), 1)
+        self.assertEqual(self.solution.fibonacciNumberB(3), 2)
+        self.assertEqual(self.solution.fibonacciNumberB(4), 3)
+
+    def test_fib_zero(self):
+        self.assertEqual(self.solution.fibonacciNumberB(0), 0)
+
+    def test_fib_one(self):
+        self.assertEqual(self.solution.fibonacciNumberB(1), 1)
+
+    def test_fib_two(self):
+        self.assertEqual(self.solution.fibonacciNumberB(2), 1)
+
+    def test_fib_five(self):
+        self.assertEqual(self.solution.fibonacciNumberB(5), 5)
+
+    def test_fib_ten(self):
+        self.assertEqual(self.solution.fibonacciNumberB(10), 55)
+
+    def test_fib_large(self):
+        self.assertEqual(self.solution.fibonacciNumberB(55), 139583862445)
+
+
 def main():
-    N = 55
-    solution = Solution()
-    result = solution.solutionB(N)
-    print("result=" + str(result))
+    unittest.main()
 
 
 if __name__ == "__main__":
