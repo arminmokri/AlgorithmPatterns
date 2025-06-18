@@ -1,3 +1,23 @@
+"""
+Title: First Unique Character in a String
+
+Given a string, return the index of the first non-repeating (unique) character.
+If there is no such character, return None (or -1 based on design preference).
+
+Approach:
+- Initialize a frequency list of size 256 to count occurrences of each ASCII character.
+- Traverse the string and update the frequency of each character using its ASCII value.
+- Traverse the string again to find the first character with a frequency of 1.
+- Return the index of this unique character.
+- If no unique character is found, return None.
+
+Example:
+Input:  "stress"
+Output: 1  # 't' is the first non-repeating character
+"""
+
+import unittest
+
 debug = True
 
 
@@ -23,7 +43,10 @@ class Solution:
         items = [f"({i}) {item}" for i, item in enumerate(myList)]
         return f"[{', '.join(items)}]"
 
-    def Solution(self, string: str) -> int:
+    def firstUniqueCharacter(self, string: str) -> int:
+        if debug:
+            print()
+
         singleIndex = None
 
         frequentList = [0] * 256
@@ -47,11 +70,40 @@ class Solution:
         return singleIndex
 
 
+class Test(unittest.TestCase):
+    def setUp(self):
+        self.solution = Solution()
+
+    def test_default_case(self):
+        self.assertEqual(
+            self.solution.firstUniqueCharacter("stress"),
+            1,
+        )
+
+    def test_no_unique_character(self):
+        self.assertIsNone(self.solution.firstUniqueCharacter("aabbcc"))
+
+    def test_first_character_unique(self):
+        self.assertEqual(self.solution.firstUniqueCharacter("abcdef"), 0)
+
+    def test_last_character_unique(self):
+        self.assertEqual(self.solution.firstUniqueCharacter("aabbccd"), 6)
+
+    def test_empty_string(self):
+        self.assertIsNone(self.solution.firstUniqueCharacter(""))
+
+    def test_all_unique_characters(self):
+        self.assertEqual(self.solution.firstUniqueCharacter("abcde"), 0)
+
+    def test_single_character(self):
+        self.assertEqual(self.solution.firstUniqueCharacter("z"), 0)
+
+    def test_mixed_case(self):
+        self.assertEqual(self.solution.firstUniqueCharacter("AaBbCcD"), 0)
+
+
 def main():
-    string = "stress"
-    solution = Solution()
-    result = solution.Solution(string)
-    print("result=" + str(result))
+    unittest.main()
 
 
 if __name__ == "__main__":
