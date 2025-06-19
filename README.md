@@ -9,5 +9,5 @@
 #### 6- [Interval](src/interval) (2/5)
 #### 7- [Matrix](src/matrix) (3/7)
 #### 8- [Sliding Window](src/sliding_window) (4/7)
-#### 9- [Tree Traversal](src/tree_traversal) (1/5)
+#### 9- [Tree Traversal](src/tree_traversal) (2/5)
 #### 10- [Two Pointer](src/two_pointer) (6/7)
