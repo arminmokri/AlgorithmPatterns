@@ -1,5 +1,5 @@
 from collections import deque
-from typing import Optional
+from typing import List, Optional
 import unittest
 
 debug = True
@@ -68,7 +68,7 @@ class Solution:
         items = [f"({i}) {item}" for i, item in enumerate(myList)]
         return f"[{', '.join(items)}]"
 
-    def inorderTraversal(self, root: Optional[TreeNode]) -> list[int]:
+    def preorderTraversal(self, root: Optional[TreeNode]) -> List[int]:
         """
         :type root: Optional[TreeNode]
         :rtype: List[int]
@@ -104,7 +104,7 @@ class Test(unittest.TestCase):
         #                /
         #               3
         root = Tree.build_tree([1, None, 2, 3])
-        self.assertEqual(self.solution.inorderTraversal(root), [1, 2, 3])
+        self.assertEqual(self.solution.preorderTraversal(root), [1, 2, 3])
 
         # Input: [1,2,3,4,5,null,8,null,null,6,7,9]
         # Tree:             1
@@ -116,28 +116,28 @@ class Test(unittest.TestCase):
         #               6   7   9
         root = Tree.build_tree([1, 2, 3, 4, 5, None, 8, None, None, 6, 7, 9])
         self.assertEqual(
-            self.solution.inorderTraversal(root), [1, 2, 4, 5, 6, 7, 3, 8, 9]
+            self.solution.preorderTraversal(root), [1, 2, 4, 5, 6, 7, 3, 8, 9]
         )
 
         # Input: []
         # Tree: empty
         root = Tree.build_tree([])
-        self.assertEqual(self.solution.inorderTraversal(root), [])
+        self.assertEqual(self.solution.preorderTraversal(root), [])
 
         # Input: [1]
         # Tree: 1
         root = Tree.build_tree([1])
-        self.assertEqual(self.solution.inorderTraversal(root), [1])
+        self.assertEqual(self.solution.preorderTraversal(root), [1])
 
     def test_empty_tree(self):
         # Tree: empty
         root = Tree.build_tree([])
-        self.assertEqual(self.solution.inorderTraversal(root), [])
+        self.assertEqual(self.solution.preorderTraversal(root), [])
 
     def test_single_node(self):
         # Tree: 1
         root = Tree.build_tree([1])
-        self.assertEqual(self.solution.inorderTraversal(root), [1])
+        self.assertEqual(self.solution.preorderTraversal(root), [1])
 
     def test_right_skewed_tree(self):
         # Tree:     1
@@ -146,7 +146,7 @@ class Test(unittest.TestCase):
         #              \
         #               3
         root = Tree.build_tree([1, None, 2, None, 3])
-        self.assertEqual(self.solution.inorderTraversal(root), [1, 2, 3])
+        self.assertEqual(self.solution.preorderTraversal(root), [1, 2, 3])
 
     def test_left_skewed_tree(self):
         # Tree:         3
@@ -155,14 +155,14 @@ class Test(unittest.TestCase):
         #           /
         #         1
         root = Tree.build_tree([3, 2, None, 1])
-        self.assertEqual(self.solution.inorderTraversal(root), [3, 2, 1])
+        self.assertEqual(self.solution.preorderTraversal(root), [3, 2, 1])
 
     def test_balanced_tree(self):
         # Tree:      1
         #           / \
         #          2   3
         root = Tree.build_tree([1, 2, 3])
-        self.assertEqual(self.solution.inorderTraversal(root), [1, 2, 3])
+        self.assertEqual(self.solution.preorderTraversal(root), [1, 2, 3])
 
 
 def main():
