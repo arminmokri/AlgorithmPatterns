@@ -19,7 +19,7 @@ DFS (Depth-First Search) and BFS (Breadth-First Search) are fundamental graph tr
 ## Examples
 - [x] 1. [Number of Islands](number_of_islands/) → [LeetCode #200](https://leetcode.com/problems/number-of-islands)
 
-- [ ] 2. [Clone Graph]() → [LeetCode #133](https://leetcode.com/problems/clone-graph)
+- [x] 2. [Clone Graph](clone_graph/) → [LeetCode #133](https://leetcode.com/problems/clone-graph)
 
 - [ ] 3. [Word Ladder]() → [LeetCode #127](https://leetcode.com/problems/word-ladder)
 
