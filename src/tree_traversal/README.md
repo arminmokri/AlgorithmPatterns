@@ -21,7 +21,7 @@ Tree traversal refers to visiting each node in a tree data structure systematica
 
 - [x] 2. [Binary Tree Preorder Traversal](binary_tree_preorder_traversal/) → [LeetCode #144](https://leetcode.com/problems/binary-tree-preorder-traversal)
 
-- [ ] 3. [Binary Tree Postorder Traversal]() → [LeetCode #145](https://leetcode.com/problems/binary-tree-postorder-traversal)
+- [x] 3. [Binary Tree Postorder Traversal](binary_tree_postorder_traversal/) → [LeetCode #145](https://leetcode.com/problems/binary-tree-postorder-traversal)
 
 - [ ] 4. [Binary Tree Level Order Traversal]() → [LeetCode #102](https://leetcode.com/problems/binary-tree-level-order-traversal)
 

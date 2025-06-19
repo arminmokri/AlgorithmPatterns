@@ -3,7 +3,7 @@
 
 #### 1- [Array](src/array) (8/12)
 #### 2- [Backtracking](src/backtracking) (3/6)
-#### 3- [Binary Search](src/binary_search) (2/5)
+#### 3- [Binary Search](src/binary_search) (3/5)
 #### 4- [DFS-BFS](src/dfs_bfs) (2/5)
 #### 5- [Dynamic Programming](src/dynamic_programming) (6/9)
 #### 6- [Interval](src/interval) (2/5)
