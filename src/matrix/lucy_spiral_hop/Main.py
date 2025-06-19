@@ -18,13 +18,14 @@ Time Complexity: O(N * M) — each cell is visited at most once
 Space Complexity: O(N * M) for visited tracking
 """
 
+from typing import List, Tuple
 import unittest
 
 debug = True
 
 
 class Solution:
-    def martixToString(self, myMatrix: list[list] | tuple[tuple]) -> str:
+    def martixToString(self, myMatrix: List[List] | Tuple[Tuple]) -> str:
         if myMatrix == []:
             return "[]"
         elif myMatrix == [[]]:
@@ -38,14 +39,14 @@ class Solution:
             for row in str_matrix
         )
 
-    def listToString(self, myList: list | tuple) -> str:
+    def listToString(self, myList: List | Tuple) -> str:
         if myList == []:
             return "[]"
 
         items = [f"({i}) {item}" for i, item in enumerate(myList)]
         return f"[{', '.join(items)}]"
 
-    def lucySpiralHop(self, matrix: list[list[int]]) -> int:
+    def lucySpiralHop(self, matrix: List[List[int]]) -> int:
         if debug:
             print()
 

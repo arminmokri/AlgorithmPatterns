@@ -1,3 +1,4 @@
+from typing import List, Tuple
 import unittest
 from bisect import bisect_left
 
@@ -5,7 +6,7 @@ debug = True
 
 
 class Solution:
-    def martixToString(self, myMatrix: list[list] | tuple[tuple]) -> str:
+    def martixToString(self, myMatrix: List[List] | Tuple[Tuple]) -> str:
         if myMatrix == []:
             return "[]"
         elif myMatrix == [[]]:
@@ -19,7 +20,7 @@ class Solution:
             for row in str_matrix
         )
 
-    def listToString(self, myList: list | tuple) -> str:
+    def listToString(self, myList: List | Tuple) -> str:
         if myList == []:
             return "[]"
 
@@ -27,7 +28,7 @@ class Solution:
         return f"[{', '.join(items)}]"
 
     # Time Complexity O(n^2), Space Complexity O(1)
-    def twoSumA(self, numbers: list, target: int) -> list:
+    def twoSumA(self, numbers: List, target: int) -> List:
         if debug:
             print()
 
@@ -49,7 +50,7 @@ class Solution:
         return [indexA, indexB]
 
     # Time Complexity O(nlogn), Space Complexity O(1)
-    def twoSumB(self, numbers: list, target: int) -> list:
+    def twoSumB(self, numbers: List, target: int) -> List:
         if debug:
             print()
 
@@ -76,7 +77,7 @@ class Solution:
         return [indexA, indexB]
 
     # Time Complexity O(n), Space Complexity O(n)
-    def twoSumC(self, numbers: list, target: int) -> list:
+    def twoSumC(self, numbers: List, target: int) -> List:
         if debug:
             print()
 
@@ -99,7 +100,7 @@ class Solution:
         return [indexA, indexB]
 
     # Time Complexity O(n), Space Complexity O(1)
-    def twoSumD(self, numbers: list, target: int) -> list:
+    def twoSumD(self, numbers: List, target: int) -> List:
         if debug:
             print()
 
@@ -123,12 +124,7 @@ class Solution:
 
         return [indexA, indexB]
 
-    def twoSum(self, numbers: list, target: int) -> list:
-        """
-        :type numbers: List[int]
-        :type target: int
-        :rtype: List[int]
-        """
+    def twoSum(self, numbers: List, target: int) -> List:
         return self.twoSumD(numbers, target)
 
 

@@ -13,13 +13,14 @@ this approach uses a bottom-up dynamic programming method (iterative) which comp
 and O(1) space using just two variables to store previous values.
 """
 
+from typing import List, Tuple
 import unittest
 
 debug = True
 
 
 class Solution:
-    def martixToString(self, myMatrix: list[list] | tuple[tuple]) -> str:
+    def martixToString(self, myMatrix: List[List] | Tuple[Tuple]) -> str:
         if myMatrix == []:
             return "[]"
         elif myMatrix == [[]]:
@@ -33,7 +34,7 @@ class Solution:
             for row in str_matrix
         )
 
-    def listToString(self, myList: list | tuple) -> str:
+    def listToString(self, myList: List | Tuple) -> str:
         if myList == []:
             return "[]"
 

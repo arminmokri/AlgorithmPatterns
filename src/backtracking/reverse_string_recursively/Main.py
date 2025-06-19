@@ -14,13 +14,14 @@ Constraints:
 - Must be solved using recursion.
 """
 
+from typing import List, Tuple
 import unittest
 
 debug = True
 
 
 class Solution:
-    def martixToString(self, myMatrix: list[list] | tuple[tuple]) -> str:
+    def martixToString(self, myMatrix: List[List] | Tuple[Tuple]) -> str:
         if myMatrix == []:
             return "[]"
         elif myMatrix == [[]]:
@@ -34,7 +35,7 @@ class Solution:
             for row in str_matrix
         )
 
-    def listToString(self, myList: list | tuple) -> str:
+    def listToString(self, myList: List | Tuple) -> str:
         if myList == []:
             return "[]"
 
@@ -42,11 +43,11 @@ class Solution:
         return f"[{', '.join(items)}]"
 
     # Time Complexity O(n^2), Space Complexity O(n)
-    def reverseString(self, string: list) -> list:
+    def reverseString(self, string: str) -> str:
         if debug:
             print()
 
-        def backtrack(s):
+        def backtrack(s: List) -> str:
             if len(s) == 0:
                 return ""
             else:

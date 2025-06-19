@@ -16,13 +16,14 @@ Output: 2
 
 """
 
+from typing import List, Tuple
 import unittest
 
 debug = True
 
 
 class Solution:
-    def martixToString(self, myMatrix: list[list] | tuple[tuple]) -> str:
+    def martixToString(self, myMatrix: List[List] | Tuple[Tuple]) -> str:
         if myMatrix == []:
             return "[]"
         elif myMatrix == [[]]:
@@ -36,7 +37,7 @@ class Solution:
             for row in str_matrix
         )
 
-    def listToString(self, myList: list | tuple) -> str:
+    def listToString(self, myList: List | Tuple) -> str:
         if myList == []:
             return "[]"
 
@@ -44,12 +45,7 @@ class Solution:
         return f"[{', '.join(items)}]"
 
     # Time Complexity O(n), Space Complexity O(n)
-    def firstMissingPositive(self, nums: list) -> bool:
-        """
-        :type nums: List[int]
-        :rtype: int
-        """
-
+    def firstMissingPositive(self, nums: List[int]) -> int:
         if debug:
             print()
 

@@ -1,5 +1,5 @@
+from typing import List, Tuple, Optional
 from collections import deque
-from typing import Optional
 import unittest
 
 debug = True
@@ -15,7 +15,7 @@ class TreeNode(object):
 
 class Tree(object):
     @staticmethod
-    def build_tree(values: list[Optional["int"]]) -> TreeNode:
+    def build_tree(values: List[Optional[int]]) -> TreeNode:
         """
         Builds a binary tree from a level-order list.
         :param values: List[Optional[int]]
@@ -47,7 +47,7 @@ class Tree(object):
 
 
 class Solution:
-    def martixToString(self, myMatrix: list[list] | tuple[tuple]) -> str:
+    def martixToString(self, myMatrix: List[List] | Tuple[Tuple]) -> str:
         if myMatrix == []:
             return "[]"
         elif myMatrix == [[]]:
@@ -61,18 +61,14 @@ class Solution:
             for row in str_matrix
         )
 
-    def listToString(self, myList: list | tuple) -> str:
+    def listToString(self, myList: List | Tuple) -> str:
         if myList == []:
             return "[]"
 
         items = [f"({i}) {item}" for i, item in enumerate(myList)]
         return f"[{', '.join(items)}]"
 
-    def inorderTraversal(self, root: Optional[TreeNode]) -> list[int]:
-        """
-        :type root: Optional[TreeNode]
-        :rtype: List[int]
-        """
+    def inorderTraversal(self, root: Optional[TreeNode]) -> List[int]:
         if debug:
             print()
 

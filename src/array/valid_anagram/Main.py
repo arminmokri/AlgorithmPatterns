@@ -11,13 +11,14 @@ This problem can be solved efficiently using a frequency count
 This approach is commonly related to anagrams and substring checks.
 """
 
+from typing import List, Tuple
 import unittest
 
 debug = True
 
 
 class Solution:
-    def martixToString(self, myMatrix: list[list] | tuple[tuple]) -> str:
+    def martixToString(self, myMatrix: List[List] | Tuple[Tuple]) -> str:
         if myMatrix == []:
             return "[]"
         elif myMatrix == [[]]:
@@ -31,7 +32,7 @@ class Solution:
             for row in str_matrix
         )
 
-    def listToString(self, myList: list | tuple) -> str:
+    def listToString(self, myList: List | Tuple) -> str:
         if myList == []:
             return "[]"
 
@@ -39,17 +40,17 @@ class Solution:
         return f"[{', '.join(items)}]"
 
     # Time Complexity O(n), Space Complexity O(1)
-    def validAnagram(self, stringA: str, stringB: str) -> bool:
+    def isAnagram(self, s: str, t: str) -> bool:
         if debug:
             print()
 
         frequentList = [0] * 256
 
-        for c in stringA:
+        for c in s:
             index = ord(c)
             frequentList[index] = frequentList[index] + 1
 
-        for c in stringB:
+        for c in t:
             index = ord(c)
             frequentList[index] = frequentList[index] - 1
 
@@ -60,14 +61,7 @@ class Solution:
                 break
 
         if debug:
-            print(
-                "stringA="
-                + stringA
-                + " stringB="
-                + stringB
-                + " isAnagram="
-                + str(isAnagram)
-            )
+            print("s=" + s + " t=" + t + " isAnagram=" + str(isAnagram))
 
         return isAnagram
 
@@ -77,32 +71,32 @@ class Test(unittest.TestCase):
         self.solution = Solution()
 
     def test_default_case(self):
-        self.assertTrue(self.solution.validAnagram("listen", "silent"))
+        self.assertTrue(self.solution.isAnagram("listen", "silent"))
 
     def test_true_case(self):
-        self.assertTrue(self.solution.validAnagram("listen", "silent"))
-        self.assertTrue(self.solution.validAnagram("triangle", "integral"))
-        self.assertTrue(self.solution.validAnagram("aabbcc", "abcabc"))
+        self.assertTrue(self.solution.isAnagram("listen", "silent"))
+        self.assertTrue(self.solution.isAnagram("triangle", "integral"))
+        self.assertTrue(self.solution.isAnagram("aabbcc", "abcabc"))
 
     def test_false_case(self):
-        self.assertFalse(self.solution.validAnagram("hello", "bello"))
-        self.assertFalse(self.solution.validAnagram("rat", "car"))
-        self.assertFalse(self.solution.validAnagram("aabb", "aabbb"))
+        self.assertFalse(self.solution.isAnagram("hello", "bello"))
+        self.assertFalse(self.solution.isAnagram("rat", "car"))
+        self.assertFalse(self.solution.isAnagram("aabb", "aabbb"))
 
     def test_case_sensitive(self):
-        self.assertFalse(self.solution.validAnagram("Listen", "silent"))
+        self.assertFalse(self.solution.isAnagram("Listen", "silent"))
 
     def test_empty_strings(self):
-        self.assertTrue(self.solution.validAnagram("", ""))
-        self.assertFalse(self.solution.validAnagram("abc", ""))
-        self.assertFalse(self.solution.validAnagram("", "abc"))
+        self.assertTrue(self.solution.isAnagram("", ""))
+        self.assertFalse(self.solution.isAnagram("abc", ""))
+        self.assertFalse(self.solution.isAnagram("", "abc"))
 
     def test_same_letters_different_lengths(self):
-        self.assertFalse(self.solution.validAnagram("aabbcc", "abc"))
-        self.assertFalse(self.solution.validAnagram("abc", "aabbcc"))
+        self.assertFalse(self.solution.isAnagram("aabbcc", "abc"))
+        self.assertFalse(self.solution.isAnagram("abc", "aabbcc"))
 
     def test_unicode_support(self):
-        self.assertTrue(self.solution.validAnagram("éàè", "èàé"))
+        self.assertTrue(self.solution.isAnagram("éàè", "èàé"))
 
 
 def main():

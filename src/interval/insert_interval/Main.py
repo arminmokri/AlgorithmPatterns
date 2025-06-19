@@ -1,10 +1,11 @@
+from typing import List, Tuple
 import unittest
 
 debug = True
 
 
 class Solution:
-    def martixToString(self, myMatrix: list[list] | tuple[tuple]) -> str:
+    def martixToString(self, myMatrix: List[List] | Tuple[Tuple]) -> str:
         if myMatrix == []:
             return "[]"
         elif myMatrix == [[]]:
@@ -18,7 +19,7 @@ class Solution:
             for row in str_matrix
         )
 
-    def listToString(self, myList: list | tuple) -> str:
+    def listToString(self, myList: List | Tuple) -> str:
         if myList == []:
             return "[]"
 
@@ -26,14 +27,8 @@ class Solution:
         return f"[{', '.join(items)}]"
 
     def insert(
-        self, intervals: list[list[int]], newInterval: list[int]
-    ) -> list[list[int]]:
-        """
-        :type intervals: List[List[int]]
-        :type newInterval: List[int]
-        :rtype: List[List[int]]
-        """
-
+        self, intervals: List[List[int]], newInterval: List[int]
+    ) -> List[List[int]]:
         if debug:
             print()
 

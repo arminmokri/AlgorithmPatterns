@@ -1,5 +1,5 @@
+from typing import List, Tuple, Optional
 import unittest
-from typing import Optional
 
 debug = True
 
@@ -16,7 +16,7 @@ class Node:
 
 class Graph:
     @staticmethod
-    def build(adj_list: list[list[int]]) -> Optional[Node]:
+    def build(adj_list: List[List[int]]) -> Optional[Node]:
         if not adj_list:
             return None
         nodes = [Node(i + 1) for i in range(len(adj_list))]
@@ -25,7 +25,7 @@ class Graph:
         return nodes[0]
 
     @staticmethod
-    def to_adj_list(node: Optional[Node]) -> list[list[int]]:
+    def to_adj_list(node: Optional[Node]) -> List[List[int]]:
         if not node:
             return []
         adj_list = {}
@@ -43,7 +43,7 @@ class Graph:
 
 
 class Solution:
-    def martixToString(self, myMatrix: list[list] | tuple[tuple]) -> str:
+    def martixToString(self, myMatrix: List[List] | Tuple[Tuple]) -> str:
         if myMatrix == []:
             return "[]"
         elif myMatrix == [[]]:
@@ -57,19 +57,14 @@ class Solution:
             for row in str_matrix
         )
 
-    def listToString(self, myList: list | tuple) -> str:
+    def listToString(self, myList: List | Tuple) -> str:
         if myList == []:
             return "[]"
 
         items = [f"({i}) {item}" for i, item in enumerate(myList)]
         return f"[{', '.join(items)}]"
 
-    def cloneGraph(self, node: Optional["Node"]) -> Optional["Node"]:
-        """
-        :type node: Node
-        :rtype: Node
-        """
-
+    def cloneGraph(self, node: Optional[Node]) -> Optional[Node]:
         if debug:
             print()
 

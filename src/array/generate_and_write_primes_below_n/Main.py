@@ -16,6 +16,7 @@ For N = 100, the script will output all prime numbers less than 100
 (e.g., 2, 3, 5, ..., 97) into a file named `primes.txt`.
 """
 
+from typing import List, Tuple
 import unittest
 import tempfile
 import os
@@ -25,7 +26,7 @@ debug = True
 
 
 class Solution:
-    def martixToString(self, myMatrix: list[list] | tuple[tuple]) -> str:
+    def martixToString(self, myMatrix: List[List] | Tuple[Tuple]) -> str:
         if myMatrix == []:
             return "[]"
         elif myMatrix == [[]]:
@@ -39,7 +40,7 @@ class Solution:
             for row in str_matrix
         )
 
-    def listToString(self, myList: list | tuple) -> str:
+    def listToString(self, myList: List | Tuple) -> str:
         if myList == []:
             return "[]"
 
@@ -55,7 +56,7 @@ class Solution:
 
         return flag == 0
 
-    def generatePrimesBelowN(self, N: int, file: str) -> list:
+    def generatePrimesBelowN(self, N: int, file: str) -> List:
         if debug:
             print()
 

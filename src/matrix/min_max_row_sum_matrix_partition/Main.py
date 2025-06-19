@@ -36,6 +36,7 @@ maximum row sum = 35
 the solution should be (4,3)
 """
 
+from typing import List, Tuple
 import unittest
 import sys
 
@@ -43,7 +44,7 @@ debug = True
 
 
 class Solution:
-    def martixToString(self, myMatrix: list[list] | tuple[tuple]) -> str:
+    def martixToString(self, myMatrix: List[List] | Tuple[Tuple]) -> str:
         if myMatrix == []:
             return "[]"
         elif myMatrix == [[]]:
@@ -57,20 +58,20 @@ class Solution:
             for row in str_matrix
         )
 
-    def listToString(self, myList: list | tuple) -> str:
+    def listToString(self, myList: List | Tuple) -> str:
         if myList == []:
             return "[]"
 
         items = [f"({i}) {item}" for i, item in enumerate(myList)]
         return f"[{', '.join(items)}]"
 
-    def SumAtoBpoint(self, myList: tuple, a: int, b: int) -> int:
+    def SumAtoBpoint(self, myList: Tuple, a: int, b: int) -> int:
         sum = 0
         for i in range(a, b):
             sum = sum + myList[i]
         return sum
 
-    def minMaxRowSumMatrixPartition(self, numbers: tuple) -> tuple:
+    def minMaxRowSumMatrixPartition(self, numbers: Tuple) -> Tuple:
         if debug:
             print()
 
