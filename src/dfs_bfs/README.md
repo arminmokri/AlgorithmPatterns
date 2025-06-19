@@ -21,7 +21,7 @@ DFS (Depth-First Search) and BFS (Breadth-First Search) are fundamental graph tr
 
 - [x] 2. [Clone Graph](clone_graph/) → [LeetCode #133](https://leetcode.com/problems/clone-graph)
 
-- [ ] 3. [Word Ladder]() → [LeetCode #127](https://leetcode.com/problems/word-ladder)
+- [x] 3. [Word Ladder](word_ladder/) → [LeetCode #127](https://leetcode.com/problems/word-ladder)
 
 - [ ] 4. [Course Schedule]() → [LeetCode #207](https://leetcode.com/problems/course-schedule)
 
