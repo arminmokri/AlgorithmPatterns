@@ -25,7 +25,7 @@ Matrix problems involve navigating or modifying 2D grids or arrays, often under 
   <br>
   [`#Cisco`](https://cisco.com)
 
-- [ ] 4. [Search a 2D Matrix]() → [LeetCode #74](https://leetcode.com/problems/search-a-2d-matrix)
+- [x] 4. [Search a 2D Matrix](search_matrix/) → [LeetCode #74](https://leetcode.com/problems/search-a-2d-matrix)
 
 - [ ] 5. [Word Search]() → [LeetCode #79](https://leetcode.com/problems/word-search)
 
