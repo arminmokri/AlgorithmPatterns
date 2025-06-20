@@ -21,7 +21,7 @@ The interval pattern deals with problems involving ranges, segments, or spans, w
 
 - [x] 2. [Insert Interval](insert_interval/) → [LeetCode #57](https://leetcode.com/problems/insert-interval)
 
-- [ ] 3. [Meeting Rooms]() → [LeetCode #252](https://leetcode.com/problems/meeting-rooms)
+- [x] 3. [Meeting Rooms](meeting_rooms/) → [LeetCode #252](https://leetcode.com/problems/meeting-rooms)
 
 - [ ] 4. [Non-overlapping Intervals]() → [LeetCode #435](https://leetcode.com/problems/non-overlapping-intervals)
 
