@@ -19,7 +19,7 @@ Array problems focus on using contiguous memory structures where elements can be
 ## Examples
 - [x] 1. [Remove Duplicates from Sorted Array](remove_duplicates_from_sorted_array/) → [LeetCode #26](https://leetcode.com/problems/remove-duplicates-from-sorted-array)
 
-- [ ] 2. [Maximum Subarray]() → [LeetCode #53](https://leetcode.com/problems/maximum-subarray)
+- [x] 2. [Maximum Subarray](maximum_subarray/) → [LeetCode #53](https://leetcode.com/problems/maximum-subarray)
 
 - [ ] 3. [Merge Sorted Array]() → [LeetCode #88](https://leetcode.com/problems/merge-sorted-array)
 
