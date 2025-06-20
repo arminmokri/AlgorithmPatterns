@@ -68,34 +68,30 @@ class Solution:
         items = [f"({i}) {item}" for i, item in enumerate(myList)]
         return f"[{', '.join(items)}]"
 
-    def levelOrder(self, root: Optional[TreeNode]) -> List[List[int]]:
+    def maxDepth(self, root: Optional[TreeNode]) -> int:
         if debug:
             print()
 
-        levels = list()
-
-        seen = set()
+        max_level = 0
 
         queue = deque()
-
-        queue.append([root, 0]) if root is not None else None
+        queue.append([root, 1]) if root is not None else None
+        seen = set()
 
         while len(queue) > 0:
             node, level = queue.popleft()
 
-            if len(levels) <= level:
-                levels.append([node.val])
-            else:
-                levels[level].append(node.val)
+            if level > max_level:
+                max_level = level
 
             for child in [node.left, node.right]:
                 if child is not None and child not in seen:
                     queue.append([child, level + 1])
 
         if debug:
-            print("levels=" + str(levels))
+            print("max_level=" + str(max_level))
 
-        return levels
+        return max_level
 
 
 class Test(unittest.TestCase):
@@ -111,27 +107,25 @@ class Test(unittest.TestCase):
         #          / \
         #         15  7
         root = Tree.build_tree([3, 9, 20, None, None, 15, 7])
-        self.assertEqual(self.solution.levelOrder(root), [[3], [9, 20], [15, 7]])
+        self.assertEqual(self.solution.maxDepth(root), 3)
 
-        # Input: [1]
-        # Tree: 1
-        root = Tree.build_tree([1])
-        self.assertEqual(self.solution.levelOrder(root), [[1]])
-
-        # Input: []
-        # Tree: empty
-        root = Tree.build_tree([])
-        self.assertEqual(self.solution.levelOrder(root), [])
+        # Input: [1,null,2]
+        # Tree:
+        #    1
+        #     \
+        #      2
+        root = Tree.build_tree([1, None, 2])
+        self.assertEqual(self.solution.maxDepth(root), 2)
 
     def test_empty_tree(self):
         # Tree: empty
         root = Tree.build_tree([])
-        self.assertEqual(self.solution.levelOrder(root), [])
+        self.assertEqual(self.solution.maxDepth(root), 0)
 
     def test_single_node(self):
         # Tree: 1
         root = Tree.build_tree([1])
-        self.assertEqual(self.solution.levelOrder(root), [[1]])
+        self.assertEqual(self.solution.maxDepth(root), 1)
 
     def test_right_skewed_tree(self):
         # Tree:     1
@@ -140,7 +134,7 @@ class Test(unittest.TestCase):
         #              \
         #               3
         root = Tree.build_tree([1, None, 2, None, 3])
-        self.assertEqual(self.solution.levelOrder(root), [[1], [2], [3]])
+        self.assertEqual(self.solution.maxDepth(root), 3)
 
     def test_left_skewed_tree(self):
         # Tree:         3
@@ -149,14 +143,14 @@ class Test(unittest.TestCase):
         #           /
         #         1
         root = Tree.build_tree([3, 2, None, 1])
-        self.assertEqual(self.solution.levelOrder(root), [[3], [2], [1]])
+        self.assertEqual(self.solution.maxDepth(root), 3)
 
     def test_balanced_tree(self):
         # Tree:      1
         #           / \
         #          2   3
         root = Tree.build_tree([1, 2, 3])
-        self.assertEqual(self.solution.levelOrder(root), [[1], [2, 3]])
+        self.assertEqual(self.solution.maxDepth(root), 2)
 
 
 def main():
