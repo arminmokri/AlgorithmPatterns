@@ -21,7 +21,7 @@ Matrix problems involve navigating or modifying 2D grids or arrays, often under 
 
 - [x] 2. [Spiral Matrix](spiral_matrix/) → [LeetCode #54](https://leetcode.com/problems/spiral-matrix)
 
-- [ ] 3. [Rotate Image]() → [LeetCode #48](https://leetcode.com/problems/rotate-image)
+- [x] 3. [Rotate Image](rotate_image/) → [LeetCode #48](https://leetcode.com/problems/rotate-image)
   <br>
   [`#Cisco`](https://cisco.com)
 

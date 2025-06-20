@@ -7,9 +7,9 @@
 #### 4- [DFS-BFS](src/dfs_bfs) (3/5) 2
 #### 5- [Dynamic Programming](src/dynamic_programming) (6/9) 3
 #### 6- [Interval](src/interval) (3/5) 2
-#### 7- [Matrix](src/matrix) (3/7) 4
+#### 7- [Matrix](src/matrix) (4/7) 3
 #### 8- [Sliding Window](src/sliding_window) (4/7) 3
 #### 9- [Tree Traversal](src/tree_traversal) (3/5) 2
 #### 10- [Two Pointer](src/two_pointer) (6/7) 1
 
-#### total: (43/68) 25
+#### total: (44/68) 24
