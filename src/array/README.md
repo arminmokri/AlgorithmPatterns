@@ -21,7 +21,7 @@ Array problems focus on using contiguous memory structures where elements can be
 
 - [x] 2. [Maximum Subarray](maximum_subarray/) → [LeetCode #53](https://leetcode.com/problems/maximum-subarray)
 
-- [ ] 3. [Merge Sorted Array]() → [LeetCode #88](https://leetcode.com/problems/merge-sorted-array)
+- [x] 3. [Merge Sorted Array](merge_sorted_array/) → [LeetCode #88](https://leetcode.com/problems/merge-sorted-array)
 
 - [ ] 4. [Best Time to Buy and Sell Stock]() → [LeetCode #121](https://leetcode.com/problems/best-time-to-buy-and-sell-stock)
 
