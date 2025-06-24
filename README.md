@@ -2,7 +2,7 @@
 ### Please support my repo with your star.
 
 #### 1- [Array](src/array) (10/12) 2
-#### 2- [Backtracking](src/backtracking) (3/6) 3
+#### 2- [Backtracking](src/backtracking) (4/6) 2
 #### 3- [Binary Search](src/binary_search) (3/5) 2
 #### 4- [DFS-BFS](src/dfs_bfs) (3/5) 2
 #### 5- [Dynamic Programming](src/dynamic_programming) (6/9) 3
@@ -12,4 +12,4 @@
 #### 9- [Tree Traversal](src/tree_traversal) (5/5)
 #### 10- [Two Pointer](src/two_pointer) (6/7) 1
 
-#### total: (47/68) 21
+#### total: (48/68) 20

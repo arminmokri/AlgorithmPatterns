@@ -23,7 +23,7 @@ Backtracking is a recursive algorithmic technique for solving problems increment
   <br>
   [`#Flexton`](https://flextoninc.com)
 
-- [ ] 3. [Combination Sum]() → [LeetCode #39](https://leetcode.com/problems/combination-sum)
+- [x] 3. [Combination Sum](combination_sum/) → [LeetCode #39](https://leetcode.com/problems/combination-sum)
 
 - [ ] 4. [N-Queens]() → [LeetCode #51](https://leetcode.com/problems/n-queens)
 
