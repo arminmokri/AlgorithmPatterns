@@ -41,18 +41,18 @@ class Solution:
         else:
             dir = 1  # dec
 
-        last_item = first_item
+        prev_item = first_item
         for i in range(1, len(nums)):
             if dir == 0:
-                if not nums[i] >= last_item:
+                if not nums[i] >= prev_item:
                     isMonotonic = False
                     break
             else:
-                if not nums[i] <= last_item:
+                if not nums[i] <= prev_item:
                     isMonotonic = False
                     break
 
-            last_item = nums[i]
+            prev_item = nums[i]
 
         return isMonotonic
 
