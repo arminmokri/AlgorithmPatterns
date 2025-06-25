@@ -36,7 +36,7 @@ The sliding window pattern uses a subset (or window) that moves across the data 
   [`#ExpediaGroup`](https://expediagroup.com)
 
 <p align="center">
-  <a href="../matrix">⬅️ <strong>Matrix</strong></a>
+  <a href="../miscellaneous">⬅️ <strong>Miscellaneous</strong></a>
   🔸
   <a href="../tree_traversal"><strong>Tree Traversal</strong> ➡️</a>
 </p>

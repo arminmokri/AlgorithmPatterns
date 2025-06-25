@@ -40,7 +40,7 @@ Matrix problems involve navigating or modifying 2D grids or arrays, often under 
 <p align="center">
   <a href="../interval">⬅️ <strong>Interval</strong></a>
   🔸
-  <a href="../sliding_window"><strong>Sliding Window</strong> ➡️</a>
+  <a href="../miscellaneous"><strong>Miscellaneous</strong> ➡️</a>
 </p>
 
 [< Back To Algorithm Patterns](../../)

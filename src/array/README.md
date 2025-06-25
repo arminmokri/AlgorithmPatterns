@@ -55,6 +55,14 @@ Array problems focus on using contiguous memory structures where elements can be
   <br>
   [`#MorganStanley`](https://morganstanley.com)
 
+- [x] 13. [Arbitrary Arguments](arbitrary_arguments/)
+  <br>
+  [`#Cisco`](https://cisco.com)
+
+- [x] 14. [Monotonic Array](monotonic_array/) →  [LeetCode #896](https://leetcode.com/problems/monotonic-array)
+  <br>
+  [`#Cisco`](https://cisco.com)
+
 <p align="center">
   <a href="../backtracking"><strong>Backtracking</strong> ➡️</a>
 </p>
