@@ -13,4 +13,4 @@
 #### 10- [Tree Traversal](src/tree_traversal) (5/5)
 #### 11- [Two Pointer](src/two_pointer) (6/7) 1
 
-#### total: (51/71) 20
+#### Total: (51/71) 20
