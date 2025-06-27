@@ -20,7 +20,7 @@ Use DP when a problem has **overlapping subproblems** and **optimal substructure
 
 - [x] 2. [Longest Increasing Subsequence](longest_increasing_subsequence/) → [LeetCode #300](https://leetcode.com/problems/longest-increasing-subsequence)
 
-- [ ] 3. [Coin Change]() → [LeetCode #322](https://leetcode.com/problems/coin-change)
+- [x] 3. [Coin Change](coin_change/) → [LeetCode #322](https://leetcode.com/problems/coin-change)
 
 - [ ] 4. [House Robber]() → [LeetCode #198](https://leetcode.com/problems/house-robber)
 
