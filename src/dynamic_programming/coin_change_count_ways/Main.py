@@ -72,22 +72,21 @@ class Solution:
             if debug:
                 print("i=" + str(i) + " coin=" + str(coin))
 
-            for j in range(len(ways)):
-                if coin <= j:
-                    # Update the ways array
-                    index = j - coin
-                    ways[j] = ways[j] + ways[index]
+            for j in range(coin, len(ways)):
+                # Update the ways array
+                index = j - coin
+                ways[j] = ways[j] + ways[index]
 
-                    # print
-                    if debug:
-                        print(
-                            "j="
-                            + str(j)
-                            + " index="
-                            + str(index)
-                            + " ways="
-                            + self.listToString(ways)
-                        )
+                # print
+                if debug:
+                    print(
+                        "j="
+                        + str(j)
+                        + " index="
+                        + str(index)
+                        + " ways="
+                        + self.listToString(ways)
+                    )
 
         # print
         if debug:
@@ -96,7 +95,7 @@ class Solution:
         return ways[sum]
 
     def coinChange(self, coins: Tuple[int], sum: int) -> int:
-        return self.coinChangeA(coins, sum)
+        return self.coinChangeB(coins, sum)
 
 
 class Test(unittest.TestCase):
@@ -104,28 +103,28 @@ class Test(unittest.TestCase):
         self.solution = Solution()
 
     def test_default_case(self):
-        self.assertEqual(self.solution.coinChange((1, 2, 3), 5), 5)
+        self.assertEqual(self.solution.coinChange([1, 2, 3], 5), 5)
 
     def test_large_matchs(self):
-        self.assertEqual(self.solution.coinChange((1, 2, 5, 10), 12), 15)
+        self.assertEqual(self.solution.coinChange([1, 2, 5, 10], 12), 15)
 
     def test_zero_amount(self):
-        self.assertEqual(self.solution.coinChange((1, 2, 5), 0), 1)
+        self.assertEqual(self.solution.coinChange([1, 2, 5], 0), 1)
 
     def test_no_coins(self):
-        self.assertEqual(self.solution.coinChange((), 5), 0)
+        self.assertEqual(self.solution.coinChange([], 5), 0)
 
     def test_exact_single_coin_match(self):
-        self.assertEqual(self.solution.coinChange((5), 5), 1)
+        self.assertEqual(self.solution.coinChange([5], 5), 1)
 
     def test_coins_larger_than_target(self):
-        self.assertEqual(self.solution.coinChange((4, 5), 3), 0)
+        self.assertEqual(self.solution.coinChange([4, 5], 3), 0)
 
     def test_single_coin_multiple_ways(self):
-        self.assertEqual(self.solution.coinChange((1, 2), 4), 3)
+        self.assertEqual(self.solution.coinChange([1, 2], 4), 3)
 
     def test_large_target_small_coins(self):
-        self.assertEqual(self.solution.coinChange((1), 10), 1)
+        self.assertEqual(self.solution.coinChange([1], 10), 1)
 
 
 def main():
