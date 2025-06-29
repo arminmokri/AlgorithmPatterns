@@ -23,7 +23,7 @@ Array problems focus on using contiguous memory structures where elements can be
 
 - [x] 3. [Merge Sorted Array](merge_sorted_array/) → [LeetCode #88](https://leetcode.com/problems/merge-sorted-array)
 
-- [ ] 4. [Best Time to Buy and Sell Stock]() → [LeetCode #121](https://leetcode.com/problems/best-time-to-buy-and-sell-stock)
+- [x] 4. [Best Time to Buy and Sell Stock](best_time_to_buy_and_sell_stock/) → [LeetCode #121](https://leetcode.com/problems/best-time-to-buy-and-sell-stock)
 
 - [ ] 5. [Product of Array Except Self]() → [LeetCode #238](https://leetcode.com/problems/product-of-array-except-self)
 

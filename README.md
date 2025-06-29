@@ -1,7 +1,7 @@
 # Algorithm Patterns
 ### Please support my repo with your star.
 
-#### 1- [Array](src/array) (12/14) 2
+#### 1- [Array](src/array) (13/14) 1
 #### 2- [Backtracking](src/backtracking) (4/6) 2
 #### 3- [Binary Search](src/binary_search) (3/5) 2
 #### 4- [DFS-BFS](src/dfs_bfs) (3/5) 2
@@ -13,4 +13,4 @@
 #### 10- [Tree Traversal](src/tree_traversal) (5/5)
 #### 11- [Two Pointer](src/two_pointer) (6/7) 1
 
-#### Total: (53/71) 18
+#### Total: (54/71) 17
