@@ -21,7 +21,7 @@ Binary Search is a divide-and-conquer algorithm used to efficiently find a targe
 
 - [x] 2. [Search Insert Position](search_insert_position/) → [LeetCode #35](https://leetcode.com/problems/search-insert-position)
 
-- [ ] 3. [Find Minimum in Rotated Sorted Array]() → [LeetCode #153](https://leetcode.com/problems/find-minimum-in-rotated-sorted-array)
+- [x] 3. [Find Minimum in Rotated Sorted Array](find_minimum_in_rotated_sorted_array/) → [LeetCode #153](https://leetcode.com/problems/find-minimum-in-rotated-sorted-array)
 
 - [ ] 4. [Search in Rotated Sorted Array]() → [LeetCode #33](https://leetcode.com/problems/search-in-rotated-sorted-array)
 
