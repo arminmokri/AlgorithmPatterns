@@ -9,8 +9,8 @@
 #### 6- [Interval](src/interval) (3/5) 2
 #### 7- [Matrix](src/matrix) (4/7) 3
 #### 8- [Miscellaneous](src/miscellaneous/) (1/1)
-#### 9- [Sliding Window](src/sliding_window) (4/7) 3
+#### 9- [Sliding Window](src/sliding_window) (5/7) 2
 #### 10- [Tree Traversal](src/tree_traversal) (5/5)
 #### 11- [Two Pointer](src/two_pointer) (6/7) 1
 
-#### Total: (54/71) 17
+#### Total: (55/71) 16

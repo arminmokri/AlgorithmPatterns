@@ -25,7 +25,7 @@ The sliding window pattern uses a subset (or window) that moves across the data 
 
 - [ ] 4. [Minimum Window Substring]() → [LeetCode #76](https://leetcode.com/problems/minimum-window-substring)
 
-- [ ] 5. [Permutation in String]() → [LeetCode #567](https://leetcode.com/problems/permutation-in-string)
+- [x] 5. [Permutation in String](permutation_in_string/) → [LeetCode #567](https://leetcode.com/problems/permutation-in-string)
 
 - [x] 6. [Quadratic Consecutive Sequence Sum](quadratic_consecutive_sequence_sum/)
   <br>
