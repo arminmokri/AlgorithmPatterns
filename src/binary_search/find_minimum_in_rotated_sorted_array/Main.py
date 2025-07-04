@@ -40,7 +40,8 @@ class Solution:
         while left <= right:
             mid = (left + right) // 2
 
-            print("left=" + str(left) + " mid=" + str(mid) + " right=" + str(right))
+            if debug:
+                print("left=" + str(left) + " mid=" + str(mid) + " right=" + str(right))
 
             if nums[mid] >= nums[right]:
                 left = mid + 1
