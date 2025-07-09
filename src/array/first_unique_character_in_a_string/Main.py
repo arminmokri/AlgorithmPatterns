@@ -26,7 +26,7 @@ class Solution:
         items = [f"({i}) {item}" for i, item in enumerate(myList)]
         return f"[{', '.join(items)}]"
 
-    def firstUniqueCharacter(self, string: str) -> int:
+    def firstUniqueCharacter(self, text: str) -> int:
         if debug:
             print()
 
@@ -37,14 +37,14 @@ class Solution:
         if debug:
             print("frequentList=" + str(frequentList))
 
-        for c in string:
+        for c in text:
             frequentIndex = ord(c)
             frequentList[frequentIndex] = frequentList[frequentIndex] + 1
 
         if debug:
             print("frequentList=" + str(frequentList))
 
-        for i, c in enumerate(string):
+        for i, c in enumerate(text):
             frequentIndex = ord(c)
             if frequentList[frequentIndex] == 1:
                 singleIndex = i
