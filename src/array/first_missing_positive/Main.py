@@ -1,21 +1,3 @@
-"""
-
-Title: First Missing Positive
-
-Given an unsorted integer array, find the smallest missing positive integer.
-Your algorithm should run in O(n) time and use constant extra space.
-
-Approach:
-The idea is to rearrange the numbers so that each positive integer i is placed
-at index i - 1. Then, scan the array to find the first index i such that A[i] != i + 1.
-That index + 1 is the smallest missing positive.
-
-Example:
-Input: [3, 4, -1, 1]
-Output: 2
-
-"""
-
 from typing import List, Tuple
 import unittest
 
