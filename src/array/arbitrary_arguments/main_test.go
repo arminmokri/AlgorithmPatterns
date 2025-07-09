@@ -6,7 +6,7 @@ import (
 )
 
 func checkResult[T comparable](t *testing.T, got T, want T, message string, args ...any) {
-	t.Helper() // Marks this function as a helper in error reports
+	t.Helper()
 	if got != want {
 		t.Errorf("%s: got = %v, want = %v", fmt.Sprintf(message, args...), got, want)
 	}
