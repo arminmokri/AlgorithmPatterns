@@ -26,13 +26,13 @@ class Solution:
         items = [f"({i}) {item}" for i, item in enumerate(myList)]
         return f"[{', '.join(items)}]"
 
-    def firstRepeatedWord(self, string: str) -> str:
+    def firstRepeatedWord(self, text: str) -> str:
         if debug:
             print()
 
         firstRepeated = ""
 
-        words = string.split()
+        words = text.split()
 
         repeated = set()
 
