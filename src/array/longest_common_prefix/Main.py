@@ -35,7 +35,9 @@ class Solution:
 
         for i in range(len(minStr), 0, -1):
             prefixStr = minStr[0:i]
-            print("prefixStr=" + prefixStr)
+
+            if debug:
+                print("prefixStr=" + prefixStr)
 
             flag = 0
             for currentStr in strs:
