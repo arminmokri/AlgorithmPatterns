@@ -38,7 +38,7 @@ class Solution:
 
         return flag == 0
 
-    def generatePrimesBelowN(self, N: int, file: str) -> List:
+    def generatePrimesBelowN(self, N: int, filePath: str) -> List:
         if debug:
             print()
 
@@ -51,7 +51,7 @@ class Solution:
         if debug:
             print(primeList)
 
-        with open(file, "w") as f:
+        with open(filePath, "w") as f:
             f.write("{}\n".format(primeList))
 
         return primeList
