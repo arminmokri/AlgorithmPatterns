@@ -1,5 +1,5 @@
 # Algorithm Patterns
-### Please support my repo with your star.
+### Please support my repo with your ⭐
 
 #### 1- [Array](src/array) (13/14) 1
 #### 2- [Backtracking](src/backtracking) (4/6) 2
