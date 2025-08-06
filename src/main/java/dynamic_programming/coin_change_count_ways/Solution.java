@@ -1,12 +1,11 @@
 package dynamic_programming.coin_change_count_ways;
 
-import java.util.ArrayList;
 import java.util.Arrays;
 import java.util.List;
 import java.util.stream.Collectors;
 import java.util.stream.IntStream;
 
-public class Main {
+public class Solution {
 
     public static final Boolean debug = Boolean.TRUE;
 
@@ -30,9 +29,9 @@ public class Main {
         return listToString(list);
     }
 
-    public static int solution(Integer N, List<Integer> coins) {
+    public static int coinChange(List<Integer> coins, Integer sum) {
 
-        int[] ways = new int[N + 1];
+        int[] ways = new int[sum + 1];
         ways[0] = 1;
 
         // print
@@ -69,13 +68,6 @@ public class Main {
             }
         }
 
-        return ways[N];
-    }
-
-    public static void main(String[] args) {
-        List<Integer> coins = new ArrayList<>(Arrays.asList(1, 2, 5, 10));
-        Integer N = 12;
-        int result = solution(N, coins);
-        System.out.println("Result=" + result);
+        return ways[sum];
     }
 }

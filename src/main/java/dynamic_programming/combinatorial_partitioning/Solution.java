@@ -6,7 +6,7 @@ import java.util.List;
 import java.util.stream.Collectors;
 import java.util.stream.IntStream;
 
-public class Main {
+public class Solution {
 
     public static final Boolean debug = Boolean.TRUE;
 
@@ -30,7 +30,7 @@ public class Main {
         return listToString(list);
     }
 
-    public static int solution(Integer r, Integer total) {
+    public static int combinatorialPartitioning(Integer r, Integer total) {
 
         int[] ways = new int[total + 1];
         ways[0] = 1;
@@ -76,12 +76,5 @@ public class Main {
         }
 
         return ways[total];
-    }
-
-    public static void main(String[] args) {
-        Integer r = 2;
-        Integer total = 8;
-        int result = solution(r, total);
-        System.out.println("Result=" + result);
     }
 }
