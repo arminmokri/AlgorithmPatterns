@@ -72,43 +72,43 @@ class Test(unittest.TestCase):
         self.solution.merge(nums1, m, nums2, n)
         self.assertEqual(nums1, [1, 2, 2, 3, 5, 6])
 
-        # nums1 = [1]
-        # m = 1
-        # nums2 = []
-        # n = 0
-        # self.solution.merge(nums1, m, nums2, n)
-        # self.assertEqual(nums1, [1])
+        nums1 = [1]
+        m = 1
+        nums2 = []
+        n = 0
+        self.solution.merge(nums1, m, nums2, n)
+        self.assertEqual(nums1, [1])
 
-        # nums1 = [0]
-        # m = 0
-        # nums2 = [1]
-        # n = 1
-        # self.solution.merge(nums1, m, nums2, n)
-        # self.assertEqual(nums1, [1])
+        nums1 = [0]
+        m = 0
+        nums2 = [1]
+        n = 1
+        self.solution.merge(nums1, m, nums2, n)
+        self.assertEqual(nums1, [1])
 
-    # def test_all_zero_in_nums1(self):
-    #     nums1 = [0, 0, 0]
-    #     m = 0
-    #     nums2 = [2, 4, 6]
-    #     n = 3
-    #     self.solution.merge(nums1, m, nums2, n)
-    #     self.assertEqual(nums1, [2, 4, 6])
+    def test_all_zero_in_nums1(self):
+        nums1 = [0, 0, 0]
+        m = 0
+        nums2 = [2, 4, 6]
+        n = 3
+        self.solution.merge(nums1, m, nums2, n)
+        self.assertEqual(nums1, [2, 4, 6])
 
-    # def test_reverse_sorted(self):
-    #     nums1 = [4, 5, 6, 0, 0, 0]
-    #     m = 3
-    #     nums2 = [1, 2, 3]
-    #     n = 3
-    #     self.solution.merge(nums1, m, nums2, n)
-    #     self.assertEqual(nums1, [1, 2, 3, 4, 5, 6])
+    def test_reverse_sorted(self):
+        nums1 = [4, 5, 6, 0, 0, 0]
+        m = 3
+        nums2 = [1, 2, 3]
+        n = 3
+        self.solution.merge(nums1, m, nums2, n)
+        self.assertEqual(nums1, [1, 2, 3, 4, 5, 6])
 
-    # def test_with_duplicates(self):
-    #     nums1 = [1, 1, 1, 0, 0, 0]
-    #     m = 3
-    #     nums2 = [1, 1, 1]
-    #     n = 3
-    #     self.solution.merge(nums1, m, nums2, n)
-    #     self.assertEqual(nums1, [1, 1, 1, 1, 1, 1])
+    def test_with_duplicates(self):
+        nums1 = [1, 1, 1, 0, 0, 0]
+        m = 3
+        nums2 = [1, 1, 1]
+        n = 3
+        self.solution.merge(nums1, m, nums2, n)
+        self.assertEqual(nums1, [1, 1, 1, 1, 1, 1])
 
 
 def main():
