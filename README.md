@@ -1,7 +1,7 @@
 # Algorithm Patterns
 ### Please support my repo with your ⭐
 
-#### 1- [Array](src/main/java/array) (13/14) 1
+#### 1- [Array](src/main/java/array) (14/15) 1
 #### 2- [Backtracking](src/main/java/backtracking) (4/6) 2
 #### 3- [Binary Search](src/main/java/binary_search) (4/5) 1
 #### 4- [DFS-BFS](src/main/java/dfs_bfs) (3/5) 2
@@ -13,4 +13,4 @@
 #### 10- [Tree Traversal](src/main/java/tree_traversal) (5/5)
 #### 11- [Two Pointer](src/main/java/two_pointer) (6/7) 1
 
-#### Total: (57/71) 14
+#### Total: (58/72) 14

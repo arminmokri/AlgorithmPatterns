@@ -63,6 +63,10 @@ Array problems focus on using contiguous memory structures where elements can be
   <br>
   [`#Cisco`](https://cisco.com)
 
+- [x] 15. [Count Frequency Of Elements In An Array](count_frequency_of_elements_in_an_array/)
+  <br>
+  [`#MorganStanley`](https://morganstanley.com)
+
 <p align="center">
   <a href="../backtracking"><strong>Backtracking</strong> ➡️</a>
 </p>
