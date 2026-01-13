@@ -1,4 +1,4 @@
-[< Back To Algorithm Patterns](../../)
+[< Back To Algorithm Patterns](../../../../)
 
 # Matrix Algorithm Patterns
 ### Please support my repo with your star.
@@ -33,4 +33,4 @@ Matrix problems involve navigating or modifying 2D grids or arrays, often under 
   <a href="../miscellaneous"><strong>Miscellaneous</strong> ➡️</a>
 </p>
 
-[< Back To Algorithm Patterns](../../)
+[< Back To Algorithm Patterns](../../../../)
