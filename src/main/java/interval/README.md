@@ -1,4 +1,4 @@
-[< Back To Algorithm Patterns](../../)
+[< Back To Algorithm Patterns](../../../../)
 
 # Interval Algorithm Patterns
 ### Please support my repo with your star.
@@ -31,4 +31,4 @@ The interval pattern deals with problems involving ranges, segments, or spans, w
   <a href="../matrix"><strong>Matrix</strong> ➡️</a>
 </p>
 
-[< Back To Algorithm Patterns](../../)
+[< Back To Algorithm Patterns](../../../../)
