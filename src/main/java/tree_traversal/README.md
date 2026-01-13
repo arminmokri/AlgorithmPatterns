@@ -1,4 +1,4 @@
-[< Back To Algorithm Patterns](../../)
+[< Back To Algorithm Patterns](../../../../)
 
 # Tree Traversal Algorithm Patterns
 ### Please support my repo with your star.
@@ -31,4 +31,4 @@ Tree traversal refers to visiting each node in a tree data structure systematica
   <a href="../two_pointer"><strong>Two Pointer</strong> ➡️</a>
 </p>
 
-[< Back To Algorithm Patterns](../../)
+[< Back To Algorithm Patterns](../../../../)
