@@ -1,4 +1,4 @@
-[< Back To Algorithm Patterns](../../)
+[< Back To Algorithm Patterns](../../../../)
 
 # Dynamic Programming Algorithm Patterns
 ### Please support my repo with your star.
@@ -34,4 +34,4 @@ Use DP when a problem has **overlapping subproblems** and **optimal substructure
   <a href="../interval"><strong>Interval</strong> ➡️</a>
 </p>
 
-[< Back To Algorithm Patterns](../../)
+[< Back To Algorithm Patterns](../../../../)
