@@ -1,4 +1,4 @@
-[< Back To Algorithm Patterns](../../)
+[< Back To Algorithm Patterns](../../../../)
 
 # Backtracking Algorithm Patterns
 ### Please support my repo with your star.
@@ -32,4 +32,4 @@ Backtracking is a recursive algorithmic technique for solving problems increment
   <a href="../binary_search"><strong>Binary Search</strong> ➡️</a>
 </p>
 
-[< Back To Algorithm Patterns](../../)
+[< Back To Algorithm Patterns](../../../../)
