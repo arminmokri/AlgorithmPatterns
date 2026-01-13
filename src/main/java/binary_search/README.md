@@ -1,4 +1,4 @@
-[< Back To Algorithm Patterns](../../)
+[< Back To Algorithm Patterns](../../../../)
 
 # Binary Search Algorithm Patterns
 ### Please support my repo with your star.
@@ -31,4 +31,4 @@ Binary Search is a divide-and-conquer algorithm used to efficiently find a targe
   <a href="../dfs_bfs"><strong>DFS-BFS</strong> ➡️</a>
 </p>
 
-[< Back To Algorithm Patterns](../../)
+[< Back To Algorithm Patterns](../../../../)
