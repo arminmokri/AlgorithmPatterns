@@ -17,23 +17,15 @@ The two-pointer technique uses two indices that move through a data structure (o
 - Skipping duplicates, adjusting window sizes, or swapping elements.
 
 ## Examples
-- [x] 1. [Two Sum II - Input Array is Sorted](two_sum_ii_input_array_is_sorted/) → [LeetCode #167](https://leetcode.com/problems/two-sum-ii-input-array-is-sorted)
-  <br>
-  [`#MorganStanley`](https://morganstanley.com)
-
-- [x] 2. [3Sum](three_sum/) → [LeetCode #15](https://leetcode.com/problems/3sum)
-
-- [x] 3. [Container With Most Water](container_with_most_water/) → [LeetCode #11](https://leetcode.com/problems/container-with-most-water)
-
-- [ ] 4. [Trapping Rain Water]() → [LeetCode #42](https://leetcode.com/problems/trapping-rain-water)
-
-- [X] 5. [Valid Palindrome](valid_palindrome/) → [LeetCode #125](https://leetcode.com/problems/valid-palindrome)
-
-- [x] 6. [Sort Colors](sort_colors/) → [LeetCode #75](https://leetcode.com/problems/sort-colors)
-
-- [x] 7. [Simple Palindrome Check](simple_palindrome_check/)
-  <br>
-  [`#Bankino`](https://bankino.digital)
+| #  | Name                                                                    | Java | Python | Go | Link                                                                            | Company                                       |
+|----|-------------------------------------------------------------------------|------|--------|----|---------------------------------------------------------------------------------|-----------------------------------------------|
+| 1  | [Two Sum II - Input Array is Sorted](two_sum_ii_input_array_is_sorted/) | ❌   | ✅     | ❌ | [LeetCode #167](https://leetcode.com/problems/two-sum-ii-input-array-is-sorted) | [`#MorganStanley`](https://morganstanley.com) |
+| 2  | [3Sum](three_sum/)                                                      | ❌   | ✅     | ❌ | [LeetCode #15](https://leetcode.com/problems/3sum)                              |                                               |
+| 3  | [Container With Most Water](container_with_most_water/)                 | ❌   | ✅     | ❌ | [LeetCode #11](https://leetcode.com/problems/container-with-most-water)         |                                               |
+| 4  | [Trapping Rain Water]()                                                 | ❌   | ❌     | ❌ | [LeetCode #42](https://leetcode.com/problems/trapping-rain-water)               |                                               |
+| 5  | [Valid Palindrome](valid_palindrome/)                                   | ❌   | ✅     | ❌ | [LeetCode #125](https://leetcode.com/problems/valid-palindrome)                 |                                               |
+| 6  | [Sort Colors](sort_colors/)                                             | ❌   | ✅     | ❌ | [LeetCode #75](https://leetcode.com/problems/sort-colors)                       |                                               |
+| 7  | [Simple Palindrome Check](simple_palindrome_check/)                     | ❌   | ✅     | ❌ |                                                                                 | [`#Bankino`](https://bankino.digital)         |
 
 <p align="center">
   <a href="../tree_traversal">⬅️ <strong>Tree Traversal</strong></a>
