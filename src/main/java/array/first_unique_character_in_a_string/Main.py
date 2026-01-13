@@ -30,7 +30,7 @@ class Solution:
         if debug:
             print()
 
-        singleIndex = None
+        singleIndex = -1
 
         frequentList = [0] * 256
 
@@ -64,7 +64,7 @@ class Test(unittest.TestCase):
         )
 
     def test_no_unique_character(self):
-        self.assertIsNone(self.solution.firstUniqueCharacter("aabbcc"))
+        self.assertEqual(self.solution.firstUniqueCharacter("aabbcc"), -1)
 
     def test_first_character_unique(self):
         self.assertEqual(self.solution.firstUniqueCharacter("abcdef"), 0)
@@ -73,7 +73,7 @@ class Test(unittest.TestCase):
         self.assertEqual(self.solution.firstUniqueCharacter("aabbccd"), 6)
 
     def test_empty_string(self):
-        self.assertIsNone(self.solution.firstUniqueCharacter(""))
+        self.assertEqual(self.solution.firstUniqueCharacter(""), -1)
 
     def test_all_unique_characters(self):
         self.assertEqual(self.solution.firstUniqueCharacter("abcde"), 0)
