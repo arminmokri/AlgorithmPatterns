@@ -17,15 +17,13 @@ Tree traversal refers to visiting each node in a tree data structure systematica
 - Tracking parent-child relationships, depths, or paths during traversal.
 
 ## Examples
-- [x] 1. [Binary Tree Inorder Traversal](binary_tree_inorder_traversal/) → [LeetCode #94](https://leetcode.com/problems/binary-tree-inorder-traversal)
-
-- [x] 2. [Binary Tree Preorder Traversal](binary_tree_preorder_traversal/) → [LeetCode #144](https://leetcode.com/problems/binary-tree-preorder-traversal)
-
-- [x] 3. [Binary Tree Postorder Traversal](binary_tree_postorder_traversal/) → [LeetCode #145](https://leetcode.com/problems/binary-tree-postorder-traversal)
-
-- [x] 4. [Binary Tree Level Order Traversal](binary_tree_level_order_traversal/) → [LeetCode #102](https://leetcode.com/problems/binary-tree-level-order-traversal)
-
-- [x] 5. [Maximum Depth of Binary Tree](maximum_depth_of_binary_tree/) → [LeetCode #104](https://leetcode.com/problems/maximum-depth-of-binary-tree)
+| #  | Name                                                                    | Java | Python | Go | Link                                                                             | Company |
+|----|-------------------------------------------------------------------------|------|--------|----|----------------------------------------------------------------------------------|---------|
+| 1  | [Binary Tree Inorder Traversal](binary_tree_inorder_traversal/)         | ❌   | ✅     | ❌ | [LeetCode #94](https://leetcode.com/problems/binary-tree-inorder-traversal)      |         |
+| 2  | [Binary Tree Preorder Traversal](binary_tree_preorder_traversal/)       | ❌   | ✅     | ❌ | [LeetCode #144](https://leetcode.com/problems/binary-tree-preorder-traversal)    |         |
+| 3  | [Binary Tree Postorder Traversal](binary_tree_postorder_traversal/)     | ❌   | ✅     | ❌ | [LeetCode #145](https://leetcode.com/problems/binary-tree-postorder-traversal)   |         |
+| 4  | [Binary Tree Level Order Traversal](binary_tree_level_order_traversal/) | ❌   | ✅     | ❌ | [LeetCode #102](https://leetcode.com/problems/binary-tree-level-order-traversal) |         |
+| 5  | [Maximum Depth of Binary Tree](maximum_depth_of_binary_tree/)           | ❌   | ✅     | ❌ | [LeetCode #104](https://leetcode.com/problems/maximum-depth-of-binary-tree)      |         |
 
 <p align="center">
   <a href="../sliding_window">⬅️ <strong>Sliding Window</strong></a>
