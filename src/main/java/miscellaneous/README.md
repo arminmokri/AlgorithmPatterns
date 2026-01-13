@@ -18,9 +18,9 @@ This category covers important programming concepts, language-specific features,
 - Leveraging language features like generators, context managers, etc.
 
 ## Examples
-- [x] 1. [Python Decorator Evaluation Order](python_decorator_evaluation_order/)
-  <br>
-  [`#Cisco`](https://cisco.com)
+| #  | Name                                                                    | Java | Python | Go | Link | Company                       |
+|----|-------------------------------------------------------------------------|------|--------|----|------|-------------------------------|
+| 1  | [Python Decorator Evaluation Order](python_decorator_evaluation_order/) | ❌   | ✅     | ❌ |      | [`#Cisco`](https://cisco.com) |
 
 <p align="center">
   <a href="../matrix">⬅️ <strong>Matrix</strong></a>
