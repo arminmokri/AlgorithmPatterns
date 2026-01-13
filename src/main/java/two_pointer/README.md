@@ -1,4 +1,4 @@
-[< Back To Algorithm Patterns](../../)
+[< Back To Algorithm Patterns](../../../../)
 
 # Two Pointer Algorithm Patterns
 ### Please support my repo with your star.
@@ -31,4 +31,4 @@ The two-pointer technique uses two indices that move through a data structure (o
   <a href="../tree_traversal">⬅️ <strong>Tree Traversal</strong></a>
 </p>
 
-[< Back To Algorithm Patterns](../../)
+[< Back To Algorithm Patterns](../../../../)
