@@ -16,27 +16,17 @@ Use DP when a problem has **overlapping subproblems** and **optimal substructure
 - Using 1D or 2D arrays (or dictionaries) to store computed results
 
 ## Examples
-- [x] 1. [Climbing Stairs](climbing_stairs/) → [LeetCode #70](https://leetcode.com/problems/climbing-stairs)
-
-- [x] 2. [Longest Increasing Subsequence](longest_increasing_subsequence/) → [LeetCode #300](https://leetcode.com/problems/longest-increasing-subsequence)
-
-- [x] 3. [Coin Change](coin_change/) → [LeetCode #322](https://leetcode.com/problems/coin-change)
-
-- [x] 4. [House Robber](house_robber/) → [LeetCode #198](https://leetcode.com/problems/house-robber)
-
-- [ ] 5. [Edit Distance]() → [LeetCode #72](https://leetcode.com/problems/edit-distance)
-
-- [x] 6. [Coin Change - Count Ways To Make Sum](coin_change_count_ways/) → [GeeksforGeeks](https://www.geeksforgeeks.org/dsa/coin-change-dp-7)
-
-- [x] 7. [Combinatorial Partitioning](combinatorial_partitioning/)
-  <br>
-  [`#ExpediaGroup`](https://expediagroup.com)
-
-- [x] 8. [Fibonacci Number](fibonacci_number/) → [LeetCode #509](https://leetcode.com/problems/fibonacci-number)
-  <br>
-  [`#Geotab`](https://geotab.com)
-
-- [x] 9. [0/1 Knapsack](zero_one_knapsack/) → [W3Schools](https://w3schools.com/dsa/dsa_ref_knapsack.php) / [GeeksforGeeks](https://geeksforgeeks.org/0-1-knapsack-problem-dp-10)
+| #  | Name                                                              | Java | Python | Go | Link                                                                                                                                | Company                                     |
+|----|-------------------------------------------------------------------|------|--------|----|-------------------------------------------------------------------------------------------------------------------------------------|---------------------------------------------|
+| 1  | [Climbing Stairs](climbing_stairs/)                               | ❌   | ✅     | ❌ | [LeetCode #70](https://leetcode.com/problems/climbing-stairs)                                                                       |                                             |
+| 2  | [Longest Increasing Subsequence](longest_increasing_subsequence/) | ❌   | ✅     | ❌ | [LeetCode #300](https://leetcode.com/problems/longest-increasing-subsequence)                                                       |                                             |
+| 3  | [Coin Change](coin_change/)                                       | ❌   | ✅     | ❌ | [LeetCode #322](https://leetcode.com/problems/coin-change)                                                                          |                                             |
+| 4  | [House Robber](house_robber/)                                     | ❌   | ✅     | ❌ | [LeetCode #198](https://leetcode.com/problems/house-robber)                                                                         |                                             |
+| 5  | [Edit Distance]()                                                 | ❌   | ❌     | ❌ | [LeetCode #72](https://leetcode.com/problems/edit-distance)                                                                         |                                             |
+| 6  | [Coin Change - Count Ways To Make Sum](coin_change_count_ways/)   | ✅   | ✅     | ❌ | [GeeksforGeeks](https://www.geeksforgeeks.org/dsa/coin-change-dp-7)                                                                 |                                             |
+| 7  | [Combinatorial Partitioning](combinatorial_partitioning/)         | ✅   | ✅     | ❌ |                                                                                                                                     | [`#ExpediaGroup`](https://expediagroup.com) |
+| 8  | [Fibonacci Number](fibonacci_number/)                             | ✅   | ✅     | ❌ | [LeetCode #509](https://leetcode.com/problems/fibonacci-number)                                                                     | [`#Geotab`](https://geotab.com)             |
+| 9  | [0/1 Knapsack](zero_one_knapsack/)                                | ❌   | ✅     | ❌ | [W3Schools](https://w3schools.com/dsa/dsa_ref_knapsack.php) / [GeeksforGeeks](https://geeksforgeeks.org/0-1-knapsack-problem-dp-10) |                                             |
 
 <p align="center">
   <a href="../dfs_bfs">⬅️ <strong>DFS-BFS</strong></a>
