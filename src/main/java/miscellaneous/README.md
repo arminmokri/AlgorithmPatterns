@@ -1,4 +1,4 @@
-[< Back To Algorithm Patterns](../../)
+[< Back To Algorithm Patterns](../../../../)
 
 # Miscellaneous Algorithm Patterns
 ### Please support my repo with your star.
@@ -28,4 +28,4 @@ This category covers important programming concepts, language-specific features,
   <a href="../sliding_window/"><strong>Sliding Window</strong> ➡️</a>
 </p>
 
-[< Back To Algorithm Patterns](../../)
+[< Back To Algorithm Patterns](../../../../)
