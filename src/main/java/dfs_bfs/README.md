@@ -1,4 +1,4 @@
-[< Back To Algorithm Patterns](../../)
+[< Back To Algorithm Patterns](../../../../)
 
 # DFS-BFS Algorithm Patterns
 ### Please support my repo with your star.
@@ -31,4 +31,4 @@ DFS (Depth-First Search) and BFS (Breadth-First Search) are fundamental graph tr
   <a href="../dynamic_programming"><strong>Dynamic Programming</strong> ➡️</a>
 </p>
 
-[< Back To Algorithm Patterns](../../)
+[< Back To Algorithm Patterns](../../../../)
