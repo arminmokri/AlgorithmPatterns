@@ -5,7 +5,7 @@ debug = True
 
 
 class Solution:
-    def martixToString(self, myMatrix: List[List] | Tuple[Tuple]) -> str:
+    def matrixToString(self, myMatrix: List[List] | Tuple[Tuple]) -> str:
         if myMatrix == []:
             return "[]"
         elif myMatrix == [[]]:
@@ -36,7 +36,7 @@ class Solution:
         if debug:
             print()
             print("matrix=")
-            print(self.martixToString(matrix))
+            print(self.matrixToString(matrix))
 
         for i in range(1, number_of_items + 1):
             item_value = values[i - 1]
@@ -51,7 +51,7 @@ class Solution:
 
             if debug:
                 print("matrix=")
-                print(self.martixToString(matrix))
+                print(self.matrixToString(matrix))
 
         items = list()
         current_capacity = capacity

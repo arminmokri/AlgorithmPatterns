@@ -6,7 +6,7 @@ debug = True
 
 
 class Solution:
-    def martixToString(self, myMatrix: List[List] | Tuple[Tuple]) -> str:
+    def matrixToString(self, myMatrix: List[List] | Tuple[Tuple]) -> str:
         if myMatrix == []:
             return "[]"
         elif myMatrix == [[]]:
@@ -49,7 +49,7 @@ class Solution:
                     break
 
         if debug:
-            print("sequence=\n" + self.martixToString(sequences))
+            print("sequence=\n" + self.matrixToString(sequences))
 
         strSequences = ", ".join(
             '"' + " ".join(str(val) for val in row) + '"' for row in sequences

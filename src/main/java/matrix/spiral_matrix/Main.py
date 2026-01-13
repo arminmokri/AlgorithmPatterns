@@ -5,7 +5,7 @@ debug = True
 
 
 class Solution:
-    def martixToString(self, myMatrix: List[List] | Tuple[Tuple]) -> str:
+    def matrixToString(self, myMatrix: List[List] | Tuple[Tuple]) -> str:
         if myMatrix == []:
             return "[]"
         elif myMatrix == [[]]:
@@ -32,7 +32,7 @@ class Solution:
 
         if debug:
             print("matrix=")
-            print(self.martixToString(matrix))
+            print(self.matrixToString(matrix))
 
         order = list()
 

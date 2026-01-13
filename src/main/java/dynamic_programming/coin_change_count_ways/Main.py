@@ -5,7 +5,7 @@ debug = True
 
 
 class Solution:
-    def martixToString(self, myMatrix: List[List] | Tuple[Tuple]) -> str:
+    def matrixToString(self, myMatrix: List[List] | Tuple[Tuple]) -> str:
         if myMatrix == []:
             return "[]"
         elif myMatrix == [[]]:
@@ -37,7 +37,7 @@ class Solution:
 
         if debug:
             print("dp=")
-            print(self.martixToString(dp))
+            print(self.matrixToString(dp))
 
         for i in range(1, len(dp)):
             coin = coins[i - 1]
@@ -49,7 +49,7 @@ class Solution:
 
             if debug:
                 print("dp=")
-                print(self.martixToString(dp))
+                print(self.matrixToString(dp))
 
         return dp[len(coins)][sum]
 

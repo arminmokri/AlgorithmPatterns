@@ -5,7 +5,7 @@ debug = True
 
 
 class Solution:
-    def martixToString(self, myMatrix: List[List] | Tuple[Tuple]) -> str:
+    def matrixToString(self, myMatrix: List[List] | Tuple[Tuple]) -> str:
         if myMatrix == []:
             return "[]"
         elif myMatrix == [[]]:
@@ -32,7 +32,7 @@ class Solution:
 
         if debug:
             print("grid=")
-            print(self.martixToString(grid))
+            print(self.matrixToString(grid))
 
         n = len(grid)
         m = len(grid[0])
@@ -57,7 +57,7 @@ class Solution:
                         integrity[i][j + 1] = True
                 if debug:
                     print("i=" + str(i) + " j=" + str(j) + " integrity=")
-                    print(self.martixToString(integrity))
+                    print(self.matrixToString(integrity))
 
         if debug:
             print("number_of_islands=" + str(number_of_islands))
