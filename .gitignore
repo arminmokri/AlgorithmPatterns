@@ -31,3 +31,5 @@ build/
 .gradle/
 temp/
 
+# publicissapient
+publicissapient/*
