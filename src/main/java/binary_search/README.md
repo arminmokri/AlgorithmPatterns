@@ -17,15 +17,13 @@ Binary Search is a divide-and-conquer algorithm used to efficiently find a targe
 - Adjusting pointers based on comparison (left = mid + 1, right = mid - 1).
 
 ## Examples
-- [x] 1. [Binary Search](binary_search/) → [LeetCode #704](https://leetcode.com/problems/binary-search)
-
-- [x] 2. [Search Insert Position](search_insert_position/) → [LeetCode #35](https://leetcode.com/problems/search-insert-position)
-
-- [x] 3. [Find Minimum in Rotated Sorted Array](find_minimum_in_rotated_sorted_array/) → [LeetCode #153](https://leetcode.com/problems/find-minimum-in-rotated-sorted-array)
-
-- [x] 4. [Search in Rotated Sorted Array](search_in_rotated_sorted_array/) → [LeetCode #33](https://leetcode.com/problems/search-in-rotated-sorted-array)
-
-- [ ] 5. [Median of Two Sorted Arrays]() → [LeetCode #4](https://leetcode.com/problems/median-of-two-sorted-arrays)
+| #  | Name                                                                          | Java | Python | Go | Link                                                                                | Company |
+|----|-------------------------------------------------------------------------------|------|--------|----|-------------------------------------------------------------------------------------|---------|
+| 1  | [Binary Search](binary_search/)                                               | ❌   | ✅     | ❌ | [LeetCode #704](https://leetcode.com/problems/binary-search)                        |         |
+| 2  | [Search Insert Position](search_insert_position/)                             | ❌   | ✅     | ❌ | [LeetCode #35](https://leetcode.com/problems/search-insert-position)                |         |
+| 3  | [Find Minimum in Rotated Sorted Array](find_minimum_in_rotated_sorted_array/) | ❌   | ✅     | ❌ | [LeetCode #153](https://leetcode.com/problems/find-minimum-in-rotated-sorted-array) |         |
+| 4  | [Search in Rotated Sorted Array](search_in_rotated_sorted_array/)             | ❌   | ✅     | ❌ | [LeetCode #33](https://leetcode.com/problems/search-in-rotated-sorted-array)        |         |
+| 5  | [Median of Two Sorted Arrays]()                                               | ❌   | ❌     | ❌ | [LeetCode #4](https://leetcode.com/problems/median-of-two-sorted-arrays)            |         |
 
 <p align="center">
   <a href="../backtracking">⬅️ <strong>Backtracking</strong></a>
