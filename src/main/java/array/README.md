@@ -1,4 +1,4 @@
-[< Back To Algorithm Patterns](../../)
+[< Back To Algorithm Patterns](../../../../)
 
 # Array Algorithm Patterns
 ### Please support my repo with your star.
@@ -39,4 +39,4 @@ Array problems focus on using contiguous memory structures where elements can be
   <a href="../backtracking"><strong>Backtracking</strong> ➡️</a>
 </p>
 
-[< Back To Algorithm Patterns](../../)
+[< Back To Algorithm Patterns](../../../../)
