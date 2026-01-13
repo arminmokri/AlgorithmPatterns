@@ -1,4 +1,4 @@
-[< Back To Algorithm Patterns](../../)
+[< Back To Algorithm Patterns](../../../../)
 
 # Sliding Window Algorithm Patterns
 ### Please support my repo with your star.
@@ -33,4 +33,4 @@ The sliding window pattern uses a subset (or window) that moves across the data 
   <a href="../tree_traversal"><strong>Tree Traversal</strong> ➡️</a>
 </p>
 
-[< Back To Algorithm Patterns](../../)
+[< Back To Algorithm Patterns](../../../../)
