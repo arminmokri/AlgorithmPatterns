@@ -14,7 +14,7 @@ public class Solution {
         }
 
         if (PrintHelper.debug) {
-            System.out.println(List.of(strs));
+            System.out.println("strs="+List.of(strs));
         }
 
         String shortestString = Stream.of(strs).min(Comparator.comparing(String::length)).orElse("");
