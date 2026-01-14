@@ -32,7 +32,7 @@ Array problems focus on using contiguous memory structures where elements can be
 | 11 | [First Missing Positive](first_missing_positive/)                                   | ✅   | ✅     | ✅ | [LeetCode #41](https://leetcode.com/problems/first-missing-positive)              | [`#TrendMicro`](https://trendmicro.com)           |
 | 12 | [Two Stacks In An Array](two_stacks_in_an_array/)                                   | ❌   | ✅     | ❌ | [GeeksForGeeks](https://geeksforgeeks.org/implement-two-stacks-in-an-array)       | [`#MorganStanley`](https://morganstanley.com)     |
 | 13 | [Arbitrary Arguments](arbitrary_arguments/)                                         | ✅   | ✅     | ✅ |                                                                                   | [`#Cisco`](https://cisco.com)                     |
-| 14 | [Monotonic Array](monotonic_array/)                                                 | ❌   | ✅     | ❌ | [LeetCode #896](https://leetcode.com/problems/monotonic-array)                    | [`#Cisco`](https://cisco.com)                     |
+| 14 | [Monotonic Array](monotonic_array/)                                                 | ✅   | ✅     | ❌ | [LeetCode #896](https://leetcode.com/problems/monotonic-array)                    | [`#Cisco`](https://cisco.com)                     |
 | 15 | [Count Frequency Of Elements In An Array](count_frequency_of_elements_in_an_array/) | ✅   | ❌     | ❌ |                                                                                   | [`#MorganStanley`](https://morganstanley.com)     |
 
 <p align="center">
