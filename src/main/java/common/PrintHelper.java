@@ -2,6 +2,7 @@ package common;
 
 import java.util.Arrays;
 import java.util.List;
+import java.util.Objects;
 import java.util.stream.Collectors;
 import java.util.stream.IntStream;
 
@@ -11,7 +12,7 @@ public class PrintHelper {
     public static String listToString(List<?> list) {
         String string = IntStream
                 .range(0, list.size())
-                .mapToObj(p -> "(" + p + ") " + list.get(p).toString())
+                .mapToObj(p -> "(" + p + ") " + (Objects.nonNull(list.get(p)) ? list.get(p).toString() : "null"))
                 .collect(Collectors.joining(", ", "[", "]"));
         return string;
     }
