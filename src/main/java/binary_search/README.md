@@ -24,7 +24,7 @@ Binary Search is a divide-and-conquer algorithm used to efficiently find a targe
 | 3  | [Find Minimum in Rotated Sorted Array](find_minimum_in_rotated_sorted_array/)    | ❌   | ✅     | ❌ | [LeetCode #153](https://leetcode.com/problems/find-minimum-in-rotated-sorted-array)    |         |
 | 4  | [Search in Rotated Sorted Array](search_in_rotated_sorted_array/)                | ❌   | ✅     | ❌ | [LeetCode #33](https://leetcode.com/problems/search-in-rotated-sorted-array)           |         |
 | 5  | [Median of Two Sorted Arrays]()                                                  | ❌   | ❌     | ❌ | [LeetCode #4](https://leetcode.com/problems/median-of-two-sorted-arrays)               |         |
-| 6  | [Find Minimum in Rotated Sorted Array II](find_minimum_in_rotated_sorted_array/) | ❌   | ❌     | ❌ | [LeetCode #154](https://leetcode.com/problems/find-minimum-in-rotated-sorted-array-ii) |         |
+| 6  | [Find Minimum in Rotated Sorted Array II](find_minimum_in_rotated_sorted_array/) | ✅   | ❌     | ❌ | [LeetCode #154](https://leetcode.com/problems/find-minimum-in-rotated-sorted-array-ii) |         |
 
 <p align="center">
   <a href="../backtracking">⬅️ <strong>Backtracking</strong></a>
