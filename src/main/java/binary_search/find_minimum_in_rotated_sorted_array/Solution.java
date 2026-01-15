@@ -15,7 +15,6 @@ public class Solution {
 
         int left = 0;
         int right = nums.length - 1;
-        int min = Integer.MAX_VALUE;
 
         while (left < right) {
 
@@ -32,10 +31,12 @@ public class Solution {
             }
         }
 
+        int min = nums[left];
+
         if (PrintHelper.debug) {
             System.out.println("min=" + min);
         }
 
-        return nums[left];
+        return min;
     }
 }
