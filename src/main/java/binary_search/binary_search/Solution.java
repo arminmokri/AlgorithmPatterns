@@ -19,16 +19,16 @@ public class Solution {
 
         while (left <= right) {
 
-            int mid = (left + right) / 2;
+            int mid = left + (right - left) / 2;
 
             if (PrintHelper.debug) {
                 System.out.println("left=" + left + " mid=" + mid + " right=" + right);
             }
 
-            if (target == nums[mid]) {
+            if (nums[mid] == target) {
                 indexTarget = mid;
                 break;
-            } else if (target > nums[mid]) {
+            } else if (nums[mid] < target) {
                 left = mid + 1;
             } else {
                 right = mid - 1;

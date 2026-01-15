@@ -35,18 +35,18 @@ class Solution:
         index = -1
 
         while left <= right:
-            mid = int((left + right) / 2)
+            mid = left + int((right - left) / 2)
 
             if debug:
                 print("left=" + str(left) + " mid=" + str(mid) + " right=" + str(right))
 
-            if target == nums[mid]:
+            if nums[mid] == target:
                 index = mid
                 break
-            elif target < nums[mid]:
-                right = mid - 1
-            elif target > nums[mid]:
+            elif nums[mid] < target:
                 left = mid + 1
+            else:
+                right = mid - 1
 
         return index
 
