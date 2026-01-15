@@ -26,7 +26,7 @@ class Solution:
         items = [f"({i}) {item}" for i, item in enumerate(myList)]
         return f"[{', '.join(items)}]"
 
-    def removeDuplicates(self, nums: List[int]):
+    def removeDuplicates(self, nums: List[int]) -> int:
         if debug:
             print()
 
