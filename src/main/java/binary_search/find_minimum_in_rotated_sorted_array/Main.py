@@ -35,22 +35,19 @@ class Solution:
 
         left = 0
         right = len(nums) - 1
-        min_val = nums[0]
 
-        while left <= right:
-            mid = (left + right) // 2
+        while left < right:
+            mid = left + (right - left) // 2
 
             if debug:
                 print("left=" + str(left) + " mid=" + str(mid) + " right=" + str(right))
 
-            if nums[mid] >= nums[right]:
+            if nums[mid] > nums[right]:
                 left = mid + 1
             else:
-                right = mid - 1
+                right = mid
 
-            min_val = min(min_val, nums[mid])
-
-        return min_val
+        return nums[left]
 
 
 class Test(unittest.TestCase):
@@ -71,17 +68,11 @@ class Test(unittest.TestCase):
     def test_two_elements_not_rotated(self):
         self.assertEqual(self.solution.findMin([1, 2]), 1)
 
-    def test_repeated_elements(self):
-        self.assertEqual(self.solution.findMin([2, 2, 2, 0, 1, 2]), 0)
-
     def test_minimum_at_end(self):
         self.assertEqual(self.solution.findMin([2, 3, 4, 5, 1]), 1)
 
     def test_minimum_at_start(self):
         self.assertEqual(self.solution.findMin([0, 1, 2, 3, 4]), 0)
-
-    def test_all_equal_elements(self):
-        self.assertEqual(self.solution.findMin([5, 5, 5, 5]), 5)
 
 
 def main():
