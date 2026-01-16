@@ -10,7 +10,7 @@ public class Solution {
         }
 
         if (PrintHelper.debug) {
-            System.out.println("prices=" + PrintHelper.arrayToString(prices));
+            System.out.println("prices=" + PrintHelper.arrayToStringWithIndex(prices));
         }
 
         int maxProfit = 0;

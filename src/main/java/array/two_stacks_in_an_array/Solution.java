@@ -69,7 +69,7 @@ public class Solution {
                 + " pointerB="
                 + pointerB
                 + " myList="
-                + PrintHelper.arrayToString(myList);
+                + PrintHelper.arrayToStringWithIndex(myList);
     }
 
     public void printSpace() {

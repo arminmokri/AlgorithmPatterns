@@ -26,11 +26,12 @@ public class Solution {
                 });
 
         if (PrintHelper.debug) {
-            System.out.println("frequentList=" + PrintHelper.arrayToString(frequentList));
+            System.out.println("frequentList=" + PrintHelper.arrayToStringWithoutIndex(frequentList));
         }
 
-        boolean isAnagram = Arrays.stream(frequentList)
-                .allMatch(i -> i == 0);
+        boolean findNoneZero = Arrays.stream(frequentList)
+                .anyMatch(i -> i != 0);
+        boolean isAnagram = !findNoneZero;
 
         if (PrintHelper.debug) {
             System.out.println("isAnagram=" + isAnagram);

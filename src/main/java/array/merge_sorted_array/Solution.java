@@ -18,8 +18,8 @@ public class Solution {
 
 
         if (PrintHelper.debug) {
-            System.out.println("m=" + m + " nums1=" + PrintHelper.arrayToString(nums1));
-            System.out.println("n=" + n + " nums2=" + PrintHelper.arrayToString(nums2));
+            System.out.println("m=" + m + " nums1=" + PrintHelper.arrayToStringWithIndex(nums1));
+            System.out.println("n=" + n + " nums2=" + PrintHelper.arrayToStringWithIndex(nums2));
         }
 
         int indexM = 0;
@@ -28,7 +28,7 @@ public class Solution {
         for (int i = 0; i < m + n; i++) {
 
             if (PrintHelper.debug) {
-                System.out.println("i=" + i + " indexM=" + indexM + " indexN=" + indexN + " nums1=" + PrintHelper.arrayToString(nums1));
+                System.out.println("i=" + i + " indexM=" + indexM + " indexN=" + indexN + " nums1=" + PrintHelper.arrayToStringWithIndex(nums1));
             }
 
             if (indexN < n && indexM - indexN < m && nums1[indexM] > nums2[indexN]) { // item exist in num2 - item exist in num1 - compare
@@ -54,7 +54,7 @@ public class Solution {
         }
 
         if (PrintHelper.debug) {
-            System.out.println("nums1=" + PrintHelper.arrayToString(nums1));
+            System.out.println("nums1=" + PrintHelper.arrayToStringWithIndex(nums1));
         }
 
     }

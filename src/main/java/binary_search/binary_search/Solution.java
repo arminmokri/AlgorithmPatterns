@@ -10,7 +10,7 @@ public class Solution {
         }
 
         if (PrintHelper.debug) {
-            System.out.println("nums=" + PrintHelper.arrayToString(nums) + " target=" + target);
+            System.out.println("nums=" + PrintHelper.arrayToStringWithIndex(nums) + " target=" + target);
         }
 
         int left = 0;

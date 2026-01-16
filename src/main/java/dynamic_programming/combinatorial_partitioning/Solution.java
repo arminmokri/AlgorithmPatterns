@@ -22,7 +22,7 @@ public class Solution {
 
         // print
         if (PrintHelper.debug) {
-            System.out.println("steps=" + PrintHelper.listToString(steps));
+            System.out.println("steps=" + PrintHelper.listToStringWithIndex(steps));
             System.out.println();
         }
 
@@ -43,7 +43,7 @@ public class Solution {
 
                     // print
                     if (PrintHelper.debug) {
-                        System.out.println("j=" + j + " index=" + index + " ways=" + PrintHelper.arrayToString(ways));
+                        System.out.println("j=" + j + " index=" + index + " ways=" + PrintHelper.arrayToStringWithIndex(ways));
                     }
                 }
             }

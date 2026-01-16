@@ -9,7 +9,7 @@ import java.util.stream.IntStream;
 public class PrintHelper {
     public static final Boolean debug = Boolean.TRUE;
 
-    public static String listToString(List<?> list) {
+    public static String listToStringWithIndex(List<?> list) {
         String string = IntStream
                 .range(0, list.size())
                 .mapToObj(p -> "(" + p + ") " + (Objects.nonNull(list.get(p)) ? list.get(p).toString() : "null"))
@@ -17,15 +17,35 @@ public class PrintHelper {
         return string;
     }
 
-    public static String arrayToString(Object[] array) {
+    public static String arrayToStringWithIndex(Object[] array) {
         List<Object> list = Arrays.stream(array).toList();
-        return listToString(list);
+        return listToStringWithIndex(list);
     }
 
-    public static String arrayToString(int[] array) {
+    public static String arrayToStringWithIndex(int[] array) {
         List<Object> list = Arrays.stream(array)
                 .boxed()
                 .collect(Collectors.toList());
-        return listToString(list);
+        return listToStringWithIndex(list);
+    }
+
+    public static String listToStringWithoutIndex(List<?> list) {
+        String string = IntStream
+                .range(0, list.size())
+                .mapToObj(p -> (Objects.nonNull(list.get(p)) ? list.get(p).toString() : "null"))
+                .collect(Collectors.joining(", ", "[", "]"));
+        return string;
+    }
+
+    public static String arrayToStringWithoutIndex(Object[] array) {
+        List<Object> list = Arrays.stream(array).toList();
+        return listToStringWithoutIndex(list);
+    }
+
+    public static String arrayToStringWithoutIndex(int[] array) {
+        List<Object> list = Arrays.stream(array)
+                .boxed()
+                .collect(Collectors.toList());
+        return listToStringWithoutIndex(list);
     }
 }

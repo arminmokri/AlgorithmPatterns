@@ -13,7 +13,7 @@ public class Solution {
 
         // print
         if (PrintHelper.debug) {
-            System.out.println("coins=" + PrintHelper.listToString(coins));
+            System.out.println("coins=" + PrintHelper.listToStringWithIndex(coins));
             System.out.println();
         }
 
@@ -34,7 +34,7 @@ public class Solution {
 
                     // print
                     if (PrintHelper.debug) {
-                        System.out.println("j=" + j + " index=" + index + " ways=" + PrintHelper.arrayToString(ways));
+                        System.out.println("j=" + j + " index=" + index + " ways=" + PrintHelper.arrayToStringWithIndex(ways));
                     }
                 }
             }

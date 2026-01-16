@@ -11,7 +11,7 @@ public class Solution {
         }
 
         if (PrintHelper.debug) {
-            System.out.println("nums=" + PrintHelper.arrayToString(nums));
+            System.out.println("nums=" + PrintHelper.arrayToStringWithIndex(nums));
         }
 
         int uniqueIndex = nums.length > 0 ? 1 : 0;
@@ -28,7 +28,7 @@ public class Solution {
             nums[i] = 0;
         }
 
-        System.out.println("nums=" + PrintHelper.arrayToString(nums));
+        System.out.println("nums=" + PrintHelper.arrayToStringWithIndex(nums));
 
         return uniqueIndex;
 

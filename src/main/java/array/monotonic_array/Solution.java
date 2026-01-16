@@ -11,7 +11,7 @@ public class Solution {
         }
 
         if (PrintHelper.debug) {
-            System.out.println("nums=" + PrintHelper.arrayToString(nums));
+            System.out.println("nums=" + PrintHelper.arrayToStringWithIndex(nums));
         }
 
         boolean isMonotonic = true;
