@@ -1,7 +1,7 @@
 [< Back To Algorithm Patterns](../../../../)
 
 # Dynamic Programming Algorithm Patterns
-### Please support my repo with your star.
+### Please support my repo with your ⭐
 
 ## Concept
 Dynamic Programming (DP) is a method for solving complex problems by breaking them down into simpler overlapping subproblems, storing the results of these subproblems to avoid redundant computation (memoization or tabulation). It’s typically used to optimize recursive solutions and improve time complexity by reusing previously computed results.
