@@ -158,7 +158,7 @@ Mixing these rules breaks the mathematical correctness of binary search and caus
 | #  | Name                                                                                | Java | Python | Go | Link                                                                                   | Company |
 |----|-------------------------------------------------------------------------------------|------|--------|----|----------------------------------------------------------------------------------------|---------|
 | 1  | [Binary Search](binary_search/)                                                     | ✅   | ✅     | ❌ | [LeetCode #704](https://leetcode.com/problems/binary-search)                           |         |
-| 2  | [Search Insert Position](search_insert_position/)                                   | ❌   | ✅     | ❌ | [LeetCode #35](https://leetcode.com/problems/search-insert-position)                   |         |
+| 2  | [Search Insert Position](search_insert_position/)                                   | ✅   | ✅     | ❌ | [LeetCode #35](https://leetcode.com/problems/search-insert-position)                   |         |
 | 3  | [Find Minimum in Rotated Sorted Array](find_minimum_in_rotated_sorted_array/)       | ✅   | ✅     | ❌ | [LeetCode #153](https://leetcode.com/problems/find-minimum-in-rotated-sorted-array)    |         |
 | 4  | [Search in Rotated Sorted Array](search_in_rotated_sorted_array/)                   | ✅   | ✅     | ❌ | [LeetCode #33](https://leetcode.com/problems/search-in-rotated-sorted-array)           |         |
 | 5  | [Median of Two Sorted Arrays]()                                                     | ❌   | ❌     | ❌ | [LeetCode #4](https://leetcode.com/problems/median-of-two-sorted-arrays)               |         |

@@ -34,19 +34,17 @@ class Solution:
             print("num=" + str(nums))
 
         left = 0
-        right = len(nums) - 1
+        right = len(nums)
 
-        while left <= right:
-            mid = (left + right) // 2
+        while left < right:
+            mid = left + (right - left) // 2
 
             print("left=" + str(left) + " mid=" + str(mid) + " right=" + str(right))
 
             if nums[mid] < target:
                 left = mid + 1
-            elif nums[mid] > target:
-                right = mid - 1
             else:
-                break
+                right = mid
 
         return left
 
