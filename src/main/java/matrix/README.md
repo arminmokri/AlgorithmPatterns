@@ -1,7 +1,7 @@
 [< Back To Algorithm Patterns](../../../../)
 
 # Matrix Algorithm Patterns
-### Please support my repo with your star.
+### Please support my repo with your ⭐
 
 ## Concept
 Matrix problems involve navigating or modifying 2D grids or arrays, often under certain movement constraints (up, down, left, right, diagonal). These problems can incorporate elements of DFS/BFS, dynamic programming, backtracking, or simulation, depending on the challenge. They’re common in pathfinding, island detection, rotation, and flood fill tasks.
