@@ -1,7 +1,7 @@
 [< Back To Algorithm Patterns](../../../../)
 
 # Backtracking Algorithm Patterns
-### Please support my repo with your star.
+### Please support my repo with your ⭐
 
 ## Concept
 Backtracking is a recursive algorithmic technique for solving problems incrementally by trying partial solutions and abandoning them (“backtracking”) if they fail to satisfy the problem’s constraints. It’s often used in constraint satisfaction problems like permutations, combinations, and puzzles.
