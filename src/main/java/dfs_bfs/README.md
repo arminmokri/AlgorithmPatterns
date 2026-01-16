@@ -1,7 +1,7 @@
 [< Back To Algorithm Patterns](../../../../)
 
 # DFS-BFS Algorithm Patterns
-### Please support my repo with your star.
+### Please support my repo with your ⭐
 
 ## Concept
 DFS (Depth-First Search) and BFS (Breadth-First Search) are fundamental graph traversal algorithms used to explore nodes and edges in graphs or trees. DFS explores as far as possible down each branch before backtracking, while BFS explores all neighbors at the current depth before moving deeper. Both are essential for searching, connectivity checks, pathfinding, and cycle detection.
