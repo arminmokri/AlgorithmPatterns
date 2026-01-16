@@ -1,7 +1,7 @@
 [< Back To Algorithm Patterns](../../../../)
 
 # Interval Algorithm Patterns
-### Please support my repo with your star.
+### Please support my repo with your ⭐
 
 ## Concept
 The interval pattern deals with problems involving ranges, segments, or spans, where you often need to merge, compare, or cover intervals efficiently. These problems usually involve sorting intervals by start or end points and then iterating through them to check overlaps, gaps, or coverings.
