@@ -1,7 +1,7 @@
 [< Back To Algorithm Patterns](../../../../)
 
 # Two Pointer Algorithm Patterns
-### Please support my repo with your star.
+### Please support my repo with your ⭐
 
 ## Concept
 The two-pointer technique uses two indices that move through a data structure (often an array or string) to perform searches, comparisons, or optimizations efficiently. The pointers can move toward each other, in the same direction, or at different speeds, allowing you to reduce time complexity from brute-force O(n²) to O(n) in many problems, especially when the data is sorted.
