@@ -1,7 +1,7 @@
 [< Back To Algorithm Patterns](../../../../)
 
 # Array Algorithm Patterns
-### Please support my repo with your star.
+### Please support my repo with your ⭐
 
 ## Concept
 Array problems focus on using contiguous memory structures where elements can be accessed by index in constant time. Arrays are foundational for many algorithms, offering a balance of speed and simplicity, and are often used for sorting, searching, scanning, and sliding window operations.
