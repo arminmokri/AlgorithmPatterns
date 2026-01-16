@@ -1,7 +1,7 @@
 [< Back To Algorithm Patterns](../../../../)
 
 # Sliding Window Algorithm Patterns
-### Please support my repo with your star.
+### Please support my repo with your ⭐
 
 ## Concept
 The sliding window pattern uses a subset (or window) that moves across the data structure, typically arrays or strings, to keep track of a specific condition (like max, min, sum, or unique elements) over contiguous elements. It’s great for reducing nested loops (O(n²)) into single-pass solutions (O(n)) by efficiently expanding or shrinking the window.
