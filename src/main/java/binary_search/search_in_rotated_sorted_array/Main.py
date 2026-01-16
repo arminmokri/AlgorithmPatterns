@@ -38,7 +38,7 @@ class Solution:
         right = len(nums) - 1
 
         while left <= right:
-            mid = (left + right) // 2
+            mid = left + (right - left) // 2
 
             if debug:
                 s = "left=" + str(left) + " mid=" + str(mid) + " right=" + str(right)
@@ -46,24 +46,28 @@ class Solution:
             if nums[mid] == target:
                 index = mid
                 break
-            elif (
-                nums[mid] <= nums[right] and nums[mid] <= target <= nums[right]
-            ):  # sorted, target in right side
-                left = mid + 1
+            elif nums[left] <= nums[mid]:  # Left half is sorted
                 if debug:
-                    s = s + " sorted, target is in right side"
-            elif (
-                nums[mid] >= nums[left] and nums[left] <= target <= nums[mid]
-            ):  # sorted, target is in left side
-                right = mid - 1
+                    s = s + ", left half is sorted"
+                if nums[left] <= target and target < nums[mid]:
+                    if debug:
+                        s = s + ", target is in left half"
+                    right = mid - 1
+                else:
+                    if debug:
+                        s = s + ", target is in right half"
+                    left = mid + 1
+            else:  # Right half is sorted
                 if debug:
-                    s = s + " sorted, target is in left side"
-            elif nums[mid] < target:  # unsorted and target in left side
-                right = mid - 1
-                s = s + " unsorted and target in left side"
-            else:  # unsorted and target in right side
-                left = mid + 1
-                s = s + " unsorted and target in right side"
+                    s = s + ", right half is sorted"
+                if nums[mid] < target and target <= nums[right]:
+                    if debug:
+                        s = s + ", target is in right half"
+                    left = mid + 1
+                else:
+                    if debug:
+                        s = s + ", target is in left half"
+                    right = mid - 1
 
             if debug:
                 print(s)
