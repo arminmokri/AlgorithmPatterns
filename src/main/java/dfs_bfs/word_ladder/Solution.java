@@ -9,7 +9,7 @@ import java.util.stream.IntStream;
 
 public class Solution {
 
-    record Node(String word, int level) {
+    private record Node(String word, int level) {
 
     }
 
