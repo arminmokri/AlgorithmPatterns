@@ -9,10 +9,6 @@ import java.util.stream.IntStream;
 
 public class Solution {
 
-    private record Node(String word, int level) {
-
-    }
-
     public int ladderLength(String beginWord, String endWord, List<String> wordList) {
         if (PrintHelper.debug) {
             System.out.println();
@@ -27,6 +23,10 @@ public class Solution {
         }
 
         return bfsConnected(beginWord, endWord, wordList);
+    }
+
+    private record Node(String word, int level) {
+
     }
 
     private int bfsConnected(String beginWord, String endWord, List<String> wordList) {
