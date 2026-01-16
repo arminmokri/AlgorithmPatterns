@@ -79,7 +79,7 @@ class Solution:
             else:
                 path[steps] = word
 
-            if steps > 0 and word == endWord:
+            if word == endWord:
                 steps = steps + 1
                 minSteps = steps
                 break
@@ -122,7 +122,7 @@ class Test(unittest.TestCase):
         )
 
     def test_begin_equals_end(self):
-        self.assertEqual(self.solution.ladderLength("hit", "hit", ["hot", "dot"]), 0)
+        self.assertEqual(self.solution.ladderLength("hit", "hit", ["hot", "dot"]), 1)
 
     def test_two_step_path(self):
         self.assertEqual(self.solution.ladderLength("hit", "hot", ["hot"]), 2)
