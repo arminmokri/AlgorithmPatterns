@@ -1,7 +1,7 @@
 [< Back To Algorithm Patterns](../../../../)
 
 # Tree Traversal Algorithm Patterns
-### Please support my repo with your star.
+### Please support my repo with your ⭐
 
 ## Concept
 Tree traversal refers to visiting each node in a tree data structure systematically, often using depth-first (preorder, inorder, postorder) or breadth-first (level order) strategies. It’s essential for searching, updating, or analyzing hierarchical data and forms the backbone of many tree-based algorithms.
