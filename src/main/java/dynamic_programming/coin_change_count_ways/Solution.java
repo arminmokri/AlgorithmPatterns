@@ -17,8 +17,8 @@ public class Solution {
         }
 
         //return recursion(coins, 0, sum);
-        return memoization(coins, 0, sum, new Integer[coins.size()][sum + 1]);
-        //return bottomUp(coins, sum);
+        //return memoization(coins, 0, sum, new Integer[coins.size()][sum + 1]);
+        return bottomUp(coins, sum);
     }
 
     private int recursion(List<Integer> coins, int index, int sum) {
