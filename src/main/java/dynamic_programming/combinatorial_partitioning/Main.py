@@ -95,6 +95,9 @@ class Test(unittest.TestCase):
     def test_large_total(self):
         self.assertEqual(self.solution.combinatorialPartitioning(3, 10), 14)
 
+    def test_huge_case_naive_recursion_will_timeout_or_stackoverflow(self):
+        self.assertEqual(self.solution.combinatorialPartitioning(50, 100), 189_477_547)
+
 
 def main():
     unittest.main()

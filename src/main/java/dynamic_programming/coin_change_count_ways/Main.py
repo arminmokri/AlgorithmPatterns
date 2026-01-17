@@ -126,6 +126,11 @@ class Test(unittest.TestCase):
     def test_large_target_small_coins(self):
         self.assertEqual(self.solution.coinChange([1], 10), 1)
 
+    def test_huge_case_naive_recursion_will_timeout_or_stackoverflow(self):
+        coins = list(range(1, 51))
+        target = 100
+        self.assertEqual(self.solution.coinChange(coins, target), 189_477_547)
+
 
 def main():
     unittest.main()
