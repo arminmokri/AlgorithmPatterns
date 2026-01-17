@@ -55,4 +55,13 @@ public class SolutionTest {
     public void testLargeTargetSmallCoins() {
         assertEquals(1, solution.coinChange(List.of(1), 10));
     }
+
+    @Test
+    public void testHugeCase_naiveRecursionWillTimeOutOrStackOverflow() {
+        List<Integer> coins = java.util.stream.IntStream.rangeClosed(1, 50)
+                .boxed()
+                .toList();
+        int target = 100;
+        assertEquals(189477547, solution.coinChange(coins, target));
+    }
 }
