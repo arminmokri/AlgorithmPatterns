@@ -2,6 +2,8 @@ package dynamic_programming.climbing_stairs;
 
 import common.PrintHelper;
 
+import java.util.Objects;
+
 public class Solution {
 
     public long climbStairs(int n) {
@@ -9,14 +11,43 @@ public class Solution {
             System.out.println();
         }
 
-        long[] stairs = new long[n + 1];
-        stairs[0] = 1;
-        stairs[1] = 1;
+        //return recursion(n);
+        //return memoization(n, new Long[n + 1]);
+        return bottomUp(n);
+    }
 
-        for (int i = 2; i < stairs.length; i++) {
-            stairs[i] = stairs[i - 1] + stairs[i - 2];
+    private long recursion(int n) {
+        if (n == 0) {
+            return 1;
+        } else if (n == 1) {
+            return 1;
         }
 
-        return stairs[n];
+        return recursion(n - 1) + recursion(n - 2);
+    }
+
+    private long memoization(int n, Long[] memo) {
+        if (n == 0) {
+            return 1;
+        } else if (n == 1) {
+            return 1;
+        } else if (Objects.nonNull(memo[n])) {
+            return memo[n];
+        }
+
+        memo[n] = memoization(n - 1, memo) + memoization(n - 2, memo);
+        return memo[n];
+    }
+
+    private long bottomUp(int n) {
+        long[] dp = new long[n + 1];
+        dp[0] = 1;
+        dp[1] = 1;
+
+        for (int i = 2; i < dp.length; i++) {
+            dp[i] = dp[i - 1] + dp[i - 2];
+        }
+
+        return dp[n];
     }
 }
