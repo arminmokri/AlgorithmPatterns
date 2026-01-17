@@ -2,7 +2,7 @@ package dynamic_programming.coin_change;
 
 import common.PrintHelper;
 
-import java.util.Arrays;
+import java.util.Objects;
 
 public class Solution {
 
@@ -12,8 +12,8 @@ public class Solution {
         }
 
         //return recursion(coins, amount);
-        //return memoization(coins, amount, new int[amount + 1]);
-        return bottomUp(coins, amount);
+        return memoization(coins, amount, new Integer[amount + 1]);
+        //return bottomUp(coins, amount);
     }
 
     private int recursion(int[] coins, int amount) {
@@ -25,7 +25,6 @@ public class Solution {
 
         int min = Integer.MAX_VALUE;
         for (int coin : coins) {
-
             int sub = recursion(coins, amount - coin);
             if (sub != -1) { // only consider valid results
                 min = Math.min(min, sub + 1);
@@ -36,49 +35,44 @@ public class Solution {
         return (min == Integer.MAX_VALUE) ? -1 : min;
     }
 
-    private int memoization(int[] coins, int amount, int[] coinChange) {
+    private int memoization(int[] coins, int amount, Integer[] coinChange) {
         if (amount < 0) {
             return -1;
-        }
-
-        if (coinChange[amount] != 0) {
+        } else if (amount == 0) {
+            return 0;
+        } else if (Objects.nonNull(coinChange[amount])) {
             return coinChange[amount];
         }
 
-        int result;
-        if (amount == 0) {
-            result = 0;
-        } else {
-            int min = Integer.MAX_VALUE;
-            for (int coin : coins) {
-
-                int sub = memoization(coins, amount - coin, coinChange);
-                if (sub != -1) { // only consider valid results
-                    min = Math.min(min, sub + 1);
-                }
+        int min = Integer.MAX_VALUE;
+        for (int coin : coins) {
+            int sub = memoization(coins, amount - coin, coinChange);
+            if (sub != -1) { // only consider valid results
+                min = Math.min(min, sub + 1);
             }
-            result = (min == Integer.MAX_VALUE) ? -1 : min;
         }
-        coinChange[amount] = result;
+        coinChange[amount] = (min == Integer.MAX_VALUE) ? -1 : min;
 
         // if no valid combination found
-        return result;
+        return coinChange[amount];
     }
 
     private int bottomUp(int[] coins, int amount) {
 
-        int[] coinChange = new int[amount + 1];
-        Arrays.fill(coinChange, Integer.MAX_VALUE);
+        Integer[] coinChange = new Integer[amount + 1];
         coinChange[0] = 0;
 
         for (int a = 1; a <= amount; a++) {
             for (int coin : coins) {
-                if (a - coin >= 0 && coinChange[a - coin] != Integer.MAX_VALUE) {
-                    coinChange[a] = Math.min(coinChange[a], coinChange[a - coin] + 1);
+                if (a - coin >= 0 && Objects.nonNull(coinChange[a - coin])) {
+                    if (Objects.isNull(coinChange[a])) {
+                        coinChange[a] = coinChange[a - coin] + 1;
+                    } else {
+                        coinChange[a] = Math.min(coinChange[a], coinChange[a - coin] + 1);
+                    }
                 }
             }
         }
-
-        return coinChange[amount] == Integer.MAX_VALUE ? -1 : coinChange[amount];
+        return Objects.isNull(coinChange[amount]) ? -1 : coinChange[amount];
     }
 }
