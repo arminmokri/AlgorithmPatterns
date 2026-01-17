@@ -2,58 +2,69 @@ package dynamic_programming.combinatorial_partitioning;
 
 import common.PrintHelper;
 
-import java.util.ArrayList;
-import java.util.Arrays;
-import java.util.List;
-import java.util.stream.IntStream;
+import java.util.Objects;
 
 public class Solution {
 
-    public static int combinatorialPartitioning(Integer r, Integer total) {
-
-        int[] ways = new int[total + 1];
-        ways[0] = 1;
-
-        List<Integer> steps = new ArrayList<>(
-                Arrays.asList(
-                        IntStream.range(1, r + 1).boxed().toArray(Integer[]::new)
-                )
-        );
-
-        // print
+    public long combinatorialPartitioning(int r, int partition) {
         if (PrintHelper.debug) {
-            System.out.println("steps=" + PrintHelper.listToStringWithIndex(steps));
             System.out.println();
         }
 
-        for (int i = 0; i < steps.size(); i++) {
 
-            int step = steps.get(i);
+        //return recursion(r, 1, partition);
+        //return memoization(r, 1, partition, new Long[r + 1][partition + 1]);
+        return bottomUp(r, partition);
+    }
 
-            // print
-            if (PrintHelper.debug) {
-                System.out.println("i=" + i + " step=" + step);
-            }
+    public long recursion(int r, int start, int partition) {
+        if (start > r) {
+            return 0;
+        } else if (partition < 0) {
+            return 0;
+        } else if (partition == 0) {
+            return 1;
+        }
 
-            for (int j = 0; j < ways.length; j++) {
-                if (step <= j) {
-                    // Update the ways array
-                    int index = j - step;
-                    ways[j] = ways[j] + ways[index];
+        return recursion(r, start, partition - start) // with start
+                + recursion(r, start + 1, partition); // without start
+    }
 
-                    // print
-                    if (PrintHelper.debug) {
-                        System.out.println("j=" + j + " index=" + index + " ways=" + PrintHelper.arrayToStringWithIndex(ways));
+    public long memoization(int r, int start, int partition, Long[][] memo) {
+        if (start > r) {
+            return 0;
+        } else if (partition < 0) {
+            return 0;
+        } else if (partition == 0) {
+            return 1;
+        } else if (Objects.nonNull(memo[start][partition])) {
+            return memo[start][partition];
+        }
+
+        memo[start][partition] = memoization(r, start, partition - start, memo) // with start
+                + memoization(r, start + 1, partition, memo); // without start
+
+        return memo[start][partition];
+    }
+
+    private long bottomUp(int r, int partition) {
+
+        Long[] dp = new Long[partition + 1];
+        dp[0] = 1L;
+
+        for (int start = 1; start <= r; start++) {
+            for (int p = 1; p <= partition; p++) {
+                if (p - start >= 0) {
+                    if (Objects.nonNull(dp[p])) {
+                        dp[p] = dp[p] + dp[p - start];
+                    } else {
+                        dp[p] = +dp[p - start];
                     }
-                }
-            }
 
-            // print
-            if (PrintHelper.debug) {
-                System.out.println();
+                }
             }
         }
 
-        return ways[total];
+        return Objects.nonNull(dp[partition]) ? dp[partition] : 0;
     }
 }
