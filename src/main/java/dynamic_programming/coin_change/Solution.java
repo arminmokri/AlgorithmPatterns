@@ -12,8 +12,8 @@ public class Solution {
         }
 
         //return recursion(coins, amount);
-        return memoization(coins, amount, new Integer[amount + 1]);
-        //return bottomUp(coins, amount);
+        //return memoization(coins, amount, new Integer[amount + 1]);
+        return bottomUp(coins, amount);
     }
 
     private int recursion(int[] coins, int amount) {
@@ -35,44 +35,44 @@ public class Solution {
         return (min == Integer.MAX_VALUE) ? -1 : min;
     }
 
-    private int memoization(int[] coins, int amount, Integer[] coinChange) {
+    private int memoization(int[] coins, int amount, Integer[] memo) {
         if (amount < 0) {
             return -1;
         } else if (amount == 0) {
             return 0;
-        } else if (Objects.nonNull(coinChange[amount])) {
-            return coinChange[amount];
+        } else if (Objects.nonNull(memo[amount])) {
+            return memo[amount];
         }
 
         int min = Integer.MAX_VALUE;
         for (int coin : coins) {
-            int sub = memoization(coins, amount - coin, coinChange);
+            int sub = memoization(coins, amount - coin, memo);
             if (sub != -1) { // only consider valid results
                 min = Math.min(min, sub + 1);
             }
         }
-        coinChange[amount] = (min == Integer.MAX_VALUE) ? -1 : min;
+        memo[amount] = (min == Integer.MAX_VALUE) ? -1 : min;
 
         // if no valid combination found
-        return coinChange[amount];
+        return memo[amount];
     }
 
     private int bottomUp(int[] coins, int amount) {
 
-        Integer[] coinChange = new Integer[amount + 1];
-        coinChange[0] = 0;
+        Integer[] dp = new Integer[amount + 1];
+        dp[0] = 0;
 
         for (int a = 1; a <= amount; a++) {
             for (int coin : coins) {
-                if (a - coin >= 0 && Objects.nonNull(coinChange[a - coin])) {
-                    if (Objects.isNull(coinChange[a])) {
-                        coinChange[a] = coinChange[a - coin] + 1;
+                if (a - coin >= 0 && Objects.nonNull(dp[a - coin])) {
+                    if (Objects.isNull(dp[a])) {
+                        dp[a] = dp[a - coin] + 1;
                     } else {
-                        coinChange[a] = Math.min(coinChange[a], coinChange[a - coin] + 1);
+                        dp[a] = Math.min(dp[a], dp[a - coin] + 1);
                     }
                 }
             }
         }
-        return Objects.isNull(coinChange[amount]) ? -1 : coinChange[amount];
+        return Objects.isNull(dp[amount]) ? -1 : dp[amount];
     }
 }
