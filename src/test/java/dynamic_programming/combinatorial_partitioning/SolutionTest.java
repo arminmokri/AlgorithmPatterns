@@ -48,4 +48,10 @@ public class SolutionTest {
     public void testLargeTotal() {
         assertEquals(14, solution.combinatorialPartitioning(3, 10));
     }
+
+    @Test
+    public void testHugeCase_naiveRecursionWillTimeOutOrStackOverflow() {
+        assertEquals(189477547, solution.combinatorialPartitioning(50, 100));
+    }
+
 }
