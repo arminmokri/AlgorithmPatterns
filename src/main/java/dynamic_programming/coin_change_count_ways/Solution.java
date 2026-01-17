@@ -3,48 +3,69 @@ package dynamic_programming.coin_change_count_ways;
 import common.PrintHelper;
 
 import java.util.List;
+import java.util.Objects;
 
 public class Solution {
 
-    public static int coinChange(List<Integer> coins, Integer sum) {
-
-        int[] ways = new int[sum + 1];
-        ways[0] = 1;
-
-        // print
+    public int coinChange(List<Integer> coins, int sum) {
         if (PrintHelper.debug) {
-            System.out.println("coins=" + PrintHelper.listToStringWithIndex(coins));
             System.out.println();
         }
 
-        for (int i = 0; i < coins.size(); i++) {
+        if (PrintHelper.debug) {
+            System.out.println("sum=" + sum + " coins=" + PrintHelper.listToStringWithIndex(coins));
+        }
 
-            int coin = coins.get(i);
+        //return recursion(coins, 0, sum);
+        //return memoization(coins, 0, sum, new Integer[coins.size()][sum + 1]);
+        return bottomUp(coins, sum);
+    }
 
-            // print
-            if (PrintHelper.debug) {
-                System.out.println("i=" + i + " coin=" + coin);
-            }
+    private int recursion(List<Integer> coins, int index, int sum) {
+        if (sum < 0 || coins.size() == index) {
+            return 0;
+        } else if (sum == 0) {
+            return 1;
+        }
 
-            for (int j = 0; j < ways.length; j++) {
-                if (coin <= j) {
-                    // Update the ways array
-                    int index = j - coin;
-                    ways[j] = ways[j] + ways[index];
+        int coin = coins.get(index);
+        return recursion(coins, index, sum - coin) // with coin
+                + recursion(coins, index + 1, sum); // without coin
+    }
 
-                    // print
-                    if (PrintHelper.debug) {
-                        System.out.println("j=" + j + " index=" + index + " ways=" + PrintHelper.arrayToStringWithIndex(ways));
+    private int memoization(List<Integer> coins, int index, int sum, Integer[][] memo) {
+        if (sum < 0 || coins.size() == index) {
+            return 0;
+        } else if (sum == 0) {
+            return 1;
+        } else if (Objects.nonNull(memo[index][sum])) {
+            return memo[index][sum];
+        }
+
+        int coin = coins.get(index);
+        memo[index][sum] = memoization(coins, index, sum - coin, memo) // with coin
+                + memoization(coins, index + 1, sum, memo); // without coin
+
+        return memo[index][sum];
+    }
+
+    private int bottomUp(List<Integer> coins, int sum) {
+
+        Integer[] dp = new Integer[sum + 1];
+        dp[0] = 1;
+
+        for (int coin : coins) {
+            for (int s = 1; s <= sum; s++) {
+                if (s - coin >= 0) {
+                    if (Objects.isNull(dp[s])) {
+                        dp[s] = dp[s - coin];
+                    } else {
+                        dp[s] = dp[s] + dp[s - coin];
                     }
                 }
             }
-
-            // print
-            if (PrintHelper.debug) {
-                System.out.println();
-            }
         }
 
-        return ways[sum];
+        return Objects.nonNull(dp[sum]) ? dp[sum] : 0;
     }
 }
