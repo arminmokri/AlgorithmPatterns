@@ -42,7 +42,7 @@ class Solution:
                 dp[j] = min(dp[j], dp[j - coin] + 1)
 
             if debug:
-                print("dp=" + self.listToString(dp))
+                print("coin=" + str(coin) + " dp=" + self.listToString(dp))
 
         return dp[amount] if dp[amount] != (amount + 1) else -1
 
