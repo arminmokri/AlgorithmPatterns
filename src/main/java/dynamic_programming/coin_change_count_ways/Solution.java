@@ -17,12 +17,14 @@ public class Solution {
         }
 
         //return recursion(coins, 0, sum);
-        //return memoization(coins, 0, sum, new Integer[coins.size()][sum + 1]);
-        return bottomUp(coins, sum);
+        return memoization(coins, 0, sum, new Integer[coins.size()][sum + 1]);
+        //return bottomUp(coins, sum);
     }
 
     private int recursion(List<Integer> coins, int index, int sum) {
-        if (sum < 0 || coins.size() == index) {
+        if (sum < 0) {
+            return 0;
+        } else if (coins.size() == index) {
             return 0;
         } else if (sum == 0) {
             return 1;
@@ -34,7 +36,9 @@ public class Solution {
     }
 
     private int memoization(List<Integer> coins, int index, int sum, Integer[][] memo) {
-        if (sum < 0 || coins.size() == index) {
+        if (sum < 0) {
+            return 0;
+        } else if (coins.size() == index) {
             return 0;
         } else if (sum == 0) {
             return 1;
