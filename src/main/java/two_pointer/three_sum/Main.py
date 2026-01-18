@@ -83,6 +83,69 @@ class Test(unittest.TestCase):
             self.solution.threeSum([0, -3, -2, 2, 3]), [[-3, 0, 3], [-2, 0, 2]]
         )
 
+    def test_empty_and_too_short_inputs(self):
+        self.assertCountEqual(self.solution.threeSum([]), [])
+        self.assertCountEqual(self.solution.threeSum([0]), [])
+        self.assertCountEqual(self.solution.threeSum([0, 0]), [])
+
+    def test_all_positive_or_all_negative(self):
+        self.assertCountEqual(self.solution.threeSum([1, 2, 3, 4, 5]), [])
+        self.assertCountEqual(self.solution.threeSum([-5, -4, -3, -2, -1]), [])
+
+    def test_many_duplicates_single_triplet(self):
+        self.assertCountEqual(self.solution.threeSum([0, 0, 0, 0, 0]), [[0, 0, 0]])
+        self.assertCountEqual(
+            self.solution.threeSum([-1, -1, -1, 2, 2, 2]), [[-1, -1, 2]]
+        )
+
+    def test_multiple_triplets_with_duplicates(self):
+        # Classic case with duplicates that should not duplicate output triplets
+        self.assertCountEqual(
+            self.solution.threeSum([-2, 0, 0, 2, 2]),
+            [[-2, 0, 2]],
+        )
+        self.assertCountEqual(
+            self.solution.threeSum([-4, -2, -2, -2, 0, 1, 2, 2, 2, 4]),
+            [[-4, 0, 4], [-4, 2, 2], [-2, -2, 4], [-2, 0, 2]],
+        )
+
+    def test_unsorted_input_and_order_independence(self):
+        # Same values, shuffled; result should be the same set of triplets
+        nums = [3, -1, -7, 4, 5, -4, 2, -2, -3, 1, 6]
+        expected = [
+            [-7, 1, 6],
+            [-7, 2, 5],
+            [-7, 3, 4],
+            [-4, -2, 6],
+            [-4, -1, 5],
+            [-4, 1, 3],
+            [-3, -2, 5],
+            [-3, -1, 4],
+            [-3, 1, 2],
+            [-2, -1, 3],
+        ]
+        self.assertCountEqual(self.solution.threeSum(nums), expected)
+
+    def test_large_magnitude_numbers(self):
+        self.assertCountEqual(
+            self.solution.threeSum([-(10**9), 0, 10**9]),
+            [[-(10**9), 0, 10**9]],
+        )
+        self.assertCountEqual(
+            self.solution.threeSum([-(10**9), -(10**9), 2 * 10**9, 1]),
+            [[-(10**9), -(10**9), 2 * 10**9]],
+        )
+
+    def test_triplets_with_zero_and_pairs(self):
+        self.assertCountEqual(
+            self.solution.threeSum([-1, 0, 1, 0]),
+            [[-1, 0, 1]],
+        )
+        self.assertCountEqual(
+            self.solution.threeSum([-2, -1, 0, 1, 2, 3, -3]),
+            [[-3, 0, 3], [-3, 1, 2], [-2, -1, 3], [-2, 0, 2], [-1, 0, 1]],
+        )
+
 
 def main():
     unittest.main()
