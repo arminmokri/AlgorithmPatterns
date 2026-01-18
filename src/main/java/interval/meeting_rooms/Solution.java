@@ -9,8 +9,6 @@ import java.util.stream.Collectors;
 
 public class Solution {
 
-    //     def canAttendMeetings(self, intervals: List[List[int]]) -> bool:
-
     public boolean canAttendMeetings(int[][] intervals) {
         if (PrintHelper.debug) {
             System.out.println();
