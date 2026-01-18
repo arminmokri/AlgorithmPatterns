@@ -19,7 +19,7 @@ Tree traversal refers to visiting each node in a tree data structure systematica
 ## Examples
 | #  | Name                                                                    | Java | Python | Go | Link                                                                             | Company |
 |----|-------------------------------------------------------------------------|------|--------|----|----------------------------------------------------------------------------------|---------|
-| 1  | [Binary Tree Inorder Traversal](binary_tree_inorder_traversal/)         | ❌   | ✅     | ❌ | [LeetCode #94](https://leetcode.com/problems/binary-tree-inorder-traversal)      |         |
+| 1  | [Binary Tree Inorder Traversal](binary_tree_inorder_traversal/)         | ✅   | ✅     | ❌ | [LeetCode #94](https://leetcode.com/problems/binary-tree-inorder-traversal)      |         |
 | 2  | [Binary Tree Preorder Traversal](binary_tree_preorder_traversal/)       | ❌   | ✅     | ❌ | [LeetCode #144](https://leetcode.com/problems/binary-tree-preorder-traversal)    |         |
 | 3  | [Binary Tree Postorder Traversal](binary_tree_postorder_traversal/)     | ❌   | ✅     | ❌ | [LeetCode #145](https://leetcode.com/problems/binary-tree-postorder-traversal)   |         |
 | 4  | [Binary Tree Level Order Traversal](binary_tree_level_order_traversal/) | ❌   | ✅     | ❌ | [LeetCode #102](https://leetcode.com/problems/binary-tree-level-order-traversal) |         |
