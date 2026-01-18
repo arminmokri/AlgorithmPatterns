@@ -137,6 +137,33 @@ class Test(unittest.TestCase):
         self.assertEqual(self.solution.twoSum([2, 3, 4], 6), [1, 3])
         self.assertEqual(self.solution.twoSum([-1, 0], -1), [1, 2])
 
+    def test_two_sum_minimum_input_size(self):
+        self.assertEqual([1, 2], self.solution.twoSum([1, 1], 2))
+
+    def test_two_sum_with_duplicates(self):
+        self.assertEqual([1, 2], self.solution.twoSum([3, 3, 4], 6))
+
+    def test_two_sum_target_at_end(self):
+        self.assertEqual([2, 4], self.solution.twoSum([1, 5, 7, 3], 8))
+
+    def test_two_sum_all_negative_numbers(self):
+        self.assertEqual([3, 4], self.solution.twoSum([-8, -5, -3, -2], -5))
+
+    def test_two_sum_mixed_positive_and_negative(self):
+        self.assertEqual([1, 4], self.solution.twoSum([4, -2, 7, -1], 3))
+
+    def test_two_sum_large_numbers(self):
+        self.assertEqual(
+            [2, 3], self.solution.twoSum([3, 1_000_000, 2_000_000], 3_000_000)
+        )
+
+    def test_two_sum_result_uses_different_indices(self):
+        result = self.solution.twoSum([0, 4, 3, 0], 0)
+        self.assertNotEqual(result[0], result[1])
+
+    def test_two_sum_no_solution_exists(self):
+        self.assertEqual([-1, -1], self.solution.twoSum([1, 2, 3, 4], 100))
+
 
 def main():
     unittest.main()
