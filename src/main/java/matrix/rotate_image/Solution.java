@@ -10,7 +10,7 @@ public class Solution {
         }
 
         if (PrintHelper.debug) {
-            System.out.println("numbers=");
+            System.out.println("matrix=");
             System.out.println(PrintHelper.matrixToString(matrix));
         }
 
@@ -22,7 +22,7 @@ public class Solution {
         }
 
         if (PrintHelper.debug) {
-            System.out.println("numbers=");
+            System.out.println("matrix=");
             System.out.println(PrintHelper.matrixToString(matrix));
         }
 
@@ -34,7 +34,7 @@ public class Solution {
         }
 
         if (PrintHelper.debug) {
-            System.out.println("numbers=");
+            System.out.println("matrix=");
             System.out.println(PrintHelper.matrixToString(matrix));
         }
     }
