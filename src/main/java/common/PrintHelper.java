@@ -1,9 +1,6 @@
 package common;
 
-import java.util.ArrayList;
-import java.util.Arrays;
-import java.util.List;
-import java.util.Objects;
+import java.util.*;
 import java.util.stream.Collectors;
 import java.util.stream.IntStream;
 
@@ -104,5 +101,15 @@ public class PrintHelper {
             result.add(listRow);
         }
         return matrixToString(result);
+    }
+
+    public static String matrixToString(int[][] matrix) {
+        List<List<Integer>> newMatrix = Arrays.stream(matrix)
+                .map(row -> row == null
+                        ? Collections.<Integer>emptyList()
+                        : Arrays.stream(row).boxed().toList())
+                .toList();
+
+        return matrixToString(newMatrix);
     }
 }
