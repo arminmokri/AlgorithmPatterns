@@ -25,7 +25,7 @@ Matrix problems involve navigating or modifying 2D grids or arrays, often under 
 | 4  | [Search a 2D Matrix](search_matrix/)                                  | ❌   | ✅     | ❌ | [LeetCode #74](https://leetcode.com/problems/search-a-2d-matrix) |                                       |
 | 5  | [Word Search]()                                                       | ❌   | ❌     | ❌ | [LeetCode #79](https://leetcode.com/problems/word-search)        |                                       |
 | 6  | [Min Max Row Sum Matrix Partition](min_max_row_sum_matrix_partition/) | ❌   | ✅     | ❌ |                                                                  | [`#Bounteous`](https://bounteous.com) |
-| 7  | [Lucy’s Spiral Hop](lucy_spiral_hop/)                                 | ❌   | ✅     | ❌ | [Brainly](https://brainly.com/question/31047283)                 | [`#Cisco`](https://cisco.com)         |
+| 7  | [Lucy’s Spiral Hop](lucy_spiral_hop/)                                 | ✅   | ✅     | ❌ | [Brainly](https://brainly.com/question/31047283)                 | [`#Cisco`](https://cisco.com)         |
 
 <p align="center">
   <a href="../interval">⬅️ <strong>Interval</strong></a>
