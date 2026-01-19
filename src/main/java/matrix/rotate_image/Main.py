@@ -50,6 +50,10 @@ class Solution:
             up = up + 1
             down = down - 1
 
+        if debug:
+            print("matrix=")
+            print(self.matrixToString(matrix))
+
         for i in range(n):
             for j in range(i + 1, m):
                 matrix[i][j], matrix[j][i] = matrix[j][i], matrix[i][j]
