@@ -24,7 +24,7 @@ The sliding window pattern uses a subset (or window) that moves across the data 
 | 3  | [Longest Repeating Character Replacement]()                                                       | ❌   | ❌     | ❌ | [LeetCode #424](https://leetcode.com/problems/longest-repeating-character-replacement)      |                                             |
 | 4  | [Minimum Window Substring]()                                                                      | ❌   | ❌     | ❌ | [LeetCode #76](https://leetcode.com/problems/minimum-window-substring)                      |                                             |
 | 5  | [Permutation in String](permutation_in_string/)                                                   | ✅   | ✅     | ❌ | [LeetCode #567](https://leetcode.com/problems/permutation-in-string)                        |                                             |
-| 6  | [Quadratic Consecutive Sequence Sum](quadratic_consecutive_sequence_sum/)                         | ❌   | ✅     | ❌ |                                                                                             | [`#TrendMicro`](https://trendmicro.com)     |
+| 6  | [Quadratic Consecutive Sequence Sum](quadratic_consecutive_sequence_sum/)                         | ✅   | ✅     | ❌ |                                                                                             | [`#TrendMicro`](https://trendmicro.com)     |
 | 7  | [Distance Between Scrambled Programmer Words](distance_between_scrambled_programmer_words/)       | ✅   | ✅     | ❌ |                                                                                             | [`#ExpediaGroup`](https://expediagroup.com) |
 
 <p align="center">
