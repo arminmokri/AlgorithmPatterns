@@ -19,11 +19,11 @@ Matrix problems involve navigating or modifying 2D grids or arrays, often under 
 ## Examples
 | #  | Name                                                                  | Java | Python | Go | Link                                                             | Company                               |
 |----|-----------------------------------------------------------------------|------|--------|----|------------------------------------------------------------------|---------------------------------------|
-| 1  | [Set Matrix Zeroes]()                                                 | ❌   | ❌     | ❌ | [LeetCode #73](https://leetcode.com/problems/set-matrix-zeroes)  |                                       |
+| 1  | [Set Matrix Zeroes](set_matrix_zeroes/)                               | ❌   | ❌     | ❌ | [LeetCode #73](https://leetcode.com/problems/set-matrix-zeroes)  |                                       |
 | 2  | [Spiral Matrix](spiral_matrix/)                                       | ✅   | ✅     | ❌ | [LeetCode #54](https://leetcode.com/problems/spiral-matrix)      |                                       |
 | 3  | [Rotate Image](rotate_image/)                                         | ✅   | ✅     | ❌ | [LeetCode #48](https://leetcode.com/problems/rotate-image)       | [`#Cisco`](https://cisco.com)         |
 | 4  | [Search a 2D Matrix](search_matrix/)                                  | ✅   | ✅     | ❌ | [LeetCode #74](https://leetcode.com/problems/search-a-2d-matrix) |                                       |
-| 5  | [Word Search]()                                                       | ❌   | ❌     | ❌ | [LeetCode #79](https://leetcode.com/problems/word-search)        |                                       |
+| 5  | [Word Search](word_search/)                                           | ❌   | ❌     | ❌ | [LeetCode #79](https://leetcode.com/problems/word-search)        |                                       |
 | 6  | [Min Max Row Sum Matrix Partition](min_max_row_sum_matrix_partition/) | ✅   | ✅     | ❌ |                                                                  | [`#Bounteous`](https://bounteous.com) |
 | 7  | [Lucy’s Spiral Hop](lucy_spiral_hop/)                                 | ✅   | ✅     | ❌ | [Brainly](https://brainly.com/question/31047283)                 | [`#Cisco`](https://cisco.com)         |
 
