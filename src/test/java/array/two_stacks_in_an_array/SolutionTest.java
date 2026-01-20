@@ -1,5 +1,6 @@
 package array.two_stacks_in_an_array;
 
+import common.PrintHelper;
 import org.junit.jupiter.api.Test;
 
 import static org.junit.jupiter.api.Assertions.*;
@@ -14,7 +15,10 @@ public class SolutionTest {
         assertTrue(stack.pushB(7));
         assertTrue(stack.pushA(11));
         assertTrue(stack.pushB(77));
-        stack.printSpace();
+
+        if (PrintHelper.debug) {
+            stack.printSpace();
+        }
 
         assertFalse(stack.pushA(111));
 
@@ -27,7 +31,9 @@ public class SolutionTest {
         assertNull(stack.popA());
         assertNull(stack.popB());
 
-        stack.printSpace();
+        if (PrintHelper.debug) {
+            stack.printSpace();
+        }
     }
 
     @Test
@@ -40,7 +46,9 @@ public class SolutionTest {
         assertEquals(10, stack.popA());
         assertNull(stack.popA());
 
-        stack.printSpace();
+        if (PrintHelper.debug) {
+            stack.printSpace();
+        }
     }
 
     @Test
@@ -53,7 +61,9 @@ public class SolutionTest {
         assertEquals(30, stack.popB());
         assertNull(stack.popB());
 
-        stack.printSpace();
+        if (PrintHelper.debug) {
+            stack.printSpace();
+        }
     }
 
     @Test
@@ -65,7 +75,9 @@ public class SolutionTest {
         assertFalse(stack.pushA(3));
         assertFalse(stack.pushB(4));
 
-        stack.printSpace();
+        if (PrintHelper.debug) {
+            stack.printSpace();
+        }
     }
 
     @Test
@@ -75,7 +87,9 @@ public class SolutionTest {
         assertNull(stack.popA());
         assertNull(stack.popB());
 
-        stack.printSpace();
+        if (PrintHelper.debug) {
+            stack.printSpace();
+        }
     }
 
     @Test
@@ -96,7 +110,9 @@ public class SolutionTest {
         assertEquals(9, stack.popB());
         assertNull(stack.popB()); // Already empty
 
-        stack.printSpace();
+        if (PrintHelper.debug) {
+            stack.printSpace();
+        }
     }
 
     @Test
@@ -113,6 +129,8 @@ public class SolutionTest {
         assertEquals(30, stack.getMyList()[4]);
         assertEquals(40, stack.getMyList()[3]);
 
-        stack.printSpace();
+        if (PrintHelper.debug) {
+            stack.printSpace();
+        }
     }
 }

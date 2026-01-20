@@ -28,7 +28,9 @@ public class Solution {
             nums[i] = 0;
         }
 
-        System.out.println("nums=" + PrintHelper.arrayToStringWithIndex(nums));
+        if (PrintHelper.debug) {
+            System.out.println("nums=" + PrintHelper.arrayToStringWithIndex(nums));
+        }
 
         return uniqueIndex;
 

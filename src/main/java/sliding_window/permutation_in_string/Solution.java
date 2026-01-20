@@ -15,7 +15,9 @@ public class Solution {
             System.out.println();
         }
 
-        System.out.println("s1=" + s1 + " s2=" + s2);
+        if (PrintHelper.debug) {
+            System.out.println("s1=" + s1 + " s2=" + s2);
+        }
 
         Map<Character, Long> s1Frequent =
                 s1.chars()
