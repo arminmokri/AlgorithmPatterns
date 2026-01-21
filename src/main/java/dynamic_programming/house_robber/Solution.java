@@ -16,7 +16,7 @@ public class Solution {
         return bottomUp(nums);
     }
 
-    private int recursion(int[] nums, int index) { //2, 7, 9, 3, 1
+    private int recursion(int[] nums, int index) {
         if (index < 0) {
             return 0;
         } else if (index == 0) {
