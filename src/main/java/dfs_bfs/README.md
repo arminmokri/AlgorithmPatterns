@@ -148,7 +148,7 @@ void dfsDisconnected(List<List<Integer>> graph) {
 | 1  | [Number of Islands](number_of_islands/)                     | ✅   | ✅     | ❌ | [LeetCode #200](https://leetcode.com/problems/number-of-islands)           |         |
 | 2  | [Clone Graph](clone_graph/)                                 | ✅   | ✅     | ❌ | [LeetCode #133](https://leetcode.com/problems/clone-graph)                 |         |
 | 3  | [Word Ladder](word_ladder/)                                 | ✅   | ✅     | ❌ | [LeetCode #127](https://leetcode.com/problems/word-ladder)                 |         |
-| 4  | [Course Schedule](course_schedule/)                         | ❌   | ❌     | ❌ | [LeetCode #207](https://leetcode.com/problems/course-schedule)             |         |
+| 4  | [Course Schedule](course_schedule/)                         | ✅   | ❌     | ❌ | [LeetCode #207](https://leetcode.com/problems/course-schedule)             |         |
 | 5  | [Pacific Atlantic Water Flow](pacific_atlantic_water_flow/) | ❌   | ❌     | ❌ | [LeetCode #417](https://leetcode.com/problems/pacific-atlantic-water-flow) |         |
 
 <p align="center">
