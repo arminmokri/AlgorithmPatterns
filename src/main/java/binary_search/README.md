@@ -161,7 +161,7 @@ Mixing these rules breaks the mathematical correctness of binary search and caus
 | 2  | [Search Insert Position](search_insert_position/)                                   | ✅   | ✅     | ❌ | [LeetCode #35](https://leetcode.com/problems/search-insert-position)                   |         |
 | 3  | [Find Minimum in Rotated Sorted Array](find_minimum_in_rotated_sorted_array/)       | ✅   | ✅     | ❌ | [LeetCode #153](https://leetcode.com/problems/find-minimum-in-rotated-sorted-array)    |         |
 | 4  | [Search in Rotated Sorted Array](search_in_rotated_sorted_array/)                   | ✅   | ✅     | ❌ | [LeetCode #33](https://leetcode.com/problems/search-in-rotated-sorted-array)           |         |
-| 5  | [Find Peak Element](find_peak_element/)                                             | ❌   | ❌     | ❌ | [LeetCode #162](https://leetcode.com/problems/find-peak-element)                       |         |
+| 5  | [Find Peak Element](find_peak_element/)                                             | ✅   | ❌     | ❌ | [LeetCode #162](https://leetcode.com/problems/find-peak-element)                       |         |
 | 6  | [Find Minimum in Rotated Sorted Array II](find_minimum_in_rotated_sorted_array_ii/) | ✅   | ❌     | ❌ | [LeetCode #154](https://leetcode.com/problems/find-minimum-in-rotated-sorted-array-ii) |         |
 
 <p align="center">
