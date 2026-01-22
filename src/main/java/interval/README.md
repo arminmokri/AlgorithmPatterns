@@ -23,7 +23,7 @@ The interval pattern deals with problems involving ranges, segments, or spans, w
 | 2  | [Insert Interval](insert_interval/)                                                       | ✅   | ✅     | ❌ | [LeetCode #57](https://leetcode.com/problems/insert-interval)                             |         |
 | 3  | [Meeting Rooms](meeting_rooms/)                                                           | ✅   | ✅     | ❌ | [LeetCode #252](https://leetcode.com/problems/meeting-rooms)                              |         |
 | 4  | [Non-overlapping Intervals](non_overlapping_intervals/)                                   | ✅   | ❌     | ❌ | [LeetCode #435](https://leetcode.com/problems/non-overlapping-intervals)                  |         |
-| 5  | [Minimum Number of Arrows to Burst Balloons](minimum_number_of_arrows_to_burst_balloons/) | ❌   | ❌     | ❌ | [LeetCode #452](https://leetcode.com/problems/minimum-number-of-arrows-to-burst-balloons) |         |
+| 5  | [Minimum Number of Arrows to Burst Balloons](minimum_number_of_arrows_to_burst_balloons/) | ✅   | ❌     | ❌ | [LeetCode #452](https://leetcode.com/problems/minimum-number-of-arrows-to-burst-balloons) |         |
 
 <p align="center">
   <a href="../dynamic_programming">⬅️ <strong>Dynamic Programming</strong></a>
