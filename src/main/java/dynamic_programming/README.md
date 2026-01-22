@@ -26,7 +26,7 @@ Use DP when a problem has **overlapping subproblems** and **optimal substructure
 | 6  | [Coin Change - Count Ways To Make Sum](coin_change_count_ways/)   | ✅   | ✅     | ❌ | [GeeksforGeeks](https://www.geeksforgeeks.org/dsa/coin-change-dp-7)                                                                 |                                             |
 | 7  | [Combinatorial Partitioning](combinatorial_partitioning/)         | ✅   | ✅     | ❌ |                                                                                                                                     | [`#ExpediaGroup`](https://expediagroup.com) |
 | 8  | [Fibonacci Number](fibonacci_number/)                             | ✅   | ✅     | ❌ | [LeetCode #509](https://leetcode.com/problems/fibonacci-number)                                                                     | [`#Geotab`](https://geotab.com)             |
-| 9  | [0/1 Knapsack](zero_one_knapsack/)                                | ❌   | ✅     | ❌ | [W3Schools](https://w3schools.com/dsa/dsa_ref_knapsack.php) / [GeeksforGeeks](https://geeksforgeeks.org/0-1-knapsack-problem-dp-10) |                                             |
+| 9  | [0/1 Knapsack](zero_one_knapsack/)                                | ✅   | ✅     | ❌ | [W3Schools](https://w3schools.com/dsa/dsa_ref_knapsack.php) / [GeeksforGeeks](https://geeksforgeeks.org/0-1-knapsack-problem-dp-10) |                                             |
 
 <p align="center">
   <a href="../dfs_bfs">⬅️ <strong>DFS-BFS</strong></a>
