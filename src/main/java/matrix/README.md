@@ -19,7 +19,7 @@ Matrix problems involve navigating or modifying 2D grids or arrays, often under 
 ## Examples
 | #  | Name                                                                  | Java | Python | Go | Link                                                             | Company                               |
 |----|-----------------------------------------------------------------------|------|--------|----|------------------------------------------------------------------|---------------------------------------|
-| 1  | [Set Matrix Zeroes](set_matrix_zeroes/)                               | ❌   | ❌     | ❌ | [LeetCode #73](https://leetcode.com/problems/set-matrix-zeroes)  |                                       |
+| 1  | [Set Matrix Zeroes](set_matrix_zeroes/)                               | ✅   | ❌     | ❌ | [LeetCode #73](https://leetcode.com/problems/set-matrix-zeroes)  |                                       |
 | 2  | [Spiral Matrix](spiral_matrix/)                                       | ✅   | ✅     | ❌ | [LeetCode #54](https://leetcode.com/problems/spiral-matrix)      |                                       |
 | 3  | [Rotate Image](rotate_image/)                                         | ✅   | ✅     | ❌ | [LeetCode #48](https://leetcode.com/problems/rotate-image)       | [`#Cisco`](https://cisco.com)         |
 | 4  | [Search a 2D Matrix](search_matrix/)                                  | ✅   | ✅     | ❌ | [LeetCode #74](https://leetcode.com/problems/search-a-2d-matrix) |                                       |
