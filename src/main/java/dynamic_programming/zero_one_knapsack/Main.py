@@ -4,6 +4,20 @@ import unittest
 debug = True
 
 
+class Result:
+    value: int
+    items: list
+
+    def __init__(self, value: int, items: list):
+        self.value = value
+        self.items = items
+
+    def __eq__(self, other):
+        if isinstance(other, Result):
+            return self.value == other.value and self.items == other.items
+        return NotImplemented
+
+
 class Solution:
     def matrixToString(self, myMatrix: List[List] | Tuple[Tuple]) -> str:
         if myMatrix == []:
@@ -28,7 +42,7 @@ class Solution:
 
     def knapsack_tabulation(
         self, names: List[str], values: List[int], weights: List[int], capacity: int
-    ) -> int:
+    ) -> Result:
         number_of_items = len(values)
 
         matrix = [[0] * (capacity + 1) for i in range(number_of_items + 1)]
@@ -53,21 +67,21 @@ class Solution:
                 print("matrix=")
                 print(self.matrixToString(matrix))
 
-        items = list()
+        result = Result(matrix[number_of_items][capacity], list())
         current_capacity = capacity
         for i in range(number_of_items, 0, -1):
             item = names[i - 1]
             if not matrix[i][current_capacity] == matrix[i - 1][current_capacity]:
-                items.append(item)
+                result.items.append(item)
                 current_capacity = current_capacity - weights[i - 1]
                 if debug:
                     print(item + " is included")
             else:
                 if debug:
                     print(item + " is excluded")
-        items.reverse()
+        result.items.reverse()
 
-        return (matrix[number_of_items][capacity], items)
+        return result
 
 
 class Test(unittest.TestCase):
@@ -82,26 +96,28 @@ class Test(unittest.TestCase):
                 [2, 1, 5, 3],
                 10,
             ),
-            (1200, ["Microscope", "Cup", "Crown"]),
+            Result(1200, ["Microscope", "Cup", "Crown"]),
         )
 
     def test_empty_items(self):
-        self.assertEqual(self.solution.knapsack_tabulation([], [], [], 10), (0, []))
+        self.assertEqual(
+            self.solution.knapsack_tabulation([], [], [], 10), Result(0, [])
+        )
 
     def test_zero_capacity(self):
         self.assertEqual(
-            self.solution.knapsack_tabulation(["Item1"], [100], [1], 0), (0, [])
+            self.solution.knapsack_tabulation(["Item1"], [100], [1], 0), Result(0, [])
         )
 
     def test_single_item_fits(self):
         self.assertEqual(
             self.solution.knapsack_tabulation(["Item1"], [100], [1], 1),
-            (100, ["Item1"]),
+            Result(100, ["Item1"]),
         )
 
     def test_single_item_does_not_fit(self):
         self.assertEqual(
-            self.solution.knapsack_tabulation(["Item1"], [100], [5], 3), (0, [])
+            self.solution.knapsack_tabulation(["Item1"], [100], [5], 3), Result(0, [])
         )
 
     def test_all_items_fit_exactly(self):
@@ -109,7 +125,7 @@ class Test(unittest.TestCase):
             self.solution.knapsack_tabulation(
                 ["A", "B", "C"], [10, 20, 30], [1, 2, 3], 6
             ),
-            (60, ["A", "B", "C"]),
+            Result(60, ["A", "B", "C"]),
         )
 
     def test_choose_optimal_combination(self):
@@ -117,16 +133,16 @@ class Test(unittest.TestCase):
             self.solution.knapsack_tabulation(
                 ["A", "B", "C"], [60, 100, 120], [10, 20, 30], 50
             ),
-            (220, ["B", "C"]),
+            Result(220, ["B", "C"]),
         )
 
     def test_items_with_same_weight_and_value(self):
-        total_value, selected_items = self.solution.knapsack_tabulation(
+        result = self.solution.knapsack_tabulation(
             ["X", "Y", "Z"], [50, 50, 50], [5, 5, 5], 10
         )
-        self.assertEqual(total_value, 100)
-        self.assertEqual(len(selected_items), 2)
-        self.assertTrue(set(selected_items).issubset({"X", "Y", "Z"}))
+        self.assertEqual(result.value, 100)
+        self.assertEqual(len(result.items), 2)
+        self.assertTrue(set(result.items).issubset({"X", "Y", "Z"}))
 
     def test_duplicate_best_value(self):
         result = self.solution.knapsack_tabulation(
@@ -135,7 +151,7 @@ class Test(unittest.TestCase):
             [1, 3, 4, 5],
             8,
         )
-        self.assertEqual(result, (110, ["Notebook", "Book"]))
+        self.assertEqual(result, Result(110, ["Notebook", "Book"]))
 
 
 def main():
