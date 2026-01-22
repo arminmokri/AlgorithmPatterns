@@ -27,7 +27,7 @@ public class SolutionTest {
                 {9, 6, 3}
         };
         solution.rotate(matrix);
-        // assertArrayEquals(expected, matrix);
+        assertArrayEquals(expected, matrix);
 
         matrix = new int[][]{
                 {5, 1, 9, 11},
