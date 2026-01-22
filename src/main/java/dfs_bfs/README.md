@@ -150,6 +150,8 @@ void dfsDisconnected(List<List<Integer>> graph) {
 | 3  | [Word Ladder](word_ladder/)                                 | ✅   | ✅     | ❌ | [LeetCode #127](https://leetcode.com/problems/word-ladder)                 |         |
 | 4  | [Course Schedule](course_schedule/)                         | ✅   | ❌     | ❌ | [LeetCode #207](https://leetcode.com/problems/course-schedule)             |         |
 | 5  | [Pacific Atlantic Water Flow](pacific_atlantic_water_flow/) | ✅   | ❌     | ❌ | [LeetCode #417](https://leetcode.com/problems/pacific-atlantic-water-flow) |         |
+| 6  | [Word Search](word_search/)                                 | ❌   | ❌     | ❌ | [LeetCode #79](https://leetcode.com/problems/word-search)                  |         |
+
 
 <p align="center">
   <a href="../binary_search">⬅️ <strong>Binary Search</strong></a>
