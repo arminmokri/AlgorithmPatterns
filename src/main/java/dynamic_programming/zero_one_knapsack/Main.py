@@ -157,14 +157,12 @@ class Test(unittest.TestCase):
         items = [f"Item{i}" for i in range(30)]
         values = [i * 10 for i in range(30)]
         weights = [i + 1 for i in range(30)]
-        capacity = 100
+        capacity = 200
 
         # Recursive solution will be extremely slow or hit recursion limits
         # Tabulation / memoized solution should solve this
         result = self.solution.knapsackTabulation(items, values, weights, capacity)
-        print("aaaaaaaaaaaaaaaaa" + str(result.value))
-
-        self.assertTrue(result.value == 960)
+        self.assertTrue(result.value == 1920)
 
 
 def main():
