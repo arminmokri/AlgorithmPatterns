@@ -13,7 +13,7 @@ public class Solution {
         }
 
         if (PrintHelper.debug) {
-            System.out.println("target=" + target + " candidates" + PrintHelper.arrayToStringWithoutIndex(candidates));
+            System.out.println("target=" + target + " candidates=" + PrintHelper.arrayToStringWithoutIndex(candidates));
         }
 
         List<List<Integer>> combinationsSum = new ArrayList<>();
