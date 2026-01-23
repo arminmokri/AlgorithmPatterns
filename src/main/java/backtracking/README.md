@@ -19,7 +19,7 @@ Backtracking is a recursive algorithmic technique for solving problems increment
 ## Examples
 | #  | Name                                                        | Java | Python | Go | Link                                                          | Company                              |
 |----|-------------------------------------------------------------|------|--------|----|---------------------------------------------------------------|--------------------------------------|
-| 1  | [Permutations](permutations/)                               | ❌   | ✅     | ❌ | [LeetCode #46](https://leetcode.com/problems/permutations)    |                                      |
+| 1  | [Permutations](permutations/)                               | ✅   | ✅     | ❌ | [LeetCode #46](https://leetcode.com/problems/permutations)    |                                      |
 | 2  | [Combinations](combinations/)                               | ✅   | ✅     | ❌ | [LeetCode #77](https://leetcode.com/problems/combinations)    | [`#Flexton`](https://flextoninc.com) |
 | 3  | [Combination Sum](combination_sum/)                         | ✅   | ✅     | ❌ | [LeetCode #39](https://leetcode.com/problems/combination-sum) |                                      |
 | 4  | [N-Queens](n_queens/)                                       | ❌   | ❌     | ❌ | [LeetCode #51](https://leetcode.com/problems/n-queens)        |                                      |
