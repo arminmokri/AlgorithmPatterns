@@ -32,7 +32,6 @@ public class Solution {
                         IntStream.rangeClosed(0, s.length() - len)
                                 .mapToObj(start -> s.substring(start, start + len))
                 )
-                .peek(System.out::println)
                 .anyMatch(str -> {
                     boolean b = othersCharsHasKDiffWithMainChar(str, k);
                     if (b) {

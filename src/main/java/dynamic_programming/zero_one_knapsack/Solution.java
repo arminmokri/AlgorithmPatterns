@@ -22,12 +22,12 @@ public class Solution {
             System.out.println("capacity=" + capacity);
         }
 
-
-        //Result result = recursion(names, values, weights, capacity, 0);
-        //Result result = memoization(names, values, weights, capacity, 0, new Result[capacity + 1][values.length]);
         Result result = bottomUp(names, values, weights, capacity);
 
-        System.out.println("result=" + result);
+        if (PrintHelper.debug) {
+            System.out.println("result=" + result);
+        }
+
         return result;
     }
 
