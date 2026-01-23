@@ -27,7 +27,7 @@ public class Solution {
         return combines;
     }
 
-    public void makeCombines(int n, int k, List<List<Integer>> combines, List<Integer> combine, int index) {
+    private void makeCombines(int n, int k, List<List<Integer>> combines, List<Integer> combine, int index) {
 
         if (k == combine.size()) {
             List<Integer> list = List.copyOf(combine);
