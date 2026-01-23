@@ -112,4 +112,17 @@ public class PrintHelper {
 
         return matrixToString(newMatrix);
     }
+
+    public static String matrixToString(char[][] matrix) {
+        List<List<Character>> newMatrix = Arrays.stream(matrix)
+                .map(row -> row == null
+                        ? Collections.<Character>emptyList()
+                        : IntStream.range(0, row.length)
+                        .mapToObj(i -> row[i])
+                        .collect(Collectors.toList())
+                )
+                .collect(Collectors.toList());
+
+        return matrixToString(newMatrix);
+    }
 }
