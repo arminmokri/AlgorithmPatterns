@@ -49,10 +49,13 @@ class Solution:
             counter = counter + 1
 
             if total == target:
-                res.append(comb[:])
                 if debug:
                     print(s + "  (fine total - backtracking)")
-                return
+                if len(comb[:]):
+                    res.append(comb[:])
+                    return
+                else:
+                    return []
 
             if total > target or idx >= len(candidates):
                 if debug:
@@ -64,7 +67,7 @@ class Solution:
 
             comb.append(candidates[idx])
             make_combination(idx, comb, total + candidates[idx])
-            
+
             comb.pop()
             make_combination(idx + 1, comb, total)
 
@@ -83,15 +86,56 @@ class Test(unittest.TestCase):
             [[2, 2, 3], [7]],
         )
 
-        # self.assertEqual(
-        #     self.solution.combinationSum([2, 3, 5], 8),
-        #     [[2, 2, 2, 2], [2, 3, 3], [3, 5]],
-        # )
+        self.assertEqual(
+            self.solution.combinationSum([2, 3, 5], 8),
+            [[2, 2, 2, 2], [2, 3, 3], [3, 5]],
+        )
 
-        # self.assertEqual(
-        #     self.solution.combinationSum([2], 1),
-        #     [],
-        # )
+        self.assertEqual(
+            self.solution.combinationSum([2], 1),
+            [],
+        )
+
+    def test_single_exact_match(self):
+        self.assertEqual(
+            self.solution.combinationSum([5], 5),
+            [[5]],
+        )
+
+    def test_no_possible_combination(self):
+        self.assertEqual(
+            self.solution.combinationSum([4, 6], 5),
+            [],
+        )
+
+    def test_multiple_candidates_unsorted_input(self):
+        self.assertEqual(
+            self.solution.combinationSum([8, 1, 3], 4),
+            [[1, 1, 1, 1], [1, 3]],
+        )
+
+    def test_target_zero(self):
+        self.assertEqual(
+            self.solution.combinationSum([1, 2, 3], 0),
+            [],
+        )
+        print(self.solution.combinationSum([1, 2, 3], 0))
+
+    def test_large_target_small_numbers(self):
+        self.assertEqual(
+            self.solution.combinationSum([1, 2], 5),
+            [
+                [1, 1, 1, 1, 1],
+                [1, 1, 1, 2],
+                [1, 2, 2],
+            ],
+        )
+
+    def test_single_candidate_multiple_times(self):
+        self.assertEqual(
+            self.solution.combinationSum([3], 9),
+            [[3, 3, 3]],
+        )
 
 
 def main():
