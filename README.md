@@ -11,6 +11,6 @@
 #### 8- [Miscellaneous](src/main/java/miscellaneous/) 1 Question
 #### 9- [Sliding Window](src/main/java/sliding_window) 7 Questions
 #### 10- [Tree Traversal](src/main/java/tree_traversal) 5 Questions
-#### 11- [Two Pointer](src/main/java/two_pointer) 7 Questions
+#### 11- [Two Pointer](src/main/java/two_pointer) 8 Questions
 
-#### Total: 71 Questions
+#### Total: 72 Questions
