@@ -34,6 +34,7 @@ Array problems focus on using contiguous memory structures where elements can be
 | 13 | [Arbitrary Arguments](arbitrary_arguments/)                                         | ✅   | ✅     | ✅ |                                                                                   | [`#Cisco`](https://cisco.com)                     |
 | 14 | [Monotonic Array](monotonic_array/)                                                 | ✅   | ✅     | ❌ | [LeetCode #896](https://leetcode.com/problems/monotonic-array)                    | [`#Cisco`](https://cisco.com)                     |
 | 15 | [Count Frequency Of Elements In An Array](count_frequency_of_elements_in_an_array/) | ✅   | ❌     | ❌ |                                                                                   | [`#MorganStanley`](https://morganstanley.com)     |
+| 16 | [Majority Element](majority_element/)                                               | ✅   | ❌     | ❌ | [LeetCode #169](https://leetcode.com/problems/majority-element)                   |                                                   |
 
 <p align="center">
   <a href="../backtracking"><strong>Backtracking</strong> ➡️</a>
