@@ -36,6 +36,7 @@ Array problems focus on using contiguous memory structures where elements can be
 | 15 | [Count Frequency Of Elements In An Array](count_frequency_of_elements_in_an_array/) | ✅   | ❌     | ❌ |                                                                                   | [`#MorganStanley`](https://morganstanley.com)     |
 | 16 | [Majority Element](majority_element/)                                               | ✅   | ❌     | ❌ | [LeetCode #169](https://leetcode.com/problems/majority-element)                   |                                                   |
 | 17 | [Length of Last Word](length_of_last_word/)                                         | ✅   | ❌     | ❌ | [LeetCode #58](https://leetcode.com/problems/length-of-last-word)                 |                                                   |
+| 18 | [Subarray Sum Equals K](subarray_sum_equals_k/)                                     | ✅   | ❌     | ❌ | [LeetCode #560](https://leetcode.com/problems/subarray-sum-equals-k)              |                                                   |
 
 <p align="center">
   <a href="../backtracking"><strong>Backtracking</strong> ➡️</a>
