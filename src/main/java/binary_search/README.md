@@ -155,14 +155,15 @@ If you use:
 Mixing these rules breaks the mathematical correctness of binary search and causes subtle bugs.
 
 ## Examples
-| #  | Name                                                                                | Java | Python | Go | Link                                                                                   | Company |
-|----|-------------------------------------------------------------------------------------|------|--------|----|----------------------------------------------------------------------------------------|---------|
-| 1  | [Binary Search](binary_search/)                                                     | ✅   | ✅     | ❌ | [LeetCode #704](https://leetcode.com/problems/binary-search)                           |         |
-| 2  | [Search Insert Position](search_insert_position/)                                   | ✅   | ✅     | ❌ | [LeetCode #35](https://leetcode.com/problems/search-insert-position)                   |         |
-| 3  | [Find Minimum in Rotated Sorted Array](find_minimum_in_rotated_sorted_array/)       | ✅   | ✅     | ❌ | [LeetCode #153](https://leetcode.com/problems/find-minimum-in-rotated-sorted-array)    |         |
-| 4  | [Search in Rotated Sorted Array](search_in_rotated_sorted_array/)                   | ✅   | ✅     | ❌ | [LeetCode #33](https://leetcode.com/problems/search-in-rotated-sorted-array)           |         |
-| 5  | [Find Peak Element](find_peak_element/)                                             | ✅   | ❌     | ❌ | [LeetCode #162](https://leetcode.com/problems/find-peak-element)                       |         |
-| 6  | [Find Minimum in Rotated Sorted Array II](find_minimum_in_rotated_sorted_array_ii/) | ✅   | ❌     | ❌ | [LeetCode #154](https://leetcode.com/problems/find-minimum-in-rotated-sorted-array-ii) |         |
+| #  | Name                                                                                                                | Java | Python | Go | Link                                                                                                  | Company |
+|----|---------------------------------------------------------------------------------------------------------------------|------|--------|----|-------------------------------------------------------------------------------------------------------|---------|
+| 1  | [Binary Search](binary_search/)                                                                                     | ✅   | ✅     | ❌ | [LeetCode #704](https://leetcode.com/problems/binary-search)                                          |         |
+| 2  | [Search Insert Position](search_insert_position/)                                                                   | ✅   | ✅     | ❌ | [LeetCode #35](https://leetcode.com/problems/search-insert-position)                                  |         |
+| 3  | [Find Minimum in Rotated Sorted Array](find_minimum_in_rotated_sorted_array/)                                       | ✅   | ✅     | ❌ | [LeetCode #153](https://leetcode.com/problems/find-minimum-in-rotated-sorted-array)                   |         |
+| 4  | [Search in Rotated Sorted Array](search_in_rotated_sorted_array/)                                                   | ✅   | ✅     | ❌ | [LeetCode #33](https://leetcode.com/problems/search-in-rotated-sorted-array)                          |         |
+| 5  | [Find Peak Element](find_peak_element/)                                                                             | ✅   | ❌     | ❌ | [LeetCode #162](https://leetcode.com/problems/find-peak-element)                                      |         |
+| 6  | [Find Minimum in Rotated Sorted Array II](find_minimum_in_rotated_sorted_array_ii/)                                 | ✅   | ❌     | ❌ | [LeetCode #154](https://leetcode.com/problems/find-minimum-in-rotated-sorted-array-ii)                |         |
+| 7  | [Find First and Last Position of Element in Sorted Array](find_first_and_last_position_of_element_in_sorted_array/) | ✅   | ❌     | ❌ | [LeetCode #34](https://leetcode.com/problems/find-first-and-last-position-of-element-in-sorted-array) |         |
 
 <p align="center">
   <a href="../backtracking">⬅️ <strong>Backtracking</strong></a>
