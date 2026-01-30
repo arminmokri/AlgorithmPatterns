@@ -38,6 +38,7 @@ Array problems focus on using contiguous memory structures where elements can be
 | 17 | [Length of Last Word](length_of_last_word/)                                         | ✅   | ❌     | ❌ | [LeetCode #58](https://leetcode.com/problems/length-of-last-word)                 |                                                   |
 | 18 | [Subarray Sum Equals K](subarray_sum_equals_k/)                                     | ✅   | ❌     | ❌ | [LeetCode #560](https://leetcode.com/problems/subarray-sum-equals-k)              |                                                   |
 | 19 | [Isomorphic Strings](isomorphic_strings/)                                           | ✅   | ❌     | ❌ | [LeetCode #205](https://leetcode.com/problems/isomorphic-strings)                 |                                                   |
+| 20 | [Missing Number](missing_number/)                                                   | ✅   | ❌     | ❌ | [LeetCode #268](https://leetcode.com/problems/missing-number)                     |                                                   |
 
 <p align="center">
   <a href="../backtracking"><strong>Backtracking</strong> ➡️</a>
