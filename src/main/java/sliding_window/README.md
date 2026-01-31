@@ -30,7 +30,7 @@ The sliding window pattern uses a subset (or window) that moves across the data 
 <p align="center">
   <a href="../miscellaneous">⬅️ <strong>Miscellaneous</strong></a>
   🔸
-  <a href="../tree_traversal"><strong>Tree Traversal</strong> ➡️</a>
+  <a href="../stack"><strong>Stack</strong> ➡️</a>
 </p>
 
 [< Back To Algorithm Patterns](../../../../)
