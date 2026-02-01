@@ -19,8 +19,8 @@ The Stack pattern is based on the **Last-In-First-Out (LIFO)** principle and is 
 - Simulating recursion or state using an explicit stack.
 
 ## Examples
-| #  | Name                                              | Java | Python | Go | Link                                                                   | Company |
-|----|---------------------------------------------------|------|--------|----|------------------------------------------------------------------------|---------|
+| #  | Name                                              | Java | Python | Go | Link                                                                  | Company |
+|----|---------------------------------------------------|------|--------|----|-----------------------------------------------------------------------|---------|
 | 1  | [Next Greater Element I](next_greater_elementـi/) | ✅   | ❌     | ❌ | [LeetCode #496](https://leetcode.com/problems/next-greater-element-i) |         |
 
 <p align="center">
