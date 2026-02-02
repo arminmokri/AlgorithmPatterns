@@ -39,6 +39,7 @@ Array problems focus on using contiguous memory structures where elements can be
 | 18 | [Subarray Sum Equals K](subarray_sum_equals_k/)                                     | ✅   | ❌     | ❌ | [LeetCode #560](https://leetcode.com/problems/subarray-sum-equals-k)              |                                                   |
 | 19 | [Isomorphic Strings](isomorphic_strings/)                                           | ✅   | ❌     | ❌ | [LeetCode #205](https://leetcode.com/problems/isomorphic-strings)                 |                                                   |
 | 20 | [Missing Number](missing_number/)                                                   | ✅   | ❌     | ❌ | [LeetCode #268](https://leetcode.com/problems/missing-number)                     |                                                   |
+| 21 | [Longest Palindrome](longest_palindrome/)                                           | ✅   | ❌     | ❌ | [LeetCode #409](https://leetcode.com/problems/longest-palindrome)                 |                                                   |
 
 <p align="center">
   <a href="../backtracking"><strong>Backtracking</strong> ➡️</a>
