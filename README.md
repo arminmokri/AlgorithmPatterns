@@ -10,7 +10,7 @@
 #### 7- [Matrix](src/main/java/matrix) 6 Questions
 #### 8- [Miscellaneous](src/main/java/miscellaneous/) 1 Question
 #### 9- [Sliding Window](src/main/java/sliding_window) 7 Questions
-#### 10- [Stack](src/main/java/stack) 1 Questions
+#### 10- [Stack](src/main/java/stack) 2 Questions
 #### 11- [Tree Traversal](src/main/java/tree_traversal) 5 Questions
 #### 12- [Two Pointer](src/main/java/two_pointer) 8 Questions
 
