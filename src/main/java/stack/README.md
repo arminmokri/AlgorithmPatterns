@@ -22,6 +22,7 @@ The Stack pattern is based on the **Last-In-First-Out (LIFO)** principle and is 
 | #  | Name                                              | Java | Python | Go | Link                                                                  | Company |
 |----|---------------------------------------------------|------|--------|----|-----------------------------------------------------------------------|---------|
 | 1  | [Next Greater Element I](next_greater_elementـi/) | ✅   | ❌     | ❌ | [LeetCode #496](https://leetcode.com/problems/next-greater-element-i) |         |
+| 2  | [Valid Parentheses](valid_parentheses/)           | ✅   | ❌     | ❌ | [LeetCode #20](https://leetcode.com/problems/valid-parentheses)       |         |
 
 <p align="center">
   <a href="../sliding_window">⬅️ <strong>Sliding Window</strong></a>
