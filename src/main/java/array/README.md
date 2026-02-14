@@ -40,6 +40,7 @@ Array problems focus on using contiguous memory structures where elements can be
 | 19 | [Isomorphic Strings](isomorphic_strings/)                                           | ✅   | ❌     | ❌ | [LeetCode #205](https://leetcode.com/problems/isomorphic-strings)                 |                                                   |
 | 20 | [Missing Number](missing_number/)                                                   | ✅   | ❌     | ❌ | [LeetCode #268](https://leetcode.com/problems/missing-number)                     |                                                   |
 | 21 | [Longest Palindrome](longest_palindrome/)                                           | ✅   | ❌     | ❌ | [LeetCode #409](https://leetcode.com/problems/longest-palindrome)                 |                                                   |
+| 22 | [Longest Uniform Substring](longest_uniform_substring/)                             | ✅   | ❌     | ❌ | [LeetCode](https://leetcode.com/discuss/post/1859344)                             | [`#tagB`]()                                       |
 
 <p align="center">
   <a href="../backtracking"><strong>Backtracking</strong> ➡️</a>
