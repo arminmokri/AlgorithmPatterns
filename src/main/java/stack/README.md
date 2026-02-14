@@ -19,10 +19,11 @@ The Stack pattern is based on the **Last-In-First-Out (LIFO)** principle and is 
 - Simulating recursion or state using an explicit stack.
 
 ## Examples
-| #  | Name                                              | Java | Python | Go | Link                                                                  | Company |
-|----|---------------------------------------------------|------|--------|----|-----------------------------------------------------------------------|---------|
-| 1  | [Next Greater Element I](next_greater_elementـi/) | ✅   | ❌     | ❌ | [LeetCode #496](https://leetcode.com/problems/next-greater-element-i) |         |
-| 2  | [Valid Parentheses](valid_parentheses/)           | ✅   | ❌     | ❌ | [LeetCode #20](https://leetcode.com/problems/valid-parentheses)       |         |
+| #  | Name                                                          | Java | Python | Go | Link                                                                        | Company     |
+|----|---------------------------------------------------------------|------|--------|----|-----------------------------------------------------------------------------|-------------|
+| 1  | [Next Greater Element I](next_greater_elementـi/)             | ✅   | ❌     | ❌ | [LeetCode #496](https://leetcode.com/problems/next-greater-element-i)       |             |
+| 2  | [Valid Parentheses](valid_parentheses/)                       | ✅   | ❌     | ❌ | [LeetCode #20](https://leetcode.com/problems/valid-parentheses)             |             |
+| 3  | [Implement Queue using Stacks](implement_queue_using_stacks/) | ✅   | ❌     | ❌ | [LeetCode #232](https://leetcode.com/problems/implement-queue-using-stacks) | [`#tagA`]() |
 
 <p align="center">
   <a href="../sliding_window">⬅️ <strong>Sliding Window</strong></a>
